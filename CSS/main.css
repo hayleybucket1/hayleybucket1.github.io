@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Cantarell&family=Oxygen&display=swap');
 html {
     background-color: #c9d6ea;
     font-family: 'Cantarell', sans-serif;
-    margin: 1em auto;
-    max-width: 850px;
+    margin: 0 auto;
+    max-width: 760px;
 }
 body {
     font-size: 18px;
@@ -22,7 +23,7 @@ header, footer {
 }
 hr {
     border: 1px solid #3c362a;
-    width: 95%;
+    width: 99%;
 }
 header {
     padding: 1em 1em 1em 3em;
@@ -30,12 +31,12 @@ header {
 footer {
     padding: 0.25em;
 }
-img {
+.selfpic {
     float: right;
     margin: 1em;
     width: 180px;
     border-radius: 2px;
-    box-shadow: 0 0 20px 2px;
+    box-shadow: black 5px 5px 10px 2px;
 }
 h2 {
     padding-left: 10px;
