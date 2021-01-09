@@ -15,9 +15,6 @@ content {
     padding: 0 30px;
     margin-bottom: 8px;
 }
-main h1 {
-    clear: both;
-}
 header, footer {
     background-color: #3c362a;
     color: #e8f7ee;
@@ -26,7 +23,6 @@ header, footer {
 }
 hr {
     border: 1px solid #3c362a;
-    width: 99%;
 }
 header {
     padding: 1em 1em 1em 3em;
@@ -66,6 +62,7 @@ footer a:link, footer a:visited {
 footer a:hover {
     color: #b8c4bb;
 }
-#lastupdate {
-    color: #663f46;
-}
+#lastUpdate {
+    color: #c9d6ea;
+} 
+
