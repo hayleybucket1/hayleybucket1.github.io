@@ -18,7 +18,6 @@ content {
 header, footer {
     background-color: #3c362a;
     color: #e8f7ee;
-    border-radius: 15px;
     text-align: center;
 }
 hr {
@@ -32,19 +31,18 @@ footer {
     clear: both;
 }
 .selfpic {
-    float: right;
     margin: 1em;
     width: 180px;
     height: 240px;
-    border-radius: 2px;
-    box-shadow: black 5px 5px 10px 2px;
+    
+    
 }
 h2 {
     padding-left: 10px;
-    font-size: 30px;
+    font-size: .5em;
 }
 header h1 {
-    font-size: 2em;
+    font-size: 1em;
     font-family: 'Oxygen', 'Open Sans' sans-serif;
 }
 li {
