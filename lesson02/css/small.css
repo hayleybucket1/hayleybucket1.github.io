@@ -4,26 +4,118 @@
 }
 /* body rules*/
 body {
-    font-family: 'Inconsolata', monospace;
-    font-size: 16px;
+    font-family: 'Fraunces', serif;
+    font-size: 17px;
+
+    
 }
 
-/* header rulesss*/
-header {
-    background-color: white;
+/* header footer rules*/
+header, footer {
+    background-color: #50514f;
     padding: 1rem 2%;
+    color: white;
+    text-align: center;
+    border: solid;
+    outline: 1px solid white;
+    outline-offset: -.5em;
+
 }
 header h1 {
     margin: 0;
+    padding: 2%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 45px;
+    
+    
 }
 header h3 {
     margin: 0;
+    font-family: 'Fraunces', serif;
+
+
 }
 /* navigation rules*/
 /* main rules*/
 main {
+    background-color: #70c1b3;
+    border: solid;
+    border-color: white;
+    border-top-width: .5em;
+    border-bottom-width: .5em;
+
+}
+section {
     display: grid;
     grid-template-columns: 1fr;
+    color: black;
+    align-content: center;
+    justify-content: center;
+    align-self: center;
+    justify-self: center;
+    
+}
+h2 {
+    background-color: #247ba0;
+    color: white;
+    padding: 9%;
+    margin: 1%;
+    width: auto;
+    font-size: 1.7em;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border: solid;
+    border-radius: 10px;
+}
+img {
+    display: block;
+    margin: auto;
+    max-width: 94%;
+    background-color: #50514f;
+    padding: 1em;
+    border-radius: 20px;
+    
 
+}
+/* footer rules*/
+#lastupdate {
+    color: #ffe066;
+}
+footer a:link, 
+footer a:visited {
+    color: black;
+    background-color: #247ba0;
+    border-radius: 5px;
+    padding: 7px;
+}
+footer a:hover {
+    color: #247ba0 ;
+    background-color: black;
 
+}
+div {
+    text-align: center;
+    border-style: solid; 
+    border-color: #50514f;
+    margin: 3%;
+    background-color: white; 
+    border-radius: 10px; 
+}
+p.description {
+    margin: 3%;
+    margin-top: 4%;
+    text-align: left;
+}
+p.link a {
+    color: #f25f5c;
+    text-decoration: none;
+}
+p.link a:hover {
+    color: black;
+}
+h3.website {
+    font-family: 'Inconsolata', monospace;
+
+    font-size: 30px;
+    margin: .5em;
 }

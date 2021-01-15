@@ -1,7 +1,16 @@
 @media only screen and (min-width: 560px) {
 
-    main {
+    section {
         grid-template-columns: 1fr 1fr;
+        padding: 2%;
+    }
+    html {
+        max-width: 85%;
+        margin: auto;
+        background-color: white;
+    }
+    header, footer {
+        
 
     }
 }
