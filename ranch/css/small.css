@@ -10,7 +10,7 @@ body {
 }
 /* header rules here */
 header {
-    background-color: #EECF6D;
+    background-color: #6f9283;
     padding: 1rem 2%;
 }
 header h1 {
@@ -49,7 +49,7 @@ main {
     display: block;
 }
 main h1 {
-    color: #17a8e4;
+    color: #6f9283;
 
 }
 main figure img {
@@ -66,7 +66,7 @@ main figcaption {
 footer {
     text-align: center;
     padding: 1rem 2%;
-    background-color: #EECF6D;
+    background-color: #6f9283;
 }
 
 
