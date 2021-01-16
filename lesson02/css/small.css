@@ -72,8 +72,27 @@ img {
     background-color: #50514f;
     padding: 1em;
     border-radius: 20px;
-    
-
+}
+p.description {
+    margin: 3%;
+    margin-top: 4%;
+    text-align: left;
+}
+p.link a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+p.link a:hover {
+    color: #f25f5c;
+}
+h3.website {
+    font-family: 'Inconsolata', monospace;
+    font-size: 30px;
+    margin: .5em;
+}
+h2.card2, h2.card3 {
+    padding: 10%    
 }
 /* footer rules*/
 #lastUpdate {
@@ -100,21 +119,4 @@ div {
     background-color: white; 
     border-radius: 10px; 
 }
-p.description {
-    margin: 3%;
-    margin-top: 4%;
-    text-align: left;
-}
-p.link a {
-    color: black;
-    text-decoration: none;
-    font-size: 20px;
-}
-p.link a:hover {
-    color: #f25f5c;
-}
-h3.website {
-    font-family: 'Inconsolata', monospace;
-    font-size: 30px;
-    margin: .5em;
-}
+
