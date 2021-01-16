@@ -24,7 +24,7 @@ hr {
     border: 1px solid #3c362a;
 }
 header {
-    padding: 1em 1em 1em 3em;
+    padding: 1em 1em 1em 1em;
 }
 footer {
     padding: 0.25em;
@@ -37,10 +37,10 @@ footer {
 }
 h2 {
     padding-left: 10px;
-    font-size: .5em;
+    font-size: 1.5em;
 }
 header h1 {
-    font-size: 1em;
+    font-size: 2em;
     font-family: 'Oxygen', 'Open Sans' sans-serif;
 }
 li {
