@@ -32,8 +32,6 @@ header h1 {
 header h3 {
     margin: 0;
     font-family: 'Fraunces', serif;
-
-
 }
 /* navigation rules*/
 /* main rules*/
@@ -84,12 +82,13 @@ img {
 footer a:link, 
 footer a:visited {
     color: black;
-    background-color: #247ba0;
+    background-color: #70c1b3;
     border-radius: 5px;
     padding: 7px;
+
 }
 footer a:hover {
-    color: #247ba0 ;
+    color: #70c1b3 ;
     background-color: black;
 
 }
@@ -107,11 +106,12 @@ p.description {
     text-align: left;
 }
 p.link a {
-    color: #f25f5c;
+    color: black;
     text-decoration: none;
+    font-size: 20px;
 }
 p.link a:hover {
-    color: black;
+    color: #f25f5c;
 }
 h3.website {
     font-family: 'Inconsolata', monospace;
