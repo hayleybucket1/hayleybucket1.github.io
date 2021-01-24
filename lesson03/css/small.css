@@ -39,7 +39,7 @@ header h2 {
 }
 
 nav {
-    background-color: #1b6b9d;
+    background-color: #15547B;
 }
 
 nav ul {
@@ -65,7 +65,7 @@ nav ul li a:hover {
 }
 
 nav ul li.active a {
-    background-color: #82C0C4;
+    background-color: #4B999F;
     color: #f5f5f5;
 }
 
@@ -113,40 +113,40 @@ table {
 .nav20 {
     font-family: 'EB Garamond', serif;
     font-size: 20px;
-    background-color: #1b6b9d;
-    color: #FDF9ED;
+    background-color: #15547B;
+    color: #e0e1e0;
 }
 
 .type40 {
     font-family: 'Quicksand', sans-serif;
     font-size: 50px;
     font-weight: 700;
-    color: #1B6B9D;
-    background-color: #82C0C4;
+    color: #15547B;
+    background-color: #e0e1e0;
 }
 
 .type30 {
     font-family: 'Quicksand', sans-serif;
     font-size: 30px;
-    color: #82C0C4;
+    color: #4B999F;
     background-color: #363031;
 }
 
 .type25 {
     font-family: 'Quicksand', sans-serif;
     font-size: 25px;
-    color: #82C0C4;
+    color: #4B999F;
 }
 
 .type20 {
     font-family: 'Quicksand', sans-serif;
     font-size: 20px;
-    color: #82C0C4;
+    color: #4B999F;
 }
 
 .type16 {
     font-family: 'EB Garamond', serif;
     font-size: 20px;
-    color: #363031;
-    background-color: #FDF9ED;
+    color: black;
+    background-color: #e0e1e0;
 }
