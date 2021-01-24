@@ -39,7 +39,7 @@ header h2 {
 }
 
 nav {
-    background-color: #15547B;
+    background-color: #003459;
 }
 
 nav ul {
@@ -52,7 +52,7 @@ nav ul {
 
 nav ul li a {
     display: block;
-    color: #eee;
+    color: #FFFFFF;
     padding: .5rem 0;
     text-decoration: none;
     font-size: .9rem;
@@ -60,13 +60,13 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #363031;
+    background-color: #00A8E8;
     color: #f5f5f5;
 }
 
 nav ul li.active a {
-    background-color: #27c3c9;
-    color: black;
+    background-color: #007EA7;
+    color: FFFFFFF;
 }
 
 
@@ -113,40 +113,40 @@ table {
 .nav20 {
     font-family: 'EB Garamond', serif;
     font-size: 20px;
-    background-color: #15547B;
-    color: #e0e1e0;
+    background-color: #00171f;
+    color: #FFFFFF;
 }
 
 .type50 {
     font-family: 'Quicksand', sans-serif;
     font-size: 55px;
     font-weight: 700;
-    color: #15547B;
-    background-color: #e0e1e0;
+    color: #00A8E8;
+    background-color: #00171f;
 }
 
 .type40 {
     font-family: 'Quicksand', sans-serif;
     font-size: 40px;
-    color: #4B999F;
-    background-color: #363031;
+    color: #003459;
+    background-color: #00A8E8;
 }
 
 .type30 {
     font-family: 'Quicksand', sans-serif;
     font-size: 30px;
-    color: #4B999F;
+    color: #007EA7;
 }
 
 .type25 {
     font-family: 'Quicksand', sans-serif;
     font-size: 25px;
-    color: #4B999F;
+    color: #007EA7;
 }
 
 .type20 {
     font-family: 'EB Garamond', serif;
     font-size: 20px;
-    color: black;
-    background-color: #e0e1e0;
+    color: #00171F;
+    background-color: #FFFFFF;
 }
