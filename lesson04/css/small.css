@@ -1,0 +1,148 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+
+/*----------- apply a natural box layout model to all elements --------------*/
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    padding: 1rem 1%;
+    overflow: hidden;
+    color: #00171f;
+    background-color: #007Ea7;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    align-self: flex-start;
+    width: 100px;
+    background-color: #ffffff;
+    margin-left: 1%;
+    padding: 4% 0;
+    outline: 1px solid #00171f;
+    outline-offset: -3px;
+}
+
+.headings,
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: 0;
+}
+
+.hamburger {
+    align-self: flex-end;
+}
+
+h1 {
+    font-family: 'EB Garamond', serif;
+    font-size: 50px;
+    font-weight: 700;
+    padding-top: 0;
+}
+
+h2 {
+    font-family: 'EB Garamond', serif;
+    color: #003459;
+    text-align: center;
+    font-size: 35px;
+    margin: 0;
+}
+
+h3 {
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.hamburger {
+    margin: .5rem 1%;
+    background-color: #003459;
+    font-size: 1.6rem;
+    color: #ffffff
+}
+
+nav {
+    background-color: #fff;
+    font-family: 'Quicksand', sans-serif;
+    text-align: right;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #00171f;
+    border-top: 1px solid rgba(225, 225, 225, 0.8);
+}
+
+#active {
+    background-color: #003459;
+    color: #fff;
+}
+
+nav ul li a:hover {
+    background-color: #00A8E8;
+    color: #ffffff;
+}
+
+nav ul.hide {
+    display: none;
+}
+
+main {
+    margin: 1rem 2%;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+}
+
+div {
+    text-align: center;
+    display: block;
+    border: 1px solid #00171f;
+    padding: 1.5rem;
+    margin: .5rem auto;
+}
+
+p {
+    font-size: 14px;
+    margin: .5em;
+}
+
+footer {
+    padding: 1rem;
+    overflow: hidden;
+    color: #00A8E8;
+    background-color: #00171f;
+    text-align: center;
+}
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}

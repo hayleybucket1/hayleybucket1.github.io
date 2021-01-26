@@ -1,14 +1,46 @@
-  @media only screen and (min-width: 35rem) {
-      nav ul {
-          flex-direction: row;
-      }
-      nav ul li a {
-          padding: 0.5rem 1rem;
-      }
-      header h1 {
-          font-size: 2rem;
-      }
-      header h2 {
-          font-size: 1.5rem;
-      }
-  }
+ @media only screen and (min-width: 35rem) {
+     nav ul {
+         display: flex;
+         justify-content: space-around;
+         flex-direction: row;
+     }
+     nav ul li a {
+         padding: 0.5rem 1rem;
+     }
+     header h1 {
+         font-size: 2rem;
+     }
+     header h2 {
+         font-size: 1.5rem;
+     }
+     table {
+         width: 500px;
+         margin-left: auto;
+         margin-right: auto;
+     }
+     .nav20 {
+         font-family: 'EB Garamond', serif;
+         font-size: 20px;
+     }
+     .type50 {
+         font-family: 'Quicksand', sans-serif;
+         font-size: 50px;
+         font-weight: 700;
+     }
+     .type40 {
+         font-family: 'Quicksand', sans-serif;
+         font-size: 40px;
+     }
+     .type30 {
+         font-family: 'Quicksand', sans-serif;
+         font-size: 30px;
+     }
+     .type25 {
+         font-family: 'Quicksand', sans-serif;
+         font-size: 25px;
+     }
+     .type20 {
+         font-family: 'EB Garamond', serif;
+         font-size: 20px;
+     }
+ }

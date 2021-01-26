@@ -1,0 +1,27 @@
+/* 35em is also 560px when basefont is 16px */
+
+@media only screen and (min-width: 35rem) {
+    .headings h1 {
+        font-size: 70px;
+    }
+    header img {
+        width: 150px;
+        padding: 3% 0;
+    }
+    .hamburger {
+        align-self: flex-end;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        flex-basis: auto;
+        justify-content: center;
+        text-align: center;
+    }
+    main {
+        padding: 1rem;
+    }
+}
+
+
+/*end medium */
