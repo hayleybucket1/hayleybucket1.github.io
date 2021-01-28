@@ -1,6 +1,5 @@
 function toggleMenu() {
     document.getElementById("primaryNav").classList.toggle("hide");
 }
-var date = newDate();
-let todaydate = date.getDate();
-document.getElementById("date").innerHTML = date.toDateString();
+var today = new Date();
+document.getElementById("currentDate").textContent = today.toDateString();
