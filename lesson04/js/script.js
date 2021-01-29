@@ -2,9 +2,6 @@
 function toggleMenu() {
     document.getElementById("primaryNav").classList.toggle("hide");
 }
-// Dynamic Year
-document.getElementById("currentYear").textContent = todaysdate.getFullYear();
-
 // Dynamic Date
 const daynames = [
     "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
@@ -30,3 +27,6 @@ const year = todaysdate.getFullYear();
 const currentDate = dayName + ", " + todaysdate.getDate() + " " + monthName + " " + year;
 const options = {weekday: 'long', month: 'long', day: 'numeric', year: 'numeric'};
 document.getElementById("currentDate").textContent = currentDate;
+
+// Dynamic Year
+document.getElementById("currentYear").textContent = todaysdate.getFullYear();
