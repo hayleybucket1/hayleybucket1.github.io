@@ -3,14 +3,13 @@
 @media only screen and (min-width: 35rem) {
     .headings h1 {
         font-size: 70px;
+        color: #ffffff;
     }
     header img {
         width: 150px;
         padding: 3% 0;
     }
-    .hamburger {
-        align-self: flex-end;
-    }
+
     nav {
         display: flex;
         flex-direction: column;
@@ -18,8 +17,18 @@
         justify-content: center;
         text-align: center;
     }
+    .hamburger {
+        align-self: flex-end;
+        justify-self: flex-end;
+    }
     main {
         padding: 1rem;
+    }
+    .motto {
+        align-self: center;
+        padding-left: 40px;
+        color: #003459;
+        font-size: 25px;
     }
 }
 

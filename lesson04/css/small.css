@@ -19,9 +19,7 @@ header {
     overflow: hidden;
     color: #00171f;
     background-color: #007Ea7;
-    text-align: center;
     display: flex;
-    align-items: center;
 }
 
 header img {
@@ -35,17 +33,11 @@ header img {
     -webkit-box-shadow: 5px 5px 11px 1px #000000; 
     box-shadow: 5px 5px 11px 1px #000000;
 }
-
-.headings,
 .hamburger {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    margin: 0;
-}
-
-.hamburger {
+    flex-direction: row;
     align-self: flex-end;
+    justify-self: flex-end;
+    margin: 0;
 }
 
 h1 {
@@ -63,14 +55,14 @@ h2 {
     text-align: center;
     font-size: 35px;
     margin: 0;
+    padding: 10px;
 }
 
-header h3 {
+.motto {
     font-size: 20px;
     color: #ffffff;
-    padding-right: 15px;
-    margin: 5px;
-    padding-bottom: 10px;
+    text-align: center;
+    padding-right: 30px;
 }
 
 .hamburger {
