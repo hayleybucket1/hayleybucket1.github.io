@@ -17,7 +17,7 @@ html {
 header {
     padding: .5rem 1%;
     overflow: hidden;
-    color: #00171f;
+    color: #ffffff;
     background-color: #007Ea7;
     display: flex;
 }
@@ -30,9 +30,10 @@ header img {
     padding: 4% 0;
     outline: 1px solid #00171f;
     outline-offset: -3px;
-    -webkit-box-shadow: 5px 5px 11px 1px #000000; 
+    -webkit-box-shadow: 5px 5px 11px 1px #000000;
     box-shadow: 5px 5px 11px 1px #000000;
 }
+
 .hamburger {
     flex-direction: row;
     align-self: flex-end;
@@ -124,7 +125,7 @@ div {
 }
 
 .placeholder {
-    -webkit-box-shadow: 5px 5px 11px 1px #e0d9d994; 
+    -webkit-box-shadow: 5px 5px 11px 1px #e0d9d994;
     box-shadow: 5px 5px 11px 1px #4b4a4ac4;
 }
 
@@ -145,11 +146,13 @@ footer {
 footer div {
     border: none;
 }
+
 .social img {
     padding: 2px;
-    -webkit-box-shadow: 5px 5px 11px 1px #000000; 
+    -webkit-box-shadow: 5px 5px 11px 1px #000000;
     box-shadow: 5px 5px 11px 1px #000000;
 }
+
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 
