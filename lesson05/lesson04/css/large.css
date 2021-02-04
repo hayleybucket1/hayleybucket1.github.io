@@ -1,0 +1,52 @@
+/* 64em is also 1028px when basefont is 16px */
+
+@media only screen and (min-width: 64rem) {
+    header,
+    nav,
+    main,
+    footer {
+        max-width: 64rem;
+        margin: auto;
+    }
+    header img {
+        width: 200px;
+        margin-top: .5rem;
+        margin: 2%;
+    }
+    h2 {
+        margin: 0 1%;
+    }
+    main {
+        padding: 1rem;
+    }
+    .hero div {
+        max-width: 64rem;
+    }
+    .hamburger {
+        display: none;
+    }
+    .hide {
+        display: block;
+    }
+    nav ul {
+        margin-left: 2%;
+    }
+    nav ul li {
+        float: left;
+    }
+    nav ul li a {
+        border: none;
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
+        padding: .6rem 1rem;
+    }
+    .weathersummary {
+        top: 50px;
+        left: 110px;
+    }
+    section.article img {
+        border: 2px solid #000;
+    }
+}
+
+
+/*end large */
