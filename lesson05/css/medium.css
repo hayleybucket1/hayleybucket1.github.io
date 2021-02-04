@@ -72,12 +72,13 @@
         margin: 0 0 0.5rem 0.5rem;
     }
     section.contactinfo {
-        width: 50%;
-        height: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: column;
     }
-    section.map {
-        display: block;
-        float: right;
+    .map {
+        width: 40%;
+        height: auto;
     }
     footer {
         clear: both;
