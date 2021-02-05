@@ -4,6 +4,7 @@
     .headings h1 {
         font-size: 70px;
         color: #ffffff;
+        text-align: center;
     }
     header img {
         width: 150px;
@@ -13,6 +14,7 @@
     h2 {
         margin: 0;
         padding: 1% 0;
+        text-align: center;
     }
     nav {
         display: flex;
