@@ -74,7 +74,6 @@
     section.contactinfo {
         display: flex;
         flex-direction: row;
-        flex-wrap: column;
     }
     .map {
         width: 40%;
