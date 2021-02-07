@@ -15,10 +15,10 @@ html {
 }
 
 header {
-    padding: .5rem 1%;
+    padding: .5rem;
     overflow: hidden;
     color: #ffffff;
-    background-color: #007Ea7;
+    background-color:#3C71C1ff;
     display: flex;
 }
 
@@ -58,7 +58,7 @@ h2 {
     font-family: 'EB Garamond', serif;
     color: #003459;
     font-size: 35px;
-    margin: 0;
+    margin-left: 1rem;
     padding: 1% 0;
 }
 
@@ -66,11 +66,11 @@ h2 {
     font-size: 20px;
     color: #ffffff;
     text-align: center;
-    padding-right: 2%;
+    margin-left: 1%;
 }
 
 nav {
-    background-color: #fff;
+    background-color: #08C6AAff;
     font-family: 'Quicksand', sans-serif;
     text-align: right;
 }
@@ -95,8 +95,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #00A8E8;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #08C6AAff;
 }
 
 .hide {
@@ -106,10 +106,10 @@ nav ul li a:hover {
 
 /*---------Main ----------*/
 
-main {
-    margin: 1rem 2%;
+.preston {
+    width: 100%;
+    height: auto;
 }
-
 div#message {
     background-color: yellow;
 }
@@ -138,10 +138,7 @@ body {
     justify-content: center;
 }
 
-.preston {
-    width: 100%;
-    height: auto;
-}
+
 
 .weathersummary {
     position: absolute;
@@ -167,6 +164,7 @@ body {
 
 section.article {
     color: #00171f;
+    margin: 1rem;
 }
 
 .article p {
@@ -186,8 +184,11 @@ section.article img {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 1rem;
+    margin: 1rem;
 }
-
+.h3contact {
+    margin: 1rem;
+}
 .contact p {
     font-size: 17px;
 }
@@ -212,7 +213,7 @@ footer {
     padding: 0;
     overflow: hidden;
     color: #ffffff;
-    background-color: #007Ea7;
+    background-color: #3C71C1ff;
     text-align: center;
 }
 

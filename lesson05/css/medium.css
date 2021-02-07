@@ -1,6 +1,6 @@
 /* 35em is also 560px when basefont is 16px */
 
-@media only screen and (min-width: 35rem) {
+@media only screen and (min-width: 40rem) {
     .headings h1 {
         font-size: 70px;
         color: #ffffff;
@@ -12,10 +12,12 @@
         margin-left: 3%;
     }
     h2 {
-        margin: 0;
+        margin: .5rem;
         padding: 1% 0;
         text-align: left;
     }
+    h3 { margin: 1rem;}
+    p { margin: 1rem;}
     nav {
         display: flex;
         flex-direction: column;
@@ -45,9 +47,6 @@
     .weathersummary p {
         font-size: 19px;
     }
-    main {
-        padding: 1rem;
-    }
     .fiveday {
         display: block;
     }
@@ -55,6 +54,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         padding: 1rem 0;
+        margin: 1rem;
     }
     section.forecast div h5 {
         background-color: #eee;
@@ -83,6 +83,9 @@
     }
     footer {
         clear: both;
+    }
+    .social {
+        float: left;
     }
 }
 

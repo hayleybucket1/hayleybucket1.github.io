@@ -7,14 +7,22 @@
     footer {
         max-width: 64rem;
         margin: auto;
+        padding: 0;
     }
     header img {
         width: 200px;
         margin-top: .5rem;
+    }
+    .motto {
+        text-align: left;
+    }
+
+    h2, h3 {
         margin: 2%;
     }
-    h2 {
-        margin: 0;
+    .preston {
+        margin-left: 2%;
+        margin-right: 2%;
         overflow: hidden;
     }
     main {
@@ -44,8 +52,26 @@
         top: 50px;
         left: 110px;
     }
+    .forecast div {
+        margin: 2%;
+        overflow: hidden;
+    }
+    section.article {
+        margin: 0;
+        margin-right: 2%;
+    }
+    .article p {
+        margin: 2%;
+    }
     section.article img {
         border: 2px solid #000;
+    }
+    .h3contact {
+        margin: 2%;
+    }
+    .contactinfo {
+        margin-right: 1%;
+        margin-left: 0;
     }
 }
 
