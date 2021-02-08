@@ -5,28 +5,32 @@
     nav,
     main,
     footer {
-        max-width: 64rem;
         margin: auto;
         padding: 0;
     }
+    main {
+        max-width: 64rem;
+    }
+    .headimg,
+    .headings {
+        display: flex;
+        flex-direction: column;
+        margin: 2%;
+        justify-content: center;
+        margin-left: 2rem;
+        max-width: 64rem;
+    }
     header img {
         width: 200px;
-        margin-top: .5rem;
-    }
-    .motto {
-        text-align: left;
-    }
-
-    h2, h3 {
-        margin: 2%;
+        margin: 1rem;
     }
     .preston {
         margin-left: 2%;
         margin-right: 2%;
         overflow: hidden;
     }
-    main {
-        padding: 1rem;
+    .presIdaho {
+        margin: 2%;
     }
     .hero div {
         max-width: 64rem;
@@ -35,18 +39,25 @@
         display: none;
     }
     .hide {
-        display: block;
+        display: flex;
     }
     nav ul {
         margin-left: 2%;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 2%;
+        text-align: center;
+        padding: .5%;
     }
     nav ul li {
+        flex: 1 1 100%;
         float: left;
     }
     nav ul li a {
         border: none;
         border-right: 1px solid rgba(0, 0, 0, 0.3);
-        padding: .6rem 1rem;
+        padding: .5rem 1.5rem;
+        text-align: center;
     }
     .weathersummary {
         top: 50px;
@@ -55,6 +66,9 @@
     .forecast div {
         margin: 2%;
         overflow: hidden;
+    }
+    .top5 {
+        margin: 2%;
     }
     section.article {
         margin: 0;
@@ -72,6 +86,9 @@
     .contactinfo {
         margin-right: 1%;
         margin-left: 0;
+    }
+    footer p {
+        margin: 3%;
     }
 }
 
