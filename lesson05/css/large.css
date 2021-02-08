@@ -15,14 +15,18 @@
     .headings {
         display: flex;
         flex-direction: column;
-        margin: 2%;
-        justify-content: center;
-        margin-left: 2rem;
+        margin: 1%;
         max-width: 64rem;
+        justify-content: center;
     }
-    header img {
+    .headimg {
         width: 200px;
-        margin: 1rem;
+        height: auto;
+        margin: 2%;
+        margin-left: 3%;
+    }
+    .headings {
+        text-align: left;
     }
     .preston {
         margin-left: 2%;
