@@ -1,80 +1,84 @@
-html {
-    background-color: #c9d6ea;
-    font-family: 'Cantarell', 'Open Sans' sans-serif;
-    margin: 0 auto;
-    max-width: 760px;
-}
-
-body {
-    font-size: 18px;
-    color: #3c362a;
-}
-
-content {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 30px;
-    margin-bottom: 8px;
-}
-
-header,
-footer {
-    background-color: #3c362a;
-    color: #e8f7ee;
-    text-align: center;
-}
-
-hr {
-    border: 1px solid #3c362a;
-}
-
-header {
-    padding: 1em 1em 1em 1em;
-}
-
-footer {
-    padding: 0.25em;
-    clear: both;
-}
-
-.selfpic {
-    margin: 1em;
-    width: 180px;
-}
-
-h2 {
-    padding-left: 10px;
-    font-size: 1.5em;
-}
-
-header h1 {
-    font-size: 2em;
-    font-family: 'Oxygen', 'Open Sans' sans-serif;
-}
-
-li {
-    margin: 5px;
-    font-size: 1.1em;
-}
-
-nav a:visited,
-nav a:link {
-    color: #3c362a;
-}
-
-nav a:hover {
-    color: #e8f7ee;
-}
-
-footer a:link,
-footer a:visited {
-    color: #e8f7ee;
-}
-
-footer a:hover {
-    color: #b8c4bb;
-}
-
-#lastUpdate {
-    color: #c9d6ea;
-}
+    html {
+        background-color: #c9d6ea;
+        font-family: 'Cantarell', 'Open Sans' sans-serif;
+        margin: 0 auto;
+        max-width: 760px;
+    }
+    
+    body {
+        font-size: 18px;
+        color: #3c362a;
+    }
+    
+    content {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 30px;
+        margin-bottom: 8px;
+    }
+    
+    header,
+    footer {
+        background-color: #3c362a;
+        color: #e8f7ee;
+        text-align: center;
+    }
+    
+    hr {
+        border: 1px solid #3c362a;
+    }
+    
+    header {
+        padding: 1em 1em 1em 1em;
+    }
+    
+    footer {
+        padding: 0.25em;
+        clear: both;
+    }
+    
+    .selfpic {
+        margin: 1em;
+        width: 180px;
+    }
+    
+    h2 {
+        padding-left: 10px;
+        font-size: 1.5em;
+    }
+    
+    header h1 {
+        font-size: 2em;
+        font-family: 'Hachi Maru Pop', 'sans-serif';
+    }
+    
+    li {
+        margin: 5px;
+        font-size: 1.1em;
+    }
+    
+    li a {
+        text-decoration: none;
+    }
+    
+    nav a:visited,
+    nav a:link {
+        color: #3c362a;
+    }
+    
+    nav a:hover {
+        color: #e8f7ee;
+    }
+    
+    footer a:link,
+    footer a:visited {
+        color: #e8f7ee;
+    }
+    
+    footer a:hover {
+        color: #b8c4bb;
+    }
+    
+    #lastUpdate {
+        color: #c9d6ea;
+    }
