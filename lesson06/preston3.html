@@ -46,49 +46,54 @@
         <div id="message">Preston Pancakes in the Park! 9:00am Saturday at the city park pavillion.</div>
         <h2 class="presIdaho">Preston, Idaho</h2>
         <div class="hero-content">
-            <figure class="preston">
-                <img src="images/prestonimage.jpg" alt="hero image Preston Lake">
-                <figcaption></figcaption>
-            </figure>
-            <section class="weathersummary">
+            <picture class="preston">
+                <source media="(max-width: 500px)" srcset="images/wdd230_500.jpg">
+                <source media="(max-width: 800px)" srcset="images/wdd230_800.jpg"> <img src="images/wdd230_1100.jpg" alt="landscape">
+            </picture>
+            <section class=" weathersummary ">
                 <h3>Weather Summary</h3>
-                <p>High: 48&deg;</p>
-                <p>Low: 26&deg;</p>
-                <p>Wind: 4mph W</p>
+                <p>Currently: Snowing</p>
+                <p>Temperature:
+                    <span id="temp">32</span>&deg;F</p>
+                <p>Wind Speed:
+                    <span id="speed">14</span>mph</p>
+                <p>Humidity: 93%</p>
+                <p><span id="chill"></span>
+                </p>
             </section>
         </div>
-        <h3 class="fiveday">5 Day Forecast</h3>
-        <section class="forecast">
+        <h3 class=" fiveday ">5 Day Forecast</h3>
+        <section class="forecast ">
             <div>
                 <h5>Monday</h5>
-                <img src="images/partlycloudy.png" alt="Partly Icon" width="100" height="100">
+                <img src="images/partlycloudy.png " alt="Partly Icon " width="100 " height="100 ">
                 <p>37&deg;</p>
             </div>
             <div>
                 <h5>Tuesday</h5>
-                <img src="images/slightrain.png" alt="Slight Rain" width="100" height="100">
+                <img src="images/slightrain.png " alt="Slight Rain " width="100 " height="100 ">
                 <p>40&deg;</p>
             </div>
             <div>
                 <h5>Wednesday</h5>
-                <img src="images/sunicon.png" alt="Sunny" width="100" height="100">
+                <img src="images/sunicon.png " alt="Sunny " width="100 " height="100 ">
                 <p>42&deg;</p>
             </div>
             <div>
                 <h5>Thursday</h5>
-                <img src="images/snow.png" alt="Snow" width="100" height="100">
+                <img src="images/snow.png " alt="Snow " width="100 " height="100 ">
                 <p>32&deg;</p>
             </div>
             <div>
                 <h5>Friday</h5>
-                <img src="images/snow.png" alt="Snow" width="100" height="100">
+                <img src="images/snow.png " alt="Snow " width="100 " height="100 ">
                 <p>30&deg;</p>
             </div>
         </section>
-        <section class="article">
-            <div class="container clearfix">
-                <h3 class="top5">Top 5 BEST Things to Do in Preston</h3>
-                <img class="skilift" src="images/skilift.jpg" alt="skilift pic" width="400" height="200">
+        <section class="article ">
+            <div class="container clearfix ">
+                <h3 class="top5 ">Top 5 BEST Things to Do in Preston</h3>
+                <img class="skilift " src="images/skilift.jpg " alt="skilift pic " width="400 " height="200 ">
                 <p>Lorem ipsum dolor sit amet, ne mel tale dicat pericula, elitr prompta ne eum. Ad pro inimicus necessitatibus, cu justo diceret ius, posse scaevola accommodare at mei. Pro an amet essent propriae, ei vix eligendi petentium. No virtute explicari
                     accusamus eam.</p>
                 <p>Nihil utamur labitur ius at, ferri autem vitae his cu. Eum aliquip sanctus te, eam nostrum delicata tincidunt in, omnes vidisse eum ut. Usu sint clita senserit te, per no justo essent dictas. Iriure iudicabit intellegam ut nec, ei quo
@@ -101,28 +106,30 @@
 
             </div>
         </section>
-        <h3 class="h3contact">Contact Us!</h3>
-        <section class="contactinfo">
-            <div class="contact">
+        <h3 class="h3contact ">Contact Us!</h3>
+        <section class="contactinfo ">
+            <div class="contact ">
                 <p><strong>Address:</strong><br> 555 Sage Lane<br>Idaho Falls, ID 83402</p>
                 <p><strong>Email:</strong><br> skypeeker@mail.me<br><strong>Phone:</strong><br> 123-456-7890</p>
             </div>
-            <img class="map" src="images/mappreston.jpg" alt="map of Preston,ID" width="70" height="60">
+            <img class="map " src="images/mappreston.jpg " alt="map of Preston,ID " width="70 " height="60 ">
         </section>
     </main>
     <!-- FOOTER HERE -->
     <footer>
-        <div class="social">
-            <a href="https://facebook.com" target="blank ">
-                <img src="images/facebookicon.png" alt="facebook icon"></a>
-            <a href="https://instagram.com" target="blank">
-                <img src="images/instagramicon.png" alt="instagram icon"></a>
-            <a href="https://twitter.com" target="blank">
-                <img src="images/twittericon.png" alt="twitter icon"></a>
+        <div class="social ">
+            <a href="https://facebook.com " target="blank ">
+                <img src="images/facebookicon.png " alt="facebook icon "></a>
+            <a href="https://instagram.com " target="blank ">
+                <img src="images/instagramicon.png " alt="instagram icon "></a>
+            <a href="https://twitter.com " target="blank ">
+                <img src="images/twittericon.png " alt="twitter icon "></a>
         </div>
-        <p>&copy; <span id="currentYear"></span> | Hayley Buck | <span id="currentDate"></span> | BYU-Idaho Online Learning</p>
+        <p>&copy; <span id="currentYear "></span> | Hayley Buck | <span id="currentDate "></span> | BYU-Idaho Online Learning</p>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="js/script.js "></script>
+    <script src="js/fontload.js "></script>
+    <script src="js/windchill.js "></script>
 </body>
 
 </html>
