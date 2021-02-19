@@ -99,6 +99,13 @@
     .social {
         float: left;
     }
+    /* gallery */
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+        margin: 1rem;
+    }
 }
 
 
