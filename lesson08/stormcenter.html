@@ -45,21 +45,91 @@
         </nav>
         <main>
             <h2 class="weather">Storm Center</h2>
+            <form method="get" action="thanks.html">
+                <fieldset>
+                    <legend>Contact Info</legend>
+                    <label for="fullname">Full Name: </label>
+                    <input type="text" id="fullname" pattern="[A-Za-z ]{5,}" name=" fullname" required><br><br>
+                    <label for="email ">Email: </label>
+                    <input type="email" id="email" name="email" placeholder="someone@email.com"><br><br>
+                    <label for="tel">Phone Number: </label>
+                    <input type="tel" id="tel" name="tel" placeholder="123-456-7890" required><br><br>
+                    <label for="zipcode">Zip Code: </label><input type="number" name="number" id="number" required><br><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Storm Sighting</legend>
+                    <label for="stormdate">Storm Date:</label>
+                    <input type="date" id="stormdate" name="stormdate"><br><br>
+                    <label for="stormtype">Storm Type:</label>
+                    <select name="stormtype" id="stormtype">
+                    <option value="">Select One</option>
+                    <option value="Flash Flood">Flash Flood</option>
+                    <option value="Hail">Hail</option>
+                    <option value="Hurricane">Hurricane</option>
+                    <option value="Thunderstorm">Thunderstorm</option>
+                    <option value="Tornado">Tornado</option>
+                    </select>
+                    <br><br>
+
+                    <label class="slide">Storm Severity (1-10): &nbsp;&nbsp;&nbsp;<input type="range" id="severity" value="5" min="1" max="10" step="1" list="severityAmount" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)" name="severity"><span id="serverityValue">5</span>
+                </label>
+
+                    <datalist id="severityAmount">
+                    <option value="0"></option>
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                    <option value="4"></option>
+                    <option value="5"></option>
+                    <option value="6"></option>
+                    <option value="7"></option>
+                    <option value="8"></option>
+                    <option value="9"></option>
+                    <option value="10"></option>
+                </datalist><br><br>
+
+                    <label for="storm region">Storm Region:</label>
+                    <select name="region">
+                        <option selected disabled>Select Region</option>
+                        <option value="preston">Preston</option>
+                        <option value="sodaSprings">Soda Springs</option>
+                        <option value="fishHaven">Fish Haven</option>
+                    </select><br><br>
+                    </label>
+                    <div>Are you in danger?
+                        <label class="sbs"><input type="radio" name="dangerLevel" value="yes">Yes  </label>
+                        <label class="sbs"><input type="radio" name="dangerLevel" value="maybe">Maybe  </label>
+                        <label class="sbs"><input type="radio" name="dangerLevel" value="no">No  </label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Additional Details</legend>
+                    <textarea name="addInfo" placeholder="Add info here..." rows="10" cols="45"></textarea><br><br>
+
+                </fieldset>
+                <input type="submit" value="Submit Report" class="submitButton"><br><br>
+            </form>
         </main>
 
     </body>
     <footer>
-        <div class="social ">
-            <a href="https://facebook.com " target="blank "> <img src="images/facebookicon.png " alt="facebook icon ">
+        <div class="social">
+            <a href="https://facebook.com" target="blank"> <img src="images/facebookicon.png" alt="facebook icon">
             </a>
-            <a href="https://instagram.com " target="blank "> <img src="images/instagramicon.png " alt="instagram icon "></a>
-            <a href="https://twitter.com " target="blank "> <img src="images/twittericon.png " alt="twitter icon ">
+            <a href="https://instagram.com" target="blank"> <img src="images/instagramicon.png" alt="instagram icon"></a>
+            <a href="https://twitter.com" target="blank"> <img src="images/twittericon.png" alt="twitter icon">
             </a>
         </div>
-        <p>&copy; <span id="currentYear "> </span> | Hayley Buck | <span id="currentDate "> </span> | BYU-Idaho Online Learning </p>
+        <p>&copy; <span id="currentYear"> </span> | Hayley Buck | <span id="currentDate"> </span> | BYU-Idaho Online Learning </p>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax.libs/webfont/1.6.26/webfont.js">
     </script>
-    <script src="js/script.js ">
+    <script src="js/script.js">
     </script>
+    <script src="js/fontload.js">
+    </script>
+    <script src="js/windchill.js">
+    </script>
+    <script src="js/lazyload.js"></script>
 
 </html>
