@@ -45,3 +45,7 @@ if (dayNumber == 6) {
 } else {
     element.classList.add("hideme");
 }
+//severity
+function adjustRating(severity) {
+    document.getElementById("severityValue").innerHTML = severity;
+}

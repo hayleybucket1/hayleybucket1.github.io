@@ -1,125 +1,127 @@
-/* 64em is also 1028px when basefont is 16px */
-
-@media only screen and (min-width: 64rem) {
-    header,
-    nav,
-    main,
-    footer {
-        margin: auto;
-        padding: 0;
+    /* 64em is also 1028px when basefont is 16px */
+    
+    @media only screen and (min-width: 64rem) {
+        header,
+        nav,
+        main,
+        footer {
+            margin: auto;
+            padding: 0;
+        }
+        main {
+            max-width: 64rem;
+        }
+        .headimg,
+        .headings {
+            display: flex;
+            flex-direction: column;
+            margin: 1%;
+            max-width: 64rem;
+            justify-content: center;
+        }
+        .headimg {
+            width: 200px;
+            height: auto;
+            margin: 2%;
+            margin-left: 3%;
+        }
+        .headings {
+            text-align: left;
+        }
+        .preston {
+            margin-left: 2%;
+            margin-right: 2%;
+            overflow: hidden;
+        }
+        .presIdaho {
+            margin: 2%;
+        }
+        .hero div {
+            max-width: 64rem;
+        }
+        .hamburger {
+            display: none;
+        }
+        .hide {
+            display: flex;
+        }
+        nav ul {
+            margin-left: 2%;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-left: 2%;
+            text-align: center;
+            padding: .5%;
+        }
+        nav ul li {
+            flex: 1 1 100%;
+            float: left;
+        }
+        nav ul li a {
+            border: none;
+            border-right: 1px solid rgba(0, 0, 0, 0.3);
+            padding: .5rem 1.5rem;
+            text-align: center;
+        }
+        .weathersummary {
+            top: 50px;
+            left: 110px;
+        }
+        .forecast div {
+            margin: 2%;
+            overflow: hidden;
+        }
+        .top5 {
+            margin: 2%;
+        }
+        section.article {
+            margin: 0;
+            margin-right: 2%;
+        }
+        .article p {
+            margin: 2%;
+        }
+        section.article img {
+            border: 2px solid #000;
+        }
+        .h3contact {
+            margin: 2%;
+        }
+        .contactinfo {
+            margin-right: 1%;
+            margin-left: 0;
+        }
+        footer p {
+            margin: 3%;
+        }
+        /* gallery */
+        .gallery {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 1rem;
+            margin: 1rem;
+        }
+        .gallery picture:hover {
+            box-shadow: 0 0 50px#333;
+        }
+        /*------storm center--------*/
+        .stormtitle {
+            margin-left: 12rem;
+            font-size: 3rem;
+        }
+        form {
+            width: 45%;
+            display: grid;
+            grid-template-columns: 1fr;
+            display: inline-block;
+            position: relative;
+            left: 50%;
+            transform: translateX(-75%);
+            font-size: 25px;
+        }
+        .rainbowafter img {
+            margin: 1rem;
+            margin-left: 8rem;
+        }
     }
-    main {
-        max-width: 64rem;
-    }
-    .headimg,
-    .headings {
-        display: flex;
-        flex-direction: column;
-        margin: 1%;
-        max-width: 64rem;
-        justify-content: center;
-    }
-    .headimg {
-        width: 200px;
-        height: auto;
-        margin: 2%;
-        margin-left: 3%;
-    }
-    .headings {
-        text-align: left;
-    }
-    .preston {
-        margin-left: 2%;
-        margin-right: 2%;
-        overflow: hidden;
-    }
-    .presIdaho {
-        margin: 2%;
-    }
-    .hero div {
-        max-width: 64rem;
-    }
-    .hamburger {
-        display: none;
-    }
-    .hide {
-        display: flex;
-    }
-    nav ul {
-        margin-left: 2%;
-        flex-direction: row;
-        justify-content: space-between;
-        margin-left: 2%;
-        text-align: center;
-        padding: .5%;
-    }
-    nav ul li {
-        flex: 1 1 100%;
-        float: left;
-    }
-    nav ul li a {
-        border: none;
-        border-right: 1px solid rgba(0, 0, 0, 0.3);
-        padding: .5rem 1.5rem;
-        text-align: center;
-    }
-    .weathersummary {
-        top: 50px;
-        left: 110px;
-    }
-    .forecast div {
-        margin: 2%;
-        overflow: hidden;
-    }
-    .top5 {
-        margin: 2%;
-    }
-    section.article {
-        margin: 0;
-        margin-right: 2%;
-    }
-    .article p {
-        margin: 2%;
-    }
-    section.article img {
-        border: 2px solid #000;
-    }
-    .h3contact {
-        margin: 2%;
-    }
-    .contactinfo {
-        margin-right: 1%;
-        margin-left: 0;
-    }
-    footer p {
-        margin: 3%;
-    }
-    /* gallery */
-    .gallery {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 1rem;
-        margin: 1rem;
-    }
-    .gallery picture:hover {
-        box-shadow: 0 0 50px#333;
-    }
-    /*------storm center--------*/
-    .stormtitle {
-        margin-left: 12rem;
-        font-size: 3rem;
-    }
-    form {
-        width: 45%;
-        display: grid;
-        grid-template-columns: 1fr;
-        display: inline-block;
-        position: relative;
-        left: 50%;
-        transform: translateX(-75%);
-        font-size: 25px;
-    }
-}
-
-
-/*end large */
+    /*end large */
