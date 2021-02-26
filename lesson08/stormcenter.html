@@ -43,25 +43,25 @@
         </ul>
     </nav>
     <main>
-        <h2 class="weather">Storm Center</h2>
+        <h2 class="stormtitle">Storm Center</h2>
         <form method="get" action="thanks.html">
             <fieldset>
                 <legend>Contact Info</legend>
-                <label>Full Name: </label>
-                <input type="text" id="fullname" pattern="[A-Za-z ]{5,}" name=" fullname" required><br><br>
-                <label>Email: </label>
+                <label class="top">Full Name: </label>
+                <input type="text" id="fullname" pattern="[A-Za-z ]{5,}" name="fullname" placeholder="First Last" required><br><br>
+                <label class="top">Email: </label>
                 <input type="email" id="email" name="email" placeholder="someone@email.com"><br><br>
-                <label>Phone Number: </label>
+                <label class="top">Phone Number: </label>
                 <input type="tel" id="tel" name="tel" placeholder="123-456-7890" required><br><br>
-                <label>Zip Code: </label><input type="number" name="number" id="number" required><br><br>
+                <label class="top">Zip Code: </label><input type="number" name="number" id="number" placeholder="12345" required><br><br>
             </fieldset>
             <fieldset>
                 <legend>Storm Sighting</legend>
-                <label>Storm Date:</label>
+                <label class="top">Storm Date:</label>
                 <input type="date" id="stormdate" name="stormdate"><br><br>
-                <label>Storm Type:</label>
+                <label class="top">Storm Type:</label>
                 <select name="stormtype" id="stormtype">
-                    <option value="">Select One</option>
+                    <option selected disabled>Select One</option>
                     <option value="FlashFlood">Flash Flood</option>
                     <option value="Hail">Hail</option>
                     <option value="Hurricane">Hurricane</option>
@@ -70,7 +70,9 @@
                     </select>
                 <br><br>
 
-                <label class="slide">Storm Severity (1-10): &nbsp;&nbsp;&nbsp;<input type="range" id="severity" value="5" min="1" max="10" step="1" list="severityAmount" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)" name="severity"><span id="serverityValue">5</span>
+                <label class="slide">Storm Severity (1-10): 
+                    &nbsp;&nbsp;&nbsp;
+                    <input type="range" id="severity " value="5" min="1" max="10" step="1" list="severityAmount" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)" name="severity"><span id="serverityValue">5</span>
                 </label>
 
                 <datalist id="severityAmount">
@@ -84,10 +86,10 @@
                     <option value="7"></option>
                     <option value="8"></option>
                     <option value="9"></option>
-                    <option value="10"></option>
+                    <option value="1"></option>
                 </datalist><br><br>
 
-                <label>Storm Region:</label>
+                <label class="top">Storm Region:</label>
                 <select name="region">
                         <option selected disabled>Select Region</option>
                         <option value="preston">Preston</option>
@@ -102,7 +104,7 @@
             </fieldset>
             <fieldset>
                 <legend>Additional Details</legend>
-                <textarea name="addInfo" placeholder="Add info here..." rows="10" cols="45"></textarea><br><br>
+                <textarea class="addInfo" id="addInfo" name="addInfo" placeholder="Add info here..." rows="10" cols="40"></textarea><br><br>
 
             </fieldset>
             <input type="submit" value="Submit Report" class="submitButton"><br><br>
@@ -112,10 +114,10 @@
 </body>
 <footer>
     <div class="social">
-        <a href="https://facebook.com" target="blank"> <img src="images/facebookicon.png" alt="facebook icon">
+        <a href="https://facebook.com" target="blank"> <img src="images/facebookicon.png" alt="facebookicon">
         </a>
-        <a href="https://instagram.com" target="blank"> <img src="images/instagramicon.png" alt="instagram icon"></a>
-        <a href="https://twitter.com" target="blank"> <img src="images/twittericon.png" alt="twitter icon">
+        <a href="https://instagram.com" target="blank"> <img src="images/instagramicon.png" alt="instagramicon"></a>
+        <a href="https://twitter.com" target="blank"> <img src="images/twittericon.png" alt="twittericon">
         </a>
     </div>
     <p>&copy; <span id="currentYear"> </span> | Hayley Buck | <span id="currentDate"> </span> | BYU-Idaho Online Learning </p>

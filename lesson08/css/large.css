@@ -105,8 +105,19 @@
         box-shadow: 0 0 50px#333;
     }
     /*------storm center--------*/
+    .stormtitle {
+        margin-left: 12rem;
+        font-size: 3rem;
+    }
     form {
         width: 45%;
+        display: grid;
+        grid-template-columns: 1fr;
+        display: inline-block;
+        position: relative;
+        left: 50%;
+        transform: translateX(-75%);
+        font-size: 25px;
     }
 }
 
