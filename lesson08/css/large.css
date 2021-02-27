@@ -106,7 +106,7 @@
         }
         /*------storm center--------*/
         .stormtitle {
-            margin-left: 12rem;
+            margin-left: 6rem;
             font-size: 3rem;
         }
         form {
@@ -116,7 +116,7 @@
             display: inline-block;
             position: relative;
             left: 50%;
-            transform: translateX(-75%);
+            transform: translateX(-95%);
             font-size: 25px;
         }
         .rainbowafter img {
