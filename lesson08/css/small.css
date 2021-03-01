@@ -18,14 +18,16 @@
         color: #ffffff;
         background-color: #3C71C1ff;
         display: flex;
+        flex-direction: column;
     }
     
     header img {
-        align-self: flex-start;
-        align-self: center;
+        
+        align-items: flex-start;
+        align-self:flex-start;
         width: 100px;
         background-color: #ffffff;
-        margin-left: 2%;
+        margin: 2%;
         padding: 5% 0;
         outline: 1px solid #00171f;
         outline-offset: -3px;
@@ -37,7 +39,7 @@
         flex-direction: row;
         align-self: flex-end;
         justify-self: flex-end;
-        margin: .5rem 1%;
+        margin: 0;
         background-color: #003459;
         font-size: 1.6rem;
         color: #ffffff;
@@ -47,24 +49,25 @@
         font-family: 'EB Garamond', serif;
         font-size: 50px;
         font-weight: 700;
-        text-align: left;
-        padding-left: 35px;
-        padding-top: 1px;
+        align-self: center;
+        margin-left: 2%;
+        
     }
     
     h2 {
         font-family: 'EB Garamond', serif;
         color: #003459;
         font-size: 35px;
-        margin-left: 1rem;
-        padding: 1% 0;
+        margin-left: 2%;
+        
     }
     
     .motto {
         font-size: 20px;
         color: #ffffff;
-        text-align: center;
-        margin-left: 1%;
+        margin-left: 2%;
+        
+    
     }
     
     nav {
@@ -268,19 +271,15 @@
         border: none;
     }
     
-    form {
+    form fieldset {
+        margin: 2rem 0.5rem;
         width: 95%;
-        padding: 5px;
-        margin-top: -20px;
-    }
-    
-    fieldset {
-        padding: 10px;
-        margin: 10px;
-        margin-top: 10px;
+        padding: 0.5rem 1rem;
+        border-radius: 10px;
+        border: none;
         border-radius: 10px;
         background-color: #08C6AAff;
-        border: none;
+    
     }
     
     input,
@@ -301,7 +300,7 @@
     .submitButton {
         outline: none !important;
         border: none;
-        width: 50%;
+        width: 60%;
         height: 60px;
         background-color: #3C71C1ff;
         border-radius: 10px;
@@ -310,7 +309,7 @@
         margin: 1.5em;
         display: inline-block;
         position: relative;
-        left: 50%;
+        left: 42%;
         transform: translateX(-50%);
         font-size: 25px;
     }
@@ -342,7 +341,8 @@
     .addInfo {
         display: block;
         border-radius: 10px;
-        margin-left: .5rem;
+        width: 100%;
+        margin-top: 3%;
     }
     
     .rainbowafter img {
