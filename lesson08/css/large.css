@@ -11,22 +11,27 @@
         main {
             max-width: 64rem;
         }
-        .headimg,
         .headings {
             display: flex;
             flex-direction: column;
+            align-items: flex-start;
             margin: 1%;
             max-width: 64rem;
-            justify-content: center;
+        }
+        .headings h1 {
+            align-self: center;
+            margin-left: -7%;
+        }
+        .motto {
+            align-self: center;
         }
         .headimg {
             width: 200px;
             height: auto;
             margin: 2%;
             margin-left: 3%;
-        }
-        .headings {
-            text-align: left;
+            justify-self: flex-start;
+            margin-bottom: -12%;
         }
         .preston {
             margin-left: 2%;
@@ -106,7 +111,7 @@
         }
         /*------storm center--------*/
         .stormtitle {
-            margin-left: 6rem;
+            margin-left: 2%;
             font-size: 3rem;
         }
         form {
@@ -115,9 +120,8 @@
             grid-template-columns: 1fr;
             display: inline-block;
             position: relative;
-            left: 50%;
-            transform: translateX(-95%);
             font-size: 25px;
+            margin: 2%;
         }
         .rainbowafter img {
             margin: 1rem;
