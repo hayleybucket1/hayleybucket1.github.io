@@ -285,22 +285,24 @@
     
     input,
     select {
+        display: block;
         border-radius: 10px;
         border: none;
         padding: 7px;
         color: grey;
         background-color: white;
+        margin-top: .3rem;
     }
     
-     ::placeholder {
+    ::placeholder {
         color: grey;
     }
     
     .submitButton {
         outline: none !important;
         border: none;
-        width: 40%;
-        height: 50px;
+        width: 50%;
+        height: 60px;
         background-color: #3C71C1ff;
         border-radius: 10px;
         color: white;
@@ -326,6 +328,11 @@
         color: black;
         font-size: 20px;
     }
+    label.top input {
+        display: block;
+        padding: .5rem;
+        margin-top: .3rem;
+    }
     
     label.slide {
         display: flex;
@@ -335,6 +342,7 @@
     .addInfo {
         display: block;
         border-radius: 10px;
+        margin-left: .5rem;
     }
     
     .rainbowafter img {

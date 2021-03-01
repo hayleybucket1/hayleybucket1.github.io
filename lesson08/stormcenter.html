@@ -47,19 +47,19 @@
         <form method="get" action="thanks.html">
             <fieldset>
                 <legend>Contact Info</legend>
-                <label class="top">Full Name: </label>
-                <input type="text" id="fullname" pattern="[A-Za-z ]{5,}" name="fullname" placeholder="First Last" required><br><br>
-                <label class="top">Email: </label>
-                <input type="email" id="email" name="email" placeholder="someone@email.com"><br><br>
-                <label class="top">Phone Number: </label>
-                <input type="tel" id="tel" name="tel" placeholder="123-456-7890" required><br><br>
-                <label class="top">Zip Code: </label><input type="number" name="number" id="number" placeholder="12345" required><br><br>
+                <label class="top">Full Name:
+                <input type="text" id="fullname" pattern="[A-Za-z ]{5,}" name="fullname" placeholder="First Last" required></label><br><br>
+                <label class="top">Email:
+                <input type="email" id="email" name="email" placeholder="someone@email.com"></label><br><br>
+                <label class="top">Phone Number:
+                <input type="tel" id="tel" name="tel" placeholder="123-456-7890" required></label><br><br>
+                <label class="top">Zip Code: <input type="number" name="number" id="number" placeholder="12345" required></label><br><br>
             </fieldset>
             <fieldset>
                 <legend>Storm Sighting</legend>
-                <label class="top">Storm Date:</label>
-                <input type="date" id="stormdate" name="stormdate"><br><br>
-                <label class="top">Storm Type:</label>
+                <label class="top">Storm Date:
+                <input type="date" id="stormdate" name="stormdate"></label><br><br>
+                <label class="top">Storm Type: 
                 <select name="stormtype" id="stormtype">
                     <option selected disabled>Select One</option>
                     <option value="FlashFlood">Flash Flood</option>
@@ -67,7 +67,7 @@
                     <option value="Hurricane">Hurricane</option>
                     <option value="Thunderstorm">Thunderstorm</option>
                     <option value="Tornado">Tornado</option>
-                    </select>
+                    </select></label>
                 <br><br>
 
                 <label class="slide">Storm Severity (1-10): 
@@ -89,13 +89,14 @@
                     <option value="1"></option>
                 </datalist><br><br>
 
-                <label class="top">Storm Region:</label>
-                <select name="region">
+                <label class="top">Storm Region:  
+                    
+                    <select name="region">
                         <option selected disabled>Select Region</option>
                         <option value="preston">Preston</option>
                         <option value="sodaSprings">Soda Springs</option>
                         <option value="fishHaven">Fish Haven</option>
-                    </select><br><br>
+                    </select></label><br><br>
                 <div>Are you in danger?
                     <label class="sbs"><input type="radio" name="dangerLevel" value="yes">Yes  </label>
                     <label class="sbs"><input type="radio" name="dangerLevel" value="maybe">Maybe  </label>
