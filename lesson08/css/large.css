@@ -93,6 +93,8 @@
     }
     .map {
         margin: 1rem;
+        display: block;
+        float: left;
     }
     footer p {
         margin: 3%;
