@@ -1,128 +1,137 @@
-                 /* 35em is also 560px when basefont is 16px */
-                 
-                 @media only screen and (min-width: 40rem) {
-                     .headings h1 {
-                         font-size: 70px;
-                         color: #ffffff;
-                         text-align: left;
-                         margin: .5rem;
-                     }
-                     header img {
-                         width: 150px;
-                         padding: 3% 0;
-                         margin-left: 1%;
-                     }
-                     h2 {
-                         margin: .5rem;
-                         padding: 1% 0;
-                     }
-                     p {
-                         margin: 1rem;
-                     }
-                     .hide {
-                         display: flex;
-                     }
-                     nav ul {
-                         margin-left: 2%;
-                         flex-direction: row;
-                         justify-content: space-between;
-                         text-align: center;
-                     }
-                     nav ul li a {
-                         justify-content: space-between;
-                         border: none;
-                         border-right: 1px solid rgba(0, 0, 0, 0.3);
-                         padding: .5rem 1.5rem;
-                     }
-                     #active {
-                         padding: .5rem;
-                     }
-                     .hamburger {
-                         display: none;
-                     }
-                     .motto {
-                         color: #ffffff;
-                         font-size: 25px;
-                         text-align: left;
-                         margin-left: 40px;
-                     }
-                     .hero div {
-                         max-width: 100vw;
-                     }
-                     .weathersummary {
-                         top: 60px;
-                         left: 60px;
-                         padding: 0 1%;
-                         font-size: 22px;
-                     }
-                     .weathersummary p {
-                         font-size: 19px;
-                     }
-                     .fiveday {
-                         display: block;
-                         margin: 2%;
-                     }
-                     section.forecast {
-                         display: grid;
-                         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-                         padding: 1rem 0;
-                         margin: 1rem;
-                     }
-                     section.forecast div h5 {
-                         background-color: #eee;
-                         margin: 0;
-                         padding: 1rem 0;
-                     }
-                     section.forecast div {
-                         text-align: center;
-                         border: 2px solid #aaa;
-                         max-width: 100%;
-                     }
-                     section.article div img {
-                         display: block;
-                         float: right;
-                         width: 400px;
-                         height: auto;
-                         margin: 0 0 0.5rem 0.5rem;
-                     }
-                     section.contactinfo {
-                         display: flex;
-                         flex-direction: row;
-                     }
-                     .map {
-                         width: 40%;
-                         height: auto;
-                     }
-                     footer {
-                         clear: both;
-                     }
-                     .social {
-                         float: left;
-                     }
-                     /* gallery */
-                     .gallery {
-                         display: grid;
-                         grid-template-columns: 1fr 1fr;
-                         grid-gap: 1rem;
-                         margin: 1rem;
-                     }
-                     /*-----storm center------*/
-                     .stormtitle {
-                         margin-left: 8rem;
-                         font-size: 3rem;
-                     }
-                     form {
-                         max-width: 65%;
-                         margin: 10px;
-                         display: inline-block;
-                         position: relative;
-                         left: 50%;
-                         transform: translateX(-60%);
-                         font-size: 25px;
-                     }
-                     .rainbowafter img {
-                         margin: 1rem;
-                         margin-left: 6rem;
-                     }
-                 }
-                 /*end medium */
+ /* 35em is also 560px when basefont is 16px */
+ 
+ @media only screen and (min-width: 40rem) {
+     .headings h1 {
+         font-size: 70px;
+         color: #ffffff;
+         text-align: left;
+         margin: .5rem;
+     }
+     header img {
+         width: 150px;
+         padding: 3% 0;
+         margin-left: 1%;
+     }
+     h2 {
+         margin: 1.5rem;
+         padding: 1% 0;
+     }
+     p {
+         margin: 1rem;
+     }
+     .hide {
+         display: flex;
+     }
+     nav ul {
+         margin-left: 2%;
+         flex-direction: row;
+         justify-content: space-between;
+         text-align: center;
+     }
+     nav ul li a {
+         justify-content: space-between;
+         border: none;
+         border-right: 2px solid rgba(0, 0, 0, 0.1);
+         padding: .5rem 1.5rem;
+         overflow: hidden;
+     }
+     #active {
+         justify-content: space-between;
+         border: none;
+         border-right: 2px solid;
+         padding: .5rem 1.5rem;
+     }
+     .hamburger {
+         display: none;
+     }
+     .motto {
+         color: #ffffff;
+         font-size: 25px;
+         text-align: left;
+         margin: 1rem;
+         margin-left: 2.5rem;
+     }
+     .h2preston {
+         background: none;
+     }
+     .hero div {
+         max-width: 100vw;
+     }
+     .weathersummary {
+         top: 60px;
+         left: 60px;
+         padding: 0 1%;
+         font-size: 22px;
+     }
+     .weathersummary p {
+         font-size: 19px;
+     }
+     .fiveday {
+         display: block;
+         margin: 2%;
+     }
+     section.forecast {
+         display: grid;
+         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+         padding: 1rem 0;
+         margin: 1rem;
+     }
+     section.forecast div h5 {
+         background-color: #eee;
+         margin: 0;
+         padding: 1rem 0;
+     }
+     section.forecast div {
+         text-align: center;
+         border: 2px solid #aaa;
+         max-width: 100%;
+     }
+     section.article div img {
+         display: block;
+         float: right;
+         width: 400px;
+         height: auto;
+         margin: 0 0 0.5rem 0.5rem;
+     }
+     section.contactinfo {
+         display: flex;
+         flex-direction: row;
+     }
+     .map {
+         width: 40%;
+         height: auto;
+         margin: .5rem;
+     }
+     footer {
+         clear: both;
+     }
+     .social {
+         float: left;
+     }
+     /* gallery */
+     .gallery {
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         grid-gap: 1rem;
+         margin: 1rem;
+     }
+     /*-----storm center------*/
+     .stormtitle {
+         margin-left: 8rem;
+         font-size: 3rem;
+     }
+     form {
+         max-width: 65%;
+         margin: 10px;
+         display: inline-block;
+         position: relative;
+         left: 50%;
+         transform: translateX(-60%);
+         font-size: 25px;
+     }
+     .rainbowafter img {
+         margin: 1rem;
+         margin-left: 6rem;
+     }
+ }
+ /*end medium */

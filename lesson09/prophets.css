@@ -1,0 +1,104 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+h1,
+h2 {
+    font-family: 'Risque', cursive;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+header h1 {
+    text-align: center;
+    padding: 1.5rem;
+    color: black;
+    font-size: 3rem;
+    margin: 0;
+}
+
+header {
+    background-color: #F7FFF7;
+}
+
+h2 {
+    font-size: 1.75rem;
+    margin: .5rem;
+    text-align: center;
+    grid-row: 1;
+}
+
+body {
+    background-color: #4ECDC4;
+    margin: 0;
+}
+
+.cards {
+    margin: 10px;
+    width: 400px;
+    height: 300px;
+    border: 2px solid #CCC;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 100px);
+    justify-content: center;
+    align-content: end;
+}
+
+.cards div {
+    justify-content: center;
+    align-items: center;
+}
+
+.cards section {
+    justify-self: center;
+    background-color: #F7FFF7;
+    border-radius: 10%;
+    margin: 1rem;
+}
+
+.cards img {
+    border-radius: 10%;
+    height: 15rem;
+}
+
+.cards p {
+    text-align: center;
+    padding: .2rem;
+    margin: .5rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #F7FFF7;
+    color: black;
+}
+
+@media only screen and (min-width: 42rem) {
+    main {
+        margin: 0 margin;
+        width: 40rem;
+    }
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 80rem) {
+    main {
+        width: 78rem;
+    }
+    .cards {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
