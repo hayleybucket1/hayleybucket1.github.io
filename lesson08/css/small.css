@@ -257,38 +257,53 @@
     *:focus {
         outline: none;
     }
-    
+    .stormtitle {
+        margin: 3%;
+    }
     legend {
         background-color: #003459;
         border-radius: 10px;
         padding: 10px;
+        width: auto;
         color: white;
         font-size: 1.5rem;
         border: none;
     }
     
     form fieldset {
-        margin: 2rem 0.5rem;
+        margin: 2% .5rem ;
         width: 95%;
-        padding: 0.5rem 1rem;
         border-radius: 10px;
         border: none;
-        border-radius: 10px;
         background-color: #08C6AAff;
     }
     
-    input,
+    input {
+        display: block;
+        border-radius: 10px;
+        border: none;
+        color: grey;
+        background-color: white;
+        padding: .5rem;
+        margin: 0;
+        width: auto;
+    }
     select {
         display: block;
         border-radius: 10px;
         border: none;
-        padding: 2%;
         color: grey;
         background-color: white;
-        margin-top: 2%;
+        padding: .5rem;
+        margin: 0;
+        width: auto;
     }
+<<<<<<< HEAD
     
      ::placeholder {
+=======
+    ::placeholder {
+>>>>>>> 4bd3b2647471865060346df8f330d3a52b8911e8
         color: grey;
     }
     
@@ -316,26 +331,46 @@
         border: 2px #3C71C1ff dotted;
     }
     
-    label {
+    label.top {
         display: block;
-        padding: .25rem;
+        padding: .2rem;
         color: black;
         font-size: 20px;
-        margin: 0;
+        font-weight:  600;
+        margin-bottom: -4%;
+        margin-top: 0;
     }
-    
+    .slide {
+        font-size: 20px;
+        font-weight: 600;
+    }
     label.slide {
         display: flex;
         flex-direction: column;
     }
+    .danger {
+        display: block;
+        font-size: 20px;
+        font-weight: 600;
     
+    }
+    .sbs label {
+        display: block;
+        padding: .75rem 0;
+    }
     .addInfo {
         display: block;
         border-radius: 10px;
         width: 100%;
         margin-top: 3%;
     }
-    
+    .top input, .top select {
+        display: block;
+        border: 0;
+        padding: .75rem;
+        width: 100%;
+        max-width: 20rem;
+    }
     .rainbowafter img {
         margin: 1rem;
         margin-left: 3rem;
