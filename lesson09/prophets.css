@@ -27,13 +27,14 @@ header h1 {
 
 header {
     background-color: #F7FFF7;
+    width: 100%;
+    margin: 0;
 }
 
 h2 {
     font-size: 1.75rem;
     margin: .5rem;
     text-align: center;
-    grid-row: 1;
 }
 
 body {
@@ -42,39 +43,35 @@ body {
 }
 
 .cards {
-    margin: 10px;
-    width: 400px;
-    height: 300px;
-    border: 2px solid #CCC;
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 100px);
-    justify-content: center;
-    align-content: end;
-}
-
-.cards div {
-    justify-content: center;
     align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 .cards section {
-    justify-self: center;
     background-color: #F7FFF7;
-    border-radius: 10%;
+    border-radius: 3px;
     margin: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .cards img {
-    border-radius: 10%;
-    height: 15rem;
+    border-radius: 10px;
+    height: 14rem;
+    margin: 0 3rem 0 3rem;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 50px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .cards p {
-    text-align: center;
-    padding: .2rem;
+    padding: 0;
     margin: .5rem;
+    text-align: center;
+    position: relative;
+    bottom: 240px;
 }
 
 footer {
