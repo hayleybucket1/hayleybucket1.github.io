@@ -350,11 +350,12 @@
         flex-direction: column;
     }
     .danger {
+        display: block;
         font-size: 20px;
         font-weight: 600;
     
     }
-    .sbs {
+    .sbs label {
         display: block;
         padding: .75rem 0;
     }
@@ -364,7 +365,13 @@
         width: 100%;
         margin-top: 3%;
     }
-    
+    .top input, .top select {
+        display: block;
+        border: 0;
+        padding: .75rem;
+        width: 100%;
+        max-width: 20rem;
+    }
     .rainbowafter img {
         margin: 1rem;
         margin-left: 3rem;

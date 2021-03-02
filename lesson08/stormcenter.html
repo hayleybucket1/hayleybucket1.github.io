@@ -70,9 +70,10 @@
                     </select></label>
                 <br><br>
 
-                <label class="slide">Storm Severity (1-10): 
+                <label class="slide" for="severity">Storm Severity (1-10): 
                     &nbsp;&nbsp;&nbsp;
-                    <input type="range" id="severity" value="5" min="1" max="10" step="1" list="severityAmount" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)" name="severity"><span id="serverityValue">5</span>
+                    <input type="range" id="severity" value="5" min="1" max="10" step="1" list="severityAmount" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                    <span id="serverityValue">5</span>
                 </label>
 
                 <datalist id="severityAmount">
