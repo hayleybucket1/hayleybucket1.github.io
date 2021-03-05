@@ -23,12 +23,12 @@ fetch(requestURL)
 
             //p birthdate
             let birthDate = document.createElement('p');
-            birthDate.textContent = 'Date of Birth:\r\n' + prophets[i].birthdate;
+            birthDate.textContent = 'Date of Birth: ' + prophets[i].birthdate;
             bodyDiv.appendChild(birthDate);
 
             //p birthplace
             let birthPlace = document.createElement('p');
-            birthPlace.textContent = 'Place of Birth:\r\n' + prophets[i].birthplace;
+            birthPlace.textContent = 'Place of Birth: ' + prophets[i].birthplace;
             bodyDiv.appendChild(birthPlace);
 
             //img 

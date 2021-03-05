@@ -39,7 +39,7 @@
         align-self: flex-end;
         justify-self: flex-end;
         margin: 2%;
-        margin-top: -7%;
+        margin-top: -2%;
         background-color: #003459;
         font-size: 1.6rem;
         color: #ffffff;
@@ -49,8 +49,10 @@
         font-family: 'EB Garamond', serif;
         font-size: 50px;
         font-weight: 700;
-        align-self: center;
-        margin-left: 2%;
+        justify-self: flex-start;
+        margin-left: 30%;
+        margin-bottom: 4;
+        margin-top: -20%;
     }
     
     h2 {
@@ -63,7 +65,8 @@
     .motto {
         font-size: 20px;
         color: #ffffff;
-        margin-left: 2%;
+        margin-left: 30%;
+        margin-top: -6%;
     }
     
     nav {
@@ -302,7 +305,7 @@
         width: auto;
     }
     
-    ::placeholder {
+     ::placeholder {
         color: grey;
     }
     
