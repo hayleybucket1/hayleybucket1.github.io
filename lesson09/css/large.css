@@ -141,11 +141,24 @@
     }
     /*-------home page------*/
     .cards {
+        display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        margin-right: 2rem;
+        grid-gap: 1rem;
     }
-    .cards img {
-        margin: 1rem;
+    .cards section {
+        display: block;
+    }
+    .cards h2 {
+        margin: 0;
+        font-size: 40px;
+    
+    }
+    .cards h3 {
+        font-size: 20px;
+        margin: 0.5rem;
+    }
+    .cards p {
+        margin: .5rem;
     }
 }
 
