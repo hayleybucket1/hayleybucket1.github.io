@@ -139,6 +139,14 @@
         margin: 1rem;
         margin-left: 8rem;
     }
+    /*-------home page------*/
+    .cards {
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-right: 2rem;
+    }
+    .cards img {
+        margin: 1rem;
+    }
 }
 
 

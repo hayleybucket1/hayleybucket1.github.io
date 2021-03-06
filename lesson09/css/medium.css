@@ -50,7 +50,7 @@
      .motto {
          color: #ffffff;
          font-size: 25px;
-         margin-left: 30%;
+         margin-left: 20%;
          margin-top: 1%;
      }
      .hero div {
@@ -128,6 +128,38 @@
      .rainbowafter img {
          margin: 1rem;
          margin-left: 6rem;
+     }
+     /*------home page-------*/
+     .cards {
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+     }
+     .cards section {
+         margin: .5rem auto;
+     }
+     .cards img {
+         grid-column-start: 2;
+         grid-row-start: 1;
+         grid-row-end: 4;
+     }
+     .cards h3 {
+         grid-column-start: 1;
+     }
+     .cards .data {
+         grid-column-start: 1;
+         padding: 0 10px 0 10px;
+     }
+     .cards section:nth-child(even) img {
+         grid-column-start: 1;
+         grid-row-start: 1;
+         grid-row-end: 4;
+     }
+     .cards section:nth-child(even) h3 {
+         grid-column-start: 2;
+     }
+     .cards section:nth-child(even) .data {
+         grid-column-start: 2;
+         padding: 0 10px 0 10px;
      }
  }
  /*end medium */
