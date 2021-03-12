@@ -15,7 +15,7 @@ weekday[6] = "Saturday";
 weekday[7] = "Sunday";
 
 
-const forecastURL = "//api.openweathermap.org/ data/2.5/forecast?id=5604473&units=imperial&appid=faa2782ca6cb25eaf7cb5e291b27043a";
+const forecastURL = "http://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=faa2782ca6cb25eaf7cb5e291b27043a";
 
 fetch(forecastURL)
     .then((response) => response.json())
@@ -56,7 +56,7 @@ fetch(forecastURL)
             }
         }
     });
-const apiURL = "//api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=faa2782ca6cb25eaf7cb5e291b27043a";
+const apiURL = "http://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=faa2782ca6cb25eaf7cb5e291b27043a";
 fetch(apiURL)
     .then((response) => response.json())
     .then((weatherInfo) => {

@@ -1,5 +1,5 @@
-/*WebFont.load({
-google: {
-families: ["EB Garamond", "Quicksand"]
-}
-}); */
+WebFont.load({
+    google: {
+        families: ["EB Garamond", "Quicksand"]
+    }
+});
