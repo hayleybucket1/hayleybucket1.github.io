@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="week 04 assignment website for WDD 230: Web Frontend Developement. BYU-Idaho Online">
+    <meta name="author" content="Hayley Buck">
+    <title>Home Page</title>
+    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- STYLE SHEETS -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <!-- phone-default -->
+    <link href="css/small.css" rel="stylesheet">
+    <!-- enhance-tablet -->
+    <link href="css/medium.css" rel="stylesheet">
+    <!-- enhance-desktop -->
+    <link href="css/large.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&amp;family=Quicksand:wght@400;700&amp;display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+
+<body>
+    <!-- HEADER HERE -->
+    <header>
+        <img class="headimg" src="images/skypeekerlogo.png" alt="skypeekerlogo">
+        <section class="headings">
+            <h1 class="title">Sky Peeker </h1>
+            <h3 class="motto">Weather for you and your family! </h3>
+        </section>
+        <button class="hamburger" onclick="toggleMenu()">☰ </button>
+    </header>
+    <nav class="clearfix">
+        <ul id="primaryNav" class="hide">
+            <li> <a id="active" href="index.html">Home</a></li>
+            <li> <a href="preston3.html">Preston</a> </li>
+            <li> <a href="#">Soda Springs </a> </li>
+            <li> <a href="#">Fish Haven</a> </li>
+            <li> <a href="stormcenter.html">Storm Center</a> </li>
+            <li> <a href="gallery-7.html">Gallery</a> </li>
+        </ul>
+    </nav>
+    <main>
+        <picture class="heroidaho">
+            <source media="(max-width: 500px)" srcset="images/herohome640.jpg">
+            <source media="(max-width: 800px)" srcset="images/herohome800.jpg">
+            <img src="images/herohome1100.jpg" alt=" landscape">
+        </picture>
+
+        <div class="cards">
+        </div>
+        <div class="upcoming">
+            <h3>Upcoming Events!</h3>
+            <ul class="uplist">
+                <li>Saturday's in July: Free Fishing!</li>
+                <li>Every Wednesday night is Yoga Night!</li>
+                <li>July 24th is Pioneer Day!</li>
+            </ul>
+            <img class="fishingidaho" src="images/fishingidaho.jpg" alt="fishing pic">
+        </div>
+        <h3 class="h3contact">Contact Us!</h3>
+        <section class="contactinfo">
+            <div class="contact">
+                <p> <strong>Address: </strong> <br/> 555 Sage Lane <br/>Idaho Falls, ID 83402 </p>
+                <p> <strong>Email: </strong> <br/> skypeeker@mail.me <br/> <strong>Phone: </strong> <br> 123-456-7890 </p>
+            </div>
+            <img class="map" src="images/mappreston.jpg" alt="map of Preston,ID" width="70" height="60">
+        </section>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://facebook.com" target="blank"> <img src="images/facebookicon.png" alt="facebookicon">
+            </a>
+            <a href="https://instagram.com" target="blank"> <img src="images/instagramicon.png" alt="instagramicon"></a>
+            <a href="https://twitter.com" target="blank"> <img src="images/twittericon.png" alt="twittericon">
+            </a>
+        </div>
+        <p>&copy; <span id="currentYear"> </span> | Hayley Buck | <span id="currentDate"> </span> | BYU-Idaho Online Learning </p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax.libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/fontload.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="js/lazyload.js"></script>
+    <script src="js/cards.js"></script>
+</body>
+
+</html>

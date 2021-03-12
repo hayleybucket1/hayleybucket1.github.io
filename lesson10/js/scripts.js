@@ -1,0 +1,80 @@
+//ADD the key and change units to imperial
+
+const d = new Date();
+
+const todayDayNumber = d.getDay();
+let forecastDayNumber = d;
+const weekday = new Array(7);
+weekday[0] = "Sunday";
+weekday[1] = "Monday";
+weekday[2] = "Tuedsay";
+weekday[3] = "Wednesday";
+weekday[4] = "Thursday";
+weekday[5] = "Friday";
+weekday[6] = "Saturday";
+weekday[7] = "Sunday";
+
+
+const apiURL = "//api.openweathermap.org/data/2.5/forecast?id=5604473&appid=faa2782ca6cb25eaf7cb5e291b27043a&units=imperial";
+
+
+
+//Go fetch it and then wait for a response.
+fetch(apiURL)
+    .then((response) => response.json())
+    .then((weatherinfo) => {
+        console.log(weatherinfo);
+
+        document.getElementById("townName").textContent = weatherinfo.city.name;
+
+        let mylist = weatherinfo.list;
+        let forecastDayNumber = todayDayNumber;
+
+        for (i = 0; i < mylist.length; i++) {
+            let time = mylist[i].dt_txt;
+            if (time.includes('18:00:00')) {
+                forecastDayNumber += 1;
+                if (forecastDayNumber === 7) {
+                    forecastDayNumber = 0;
+
+                    let dayName = document.createElement("span");
+                    dayName.textContent = weekday(forecastDayNumber);
+
+                    let theTemp = document.createElement("p");
+                    theTemp.textContent = weatherinfo.list[i].main.temp + "\xB0";
+                    let iconcode = weatherinfo.list[i].weather[0].icon;
+                    let iconPath = "//openweathermap.org/img/w/" + iconcode + ".png";
+                    let theIcon = document.createElement("img");
+                    theIcon.src = iconPath;
+
+                    let theDay = document.createElement("div");
+                    theDay.appendChild(dayName);
+                    theDay.appendChild(theTemp);
+                    theDay.appendChild(theIcon);
+
+                    document.getElementById('weatherforecast').appendChild(theDay);
+
+                }
+            }
+        }
+    });
+
+fetch(apiURL)
+    .then((response) => response.json())
+    .then((weatherinfo) => {
+        document.getElementById("speed").innerHTML = weatherinfo.wind.speed;
+        document.getElementById("humid").innerHTML = weatherinfo.main.humidity;
+        document.getElementById("hightemp").innerHTML = weatherinfo.main.temp_max;
+        let current = weatherinfo.weather[0].description;
+        document.getElementById("current").innerHTML = current.replace(/^\w/, (c) => c.toUpperCase());
+
+        const s = weatherinfo.wind.speed;
+        const t = weatherinfo.main.temp;
+        let wc = 35.75 + 0.6125 * t - 35.75 * Math.pow(s, 0.16) + 0.475 * t * Math.pow(s, 0.16);
+        wc = Math.round(wc);
+        if (t <= 50 && s > 3) {
+            document.getElementById("chill").textContent = wc + "\xB0" + "F";
+        } else {
+            document.getElementById("chill").textContent = "N/A";
+        }
+    });

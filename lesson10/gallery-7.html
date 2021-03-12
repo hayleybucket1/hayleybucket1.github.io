@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- STYLE SHEETS -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <!-- phone-default -->
+    <link href="css/small.css" rel="stylesheet">
+    <!-- enhance-tablet -->
+    <link href="css/medium.css" rel="stylesheet">
+    <!-- enhance-desktop -->
+    <link href="css/large.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&amp;family=Quicksand:wght@400;700&amp;display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+
+<body>
+
+    <body>
+        <!-- HEADER HERE -->
+        <header>
+            <img class="headimg" src="images/skypeekerlogo.png" alt="skypeekerlogo">
+            <section class="headings">
+                <h1>Sky Peeker </h1>
+                <h3 class="motto">Weather for you and your family! </h3>
+            </section>
+            <button class="hamburger" onclick="toggleMenu()">☰ </button>
+        </header>
+        <nav class="clearfix">
+            <ul id="primaryNav" class="hide">
+                <li> <a href="index.html">Home</a></li>
+                <li> <a href="preston3.html">Preston</a> </li>
+                <li> <a href="#">Soda Springs </a> </li>
+                <li> <a href="#">Fish Haven</a> </li>
+                <li> <a href="stormcenter.html">Storm Center</a> </li>
+                <li> <a id="active" href="gallery-7.html">Gallery</a> </li>
+            </ul>
+        </nav>
+        <main>
+            <h2 class="weather">Weather Gallery</h2>
+            <div class="gallery">
+                <picture>
+                    <img src="https://via.placeholder.com/300x200" data-src="https://images.unsplash.com/photo-1584267385494-9fdd9a71ad75?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt=clouds width=300 height=200>
+                    <figcaption>Skies ablaze on the high plains</figcaption>
+                </picture>
+                <picture>
+                    <img src="https://via.placeholder.com/300x200" data-src="https://images.unsplash.com/photo-1561485132-59468cd0b553?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=648&q=80" alt="lightning" width=300 height=200>
+                    <figcaption>Lightning ripping through the sky.</figcaption>
+                </picture>
+                <picture><img src="https://via.placeholder.com/300x200" data-src="https://images.unsplash.com/photo-1584267385289-81fdaa6efe7a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=728&q=80" alt="lightning2"
+                        width=300 height=200>
+                    <figcaption>Lightning Storm in the Fields.</figcaption>
+                </picture>
+                <picture><img src="https://via.placeholder.com/300x200" data-src="https://images.unsplash.com/photo-1521903146409-7165ad695b34?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=735&q=80" alt="frosty tree"
+                        width=300 height=200>
+                    <figcaption>Frost covered tree.</figcaption>
+                </picture>
+                <picture><img src="https://via.placeholder.com/300x200" data-src="https://images.unsplash.com/photo-1547754980-3df97fed72a8?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80" alt="gentle snow" width=300
+                        height=200>
+                    <figcaption>Gently falling Snow.</figcaption>
+                </picture>
+                <picture><img src="https://via.placeholder.com/x200" data-src="https://images.unsplash.com/photo-1613043935889-332d8c7283cb?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=788&q=80" alt="rainbow" width=300
+                        height=200>
+                    <figcaption>Rainbow in the clouds.</figcaption>
+                </picture>
+                <picture><img src="https://via.placeholder.com/300x200" data-src="https://images.unsplash.com/photo-1527482797697-8795b05a13fe?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=668&q=80" alt="tornado" width=300
+                        height=200>
+                    <figcaption>Twister touching down.</figcaption>
+                </picture>
+                <picture><img src="https://via.placeholder.com/300x200" data-src="https://images.unsplash.com/photo-1438449805896-28a666819a20?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80" alt="raining" width=300
+                        height=200>
+                    <figcaption>Rain rain falling down.</figcaption>
+                </picture>
+                <picture><img src="https://via.placeholder.com/300x200" data-src="https://images.unsplash.com/photo-1464660439080-b79116909ce7?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=778&q=80" alt="sunshine" width=300
+                        height=200>
+                    <figcaption>Sunshine peaking thru the clouds.</figcaption>
+                </picture>
+            </div>
+        </main>
+
+    </body>
+    <footer>
+        <div class="social ">
+            <a href="https://facebook.com " target="blank "> <img src="images/facebookicon.png " alt="facebook icon ">
+            </a>
+            <a href="https://instagram.com " target="blank "> <img src="images/instagramicon.png " alt="instagram icon "></a>
+            <a href="https://twitter.com " target="blank "> <img src="images/twittericon.png " alt="twitter icon ">
+            </a>
+        </div>
+        <p>&copy; <span id="currentYear "> </span> | Hayley Buck | <span id="currentDate "> </span> | BYU-Idaho Online Learning </p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax.libs/webfont/1.6.26/webfont.js ">
+    </script>
+    <script src="js/script.js ">
+    </script>
+    <script src="js/fontload.js ">
+    </script>
+    <script src="js/windchill.js ">
+    </script>
+    <script src="js/lazyload.js "></script>
+
+</html>

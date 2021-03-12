@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="week 04 assignment website for WDD 230: Web Frontend Developement. BYU-Idaho Online">
+    <meta name="author" content="Hayley Buck">
+    <title>Sky Peeker
+    </title>
+    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- STYLE SHEETS -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <!-- phone-default -->
+    <link href="css/small.css" rel="stylesheet">
+    <!-- enhance-tablet -->
+    <link href="css/medium.css" rel="stylesheet">
+    <!-- enhance-desktop -->
+    <link href="css/large.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&amp;family=Quicksand:wght@400;700&amp;display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+
+<body>
+    <!-- HEADER HERE -->
+    <header>
+        <img class="headimg" src="images/skypeekerlogo.png" alt="skypeekerlogo">
+        <section class="headings">
+            <h1 class="title">Sky Peeker </h1>
+            <h3 class="motto">Weather for you and your family! </h3>
+        </section>
+        <button class="hamburger" onclick="toggleMenu()">☰ </button>
+    </header>
+    <nav class="clearfix">
+        <ul id="primaryNav" class="hide">
+            <li> <a href="index.html">Home</a></li>
+            <li> <a id="active" href="preston3.html">Preston</a> </li>
+            <li> <a href="#">Soda Springs </a> </li>
+            <li> <a href="#">Fish Haven</a> </li>
+            <li> <a href="stormcenter.html">Storm Center</a> </li>
+            <li> <a href="gallery-7.html">Gallery</a> </li>
+        </ul>
+    </nav>
+    <!-- CONTENT HERE -->
+    <main>
+        <div id="message">
+            Preston Pancakes in the Park! 9:00am Saturday at the city park pavillion.
+        </div>
+        <div class="h2preston">
+            <h2 class="presIdaho">Preston, Idaho </h2>
+        </div>
+        <div class="hero-content">
+            <picture class="preston">
+                <source media="(max-width: 500px)" srcset="images/wdd230_500.jpg"></source>
+                <source media="(max-width: 800px)" srcset="images/wdd230_800.jpg"></source>
+                <img src="images/wdd230_1100.jpg" alt="landscape" />
+            </picture>
+            <section class="weathersummary">
+                <h3>Weather Summary </h3>
+                <p>Currently: Snowing </p>
+                <p>Temperature: <span id="temp">32 </span>&deg;F </p>
+                <p>Wind Speed: <span id="speed">14 </span>mph </p>
+                <p>Humidity: 93% </p>
+                <p> <span id="chill"> </span> </p>
+            </section>
+        </div>
+        <h3 class="fiveday">5 Day Forecast </h3>
+        <section class="forecast">
+            <div>
+                <h5>Monday </h5>
+                <img src="images/partlycloudy.png" alt="Partly Icon" width="100" height="100">
+                <p>37&deg; </p>
+            </div>
+            <div>
+                <h5>Tuesday </h5>
+                <img src="images/slightrain.png" alt="Slight Rain" width="100" height="100">
+                <p>40&deg; </p>
+            </div>
+            <div>
+                <h5>Wednesday </h5>
+                <img src="images/sunicon.png" alt="Sunny" width="100" height="100">
+                <p>42&deg; </p>
+            </div>
+            <div>
+                <h5>Thursday </h5>
+                <img src="images/snow.png" alt="Snow" width="100" height="100">
+                <p>32&deg; </p>
+            </div>
+            <div>
+                <h5>Friday </h5>
+                <img src="images/snow.png" alt="Snow" width="100" height="100">
+                <p>30&deg; </p>
+            </div>
+        </section>
+        <section class="article">
+            <div class="container clearfix">
+                <h3 class="top5">Top 5 BEST Things to Do in Preston </h3>
+                <img class="skilift" src="images/skilift.jpg" alt="skilift pic" width="400" height="200">
+                <p>Lorem ipsum dolor sit amet, ne mel tale dicat pericula, elitr prompta ne eum. Ad pro inimicus necessitatibus, cu justo diceret ius, posse scaevola accommodare at mei. Pro an amet essent propriae, ei vix eligendi petentium. No virtute explicari
+                    accusamus eam. </p>
+                <p>Nihil utamur labitur ius at, ferri autem vitae his cu. Eum aliquip sanctus te, eam nostrum delicata tincidunt in, omnes vidisse eum ut. Usu sint clita senserit te, per no justo essent dictas. Iriure iudicabit intellegam ut nec, ei quo
+                    hinc magna. Et qui menandri iudicabit theophrastus. </p>
+                <p>Sed enim tenetur sed error expedita aut ratione assumenda et galisum dolorum. Cum quam corrupti vel labore architecto est nemo autem. In sunt consequuntur ad deleniti odit qui libero mollitia ut impedit provident. Et omnis voluptatibus
+                    est porro perferendis vel maxime illo et aliquid eligendi ut excepturi consequuntur. Et expedita magni qui nulla culpa et cumque molestiae est eveniet rerum nam velit dicta. Est amet asperiores ab error animi ea laudantium molestias
+                    sit exercitationem voluptatibus et dolorem saepe ea quia enim 33 error internos! Est veritatis nobis qui placeat iste vel illum iure qui sint iure et illum provident sed animi enim aut culpa aliquam! Et culpa ullam et voluptatum inventore
+                    et incidunt illum in rerum voluptates vel iure necessitatibus. </p>
+            </div>
+        </section>
+        <h3 class="h3contact">Contact Us!</h3>
+        <section class="contactinfo">
+            <div class="contact">
+                <p> <strong>Address: </strong> <br/> 555 Sage Lane <br/>Idaho Falls, ID 83402 </p>
+                <p> <strong>Email: </strong> <br/> skypeeker@mail.me <br/> <strong>Phone: </strong> <br> 123-456-7890 </p>
+            </div>
+            <img class="map" src="images/mappreston.jpg" alt="map of Preston,ID" width="70" height="60">
+        </section>
+    </main>
+    <!-- FOOTER HERE -->
+    <footer>
+        <div class="social">
+            <a href="https://facebook.com" target="blank"> <img src="images/facebookicon.png" alt="facebook icon">
+            </a>
+            <a href="https://instagram.com" target="blank"> <img src="images/instagramicon.png" alt="instagram icon"></a>
+            <a href="https://twitter.com" target="blank "> <img src="images/twittericon.png" alt="twitter icon">
+            </a>
+        </div>
+        <p>&copy; <span id="currentYear"> </span> | Hayley Buck | <span id="currentDate"> </span> | BYU-Idaho Online Learning </p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax.libs/webfont/1.6.26/webfont.js">
+    </script>
+    <script src="js/script.js">
+    </script>
+    <script src="js/fontload.js">
+    </script>
+    <script src="js/windchill.js">
+    </script>
+    <script src="js/lazyload.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
