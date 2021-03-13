@@ -37,13 +37,10 @@ header img {
 }
 
 .hamburger {
-    flex-direction: row;
     align-self: flex-end;
-    justify-self: flex-end;
-    margin: 2%;
-    margin-top: -1%;
+    margin: -9% 0 0 0;
     background-color: #003459;
-    font-size: 1.6rem;
+    font-size: 2rem;
     color: #ffffff;
 }
 
@@ -52,7 +49,7 @@ h1 {
     font-size: 45px;
     font-weight: 700;
     justify-self: flex-start;
-    margin-left: 30%;
+    margin-left: 27%;
     margin-bottom: 4px;
     margin-top: -20%;
 }
@@ -67,8 +64,8 @@ h2 {
 .motto {
     font-size: 18px;
     color: #ffffff;
-    margin-left: 30%;
-    margin-top: 0%;
+    margin-left: 27%;
+    margin-top: 0;
 }
 
 nav {

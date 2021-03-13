@@ -15,12 +15,44 @@ weekday[6] = "Saturday";
 weekday[7] = "Sunday";
 
 
-const forecastURL = "//api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=faa2782ca6cb25eaf7cb5e291b27043a";
-
-fetch(forecastURL)
+const apiURL = ["//api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=faa2782ca6cb25eaf7cb5e291b27043a",
+    "//api.openweathermap.org/data/2.5/forecast?id=5607916&units=imperial&appid=faa2782ca6cb25eaf7cb5e291b27043a",
+    "//api.openweathermap.org/data/2.5/forecast?id=5585010&units=imperial&appid=faa2782ca6cb25eaf7cb5e291b27043a"
+]
+const townName = document.getElementById("townName");
+let apisURL;
+switch (townName) {
+    case 'Soda Springs Idaho':
+        apisURL = apiURL[1]
+        break;
+    case 'Fish Haven Idaho':
+        apisURL = apiURL[2]
+        break;
+    default:
+        apisURL = apiURL[0]
+}
+fetch(apisURL)
     .then((response) => response.json())
     .then((weatherInfo) => {
         console.log(weatherInfo);
+
+        document.getElementById("speed").textContent = weatherInfo.list[0].wind.speed;
+        document.getElementById("humid").textContent = weatherInfo.list[0].main.humidity;
+        document.getElementById("forecast").textContent = weatherInfo.list[0].weather[0].description;
+        document.getElementById("current").textContent = weatherInfo.list[0].main.temp;
+
+        const s = weatherInfo.wind.speed;
+        const t = weatherInfo.main.temp;
+        let wc = 35.75 + 0.6125 * t - 35.75 * Math.pow(s, 0.16) + 0.475 * t * Math.pow(s, 0.16);
+        wc = Math.round(wc);
+        if (t <= 50 && s > 3) {
+            document.getElementById("chill").textContent = wc + "\xB0" + "F";
+        } else {
+            document.getElementById("chill").textContent = "N/A";
+        }
+
+
+
 
         let mylist = weatherInfo.list;
         let forecastDayNumber = todayDayNumber;
@@ -28,7 +60,6 @@ fetch(forecastURL)
         for (i = 0; i < mylist.length; i++) {
             let time = mylist[i].dt_txt;
             if (time.includes('18:00:00')) {
-                console.log("Found an entry with 18:00:00 in the time. It was report " + i + " from the mylist of 40");
 
                 forecastDayNumber += 1;
                 if (forecastDayNumber === 7) {
@@ -54,25 +85,5 @@ fetch(forecastURL)
 
                 document.getElementById("forecastDays").appendChild(theDay);
             }
-        }
-    });
-const apiURL = "//api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=faa2782ca6cb25eaf7cb5e291b27043a";
-fetch(apiURL)
-    .then((response) => response.json())
-    .then((weatherInfo) => {
-        document.getElementById("speed").innerHTML = weatherInfo.wind.speed;
-        document.getElementById("humid").innerHTML = weatherInfo.main.humidity;
-        document.getElementById("hightemp").innerHTML = weatherInfo.main.temp_max;
-        let current = weatherInfo.weather[0].description;
-        document.getElementById("current").textContent = weatherInfo.main.temp;
-
-        const s = weatherInfo.wind.speed;
-        const t = weatherInfo.main.temp;
-        let wc = 35.75 + 0.6125 * t - 35.75 * Math.pow(s, 0.16) + 0.475 * t * Math.pow(s, 0.16);
-        wc = Math.round(wc);
-        if (t <= 50 && s > 3) {
-            document.getElementById("chill").textContent = wc + "\xB0" + "F";
-        } else {
-            document.getElementById("chill").textContent = "N/A";
         }
     });
