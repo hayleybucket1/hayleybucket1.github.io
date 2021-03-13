@@ -11,30 +11,19 @@
     main {
         max-width: 64rem;
     }
-    .headings {
+    .logohead {
         display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        margin-left: 8%;
+        flex-direction: row;
+        flex-wrap: wrap-reverse;
         max-width: 64rem;
+        margin-left: 5rem;
     }
     .headings h1 {
         margin: 0;
-        margin-left: 28%;
-        max-width: 64rem;
+        margin-top: 3rem;
     }
     .motto {
-        margin-left: 28%;
-        max-width: 64rem;
-    }
-    .headimg {
-        width: 200px;
-        height: auto;
-        margin: 2%;
-        margin-bottom: -8%;
-        margin-left: 10%;
-        justify-self: flex-start;
-        position: relative;
+        margin: 0;
         max-width: 64rem;
     }
     .preston {
@@ -44,9 +33,6 @@
     }
     .presIdaho {
         margin: 2%;
-    }
-    .hero div {
-        max-width: 64rem;
     }
     .hamburger {
         display: none;

@@ -307,12 +307,17 @@ footer div {
     justify-items: center;
     grid-gap: 1rem;
     margin: 1rem;
+    border-radius: 5px;
     
 }
 
 .gallery picture {
     box-shadow: 5px 5px 11px 1px #00171f;
+    border-radius: 5px;
     
+}
+.gallery img {
+    border-radius: 5px 5px 0 0;
 }
 
 .gallery figcaption {
