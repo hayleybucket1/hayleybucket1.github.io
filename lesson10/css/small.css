@@ -52,9 +52,9 @@ h1 {
     font-size: 50px;
     font-weight: 700;
     justify-self: flex-start;
-    margin-left: 30%;
+    margin-left: 35%;
     margin-bottom: 4px;
-    margin-top: -20%;
+    margin-top: -25%;
 }
 
 h2 {
@@ -67,8 +67,8 @@ h2 {
 .motto {
     font-size: 20px;
     color: #ffffff;
-    margin-left: 30%;
-    margin-top: -5%;
+    margin-left: 35%;
+    margin-top: 0%;
 }
 
 nav {
@@ -111,10 +111,12 @@ nav ul li a:hover {
 .preston {
     width: 100%;
     height: auto;
+    display: block;
+    overflow: hidden;
 }
 
 main figure.preston img {
-    width: 100%
+    width: 100%;
 }
 
 div#message {
@@ -129,8 +131,41 @@ div.hideme {
     display: none;
 }
 
-section.forecast {
-    display: none;
+.forecast div {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+
+.forecast div div {
+    border: 1px solid black;
+    margin: 1rem auto;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    width: 160px;
+    display: block;
+}
+
+.forecast img {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: .5rem;
+}
+
+.forecast h3 {
+    font-size: 20px;
+    margin: 0;
+    padding: 1rem;
+    background-color: #08C6AAff;
+    border-bottom: 1px solid black;
+    border-radius: 5px 5px 0 0;
+}
+
+.forecast p {
+    font-size: 20px;
+    margin: .5rem;
+    padding: .5rem;
 }
 
 body {
@@ -148,28 +183,39 @@ body {
 .weathersummary {
     position: absolute;
     color: #00171f;
-    top: 20px;
-    left: 20px;
+    top: 5px;
+    left: 5px;
     background: radial-gradient(#ffffff, #e0d9d994);
+    border-radius: 5px;
     border: 2px solid #000;
     text-align: left;
     padding: 1%;
-    margin: 1%;
+    margin: 0 1%;
     -webkit-box-shadow: 5px 5px 11px 1px #e0d9d994;
     box-shadow: 5px 5px 11px 1px #4b4a4ac4;
 }
 
+.summarytitle {
+    margin: 0;
+}
+
+.summarydata {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 .weathersummary p {
-    font-size: 16px;
+    font-size: 14px;
+    margin: 0;
 }
 
-.fiveday {
-    display: none;
+h3.fiveday {
+    font-size: 24px;
+    margin: 2%;
 }
 
-section.article {
-    color: #00171f;
-    margin: 1rem;
+.article h3 {
+    margin: 2%;
 }
 
 .article p {
@@ -313,7 +359,7 @@ select {
     width: auto;
 }
 
-::placeholder {
+ ::placeholder {
     color: grey;
 }
 
@@ -404,12 +450,13 @@ label.slide {
     display: block;
     overflow: hidden;
 }
-.cards {
-    background-color:rgba(0, 0, 0, 0.22);
-    padding: 1rem;
 
+.cards {
+    background-color: rgba(0, 0, 0, 0.22);
+    padding: 1rem;
 }
-.cards section{
+
+.cards section {
     background-color: #003459;
     color: white;
     border-radius: 10px;
@@ -418,18 +465,22 @@ label.slide {
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     text-align: center;
 }
+
 .cards h2 {
     color: white;
     margin: 0;
 }
+
 .cards h3 {
     font-size: 20px;
     margin: .5rem;
 }
+
 .cards p {
     font-size: 15px;
     margin: .5rem;
 }
+
 .cards img {
     border-radius: 10px;
     width: 100%;
@@ -437,22 +488,27 @@ label.slide {
     margin: 0;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
+
 .cards section:hover {
-    background-color:#3F88C5;
+    background-color: #3F88C5;
 }
+
 .upcoming {
     margin: 1rem;
     text-align: center;
-    background-color:rgba(225, 225, 225, 0.8);
+    background-color: rgba(225, 225, 225, 0.8);
     padding: 1rem;
 }
+
 .uplist {
-    list-style:none;
+    list-style: none;
 }
+
 .fishingidaho {
-    border-radius: 10px; 
+    border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
+
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 

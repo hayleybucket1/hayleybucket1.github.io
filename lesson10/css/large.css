@@ -76,11 +76,11 @@
     }
     .weathersummary {
         top: 50px;
-        left: 110px;
+        left: 75px;
     }
     .forecast div {
-        margin: 2%;
-        overflow: hidden;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
     .top5 {
         margin: 2%;
@@ -151,7 +151,6 @@
     .cards h2 {
         margin: 0;
         font-size: 40px;
-    
     }
     .cards h3 {
         font-size: 20px;

@@ -64,7 +64,7 @@ fetch(apiURL)
         document.getElementById("humid").innerHTML = weatherInfo.main.humidity;
         document.getElementById("hightemp").innerHTML = weatherInfo.main.temp_max;
         let current = weatherInfo.weather[0].description;
-        document.getElementById("current").innerHTML = current.replace(/^\w/, (c) => c.toUpperCase());
+        document.getElementById("current").textContent = weatherInfo.main.temp;
 
         const s = weatherInfo.wind.speed;
         const t = weatherInfo.main.temp;
