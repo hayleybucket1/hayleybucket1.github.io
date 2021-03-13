@@ -15,9 +15,9 @@ weekday[6] = "Saturday";
 weekday[7] = "Sunday";
 
 
-const forecastURL = "//api.openweathermap.org/ data/2.5/forecast?id=5604473&units=imperial&appid=faa2782ca6cb25eaf7cb5e291b27043a";
+const fapiURL = "//api.openweathermap.org/ data/2.5/forecast?id=5604473&units=imperial&appid=faa2782ca6cb25eaf7cb5e291b27043a";
 
-fetch(forecastURL)
+fetch(fapiURL)
     .then((response) => response.json())
     .then((weatherInfo) => {
         console.log(weatherInfo);
@@ -37,7 +37,7 @@ fetch(forecastURL)
                 let dayName = document.createElement("h3");
                 dayName.textContent = weekday[forecastDayNumber];
 
-                let theTemp = document.createElement("p");
+                let theTemp = document.createElement("span");
                 theTemp.textContent = weatherInfo.list[i].main.temp + "\xB0";
 
                 let iconcode = weatherInfo.list[i].weather[0].icon;
