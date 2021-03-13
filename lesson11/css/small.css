@@ -135,7 +135,7 @@ div.hideme {
 }
 
 .forecast div div {
-    border: 1px solid black;
+    border: 1px solid #00171f;
     margin: 1rem auto;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
@@ -155,14 +155,16 @@ div.hideme {
     margin: 0;
     padding: 1rem;
     background-color: #08C6AAff;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #00171f;
     border-radius: 5px 5px 0 0;
+    color: #00171f;
 }
 
 .forecast p {
     font-size: 20px;
     margin: .5rem;
     padding: .5rem;
+    color: #00171f;
 }
 
 body {
@@ -184,7 +186,7 @@ body {
     left: 5px;
     background: radial-gradient(#ffffff, #e0d9d994);
     border-radius: 5px;
-    border: 2px solid #000;
+    border: 1px solid #00171f;
     text-align: left;
     padding: 1%;
     margin: 0 1%;
@@ -194,25 +196,30 @@ body {
 
 .summarytitle {
     margin: 0;
+    color: #00171f;
 }
 
 .summarydata {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    color: #00171f;
 }
 
 .weathersummary p {
     font-size: 14px;
     margin: 0;
+    color: #00171f;
 }
 
 h3.fiveday {
     font-size: 24px;
     margin: 2%;
+    color: #00171f;
 }
 
 .article h3 {
     margin: 2%;
+    color: #00171f;
 }
 
 .article p {
@@ -220,12 +227,13 @@ h3.fiveday {
 }
 
 section.article img {
-    border: 1px solid#000;
+    border: 1px solid #00171f;
+    border-radius: 5px;
     margin: 0;
     width: 100%;
     height: auto;
-    -webkit-box-shadow: 5px 5px 11px 1px #000000;
-    box-shadow: 5px 5px 11px 1px #000000;
+    -webkit-box-shadow: 5px 5px 11px 1px #00171f;
+    box-shadow: 5px 5px 11px 1px #00171f;
 }
 
 .contact {
@@ -247,9 +255,12 @@ section.article img {
     grid-column: 1/2;
     width: 70%;
     height: auto;
-    border: 3px solid #000;
+    border: 1px solid #00171f;
+    border-radius: 5px;
     margin: 1%;
     margin-left: 15%;
+    -webkit-box-shadow: 5px 5px 11px 1px #00171f;
+    box-shadow: 5px 5px 11px 1px #00171f;
 }
 
 p {
@@ -277,12 +288,14 @@ footer div {
 
 .social {
     padding: 1rem;
+    border-radius: 5px;
 }
 
 .social img {
     padding: 2px;
-    -webkit-box-shadow: 5px 5px 11px 1px #000000;
-    box-shadow: 5px 5px 11px 1px #000000;
+    -webkit-box-shadow: 5px 5px 11px 1px #00171f;
+    box-shadow: 5px 5px 11px 1px #00171f;
+    border-radius: 5px;
 }
 
 
@@ -294,10 +307,12 @@ footer div {
     justify-items: center;
     grid-gap: 1rem;
     margin: 1rem;
+    
 }
 
 .gallery picture {
-    box-shadow: 5px 5px 11px 1px #000000;
+    box-shadow: 5px 5px 11px 1px #00171f;
+    
 }
 
 .gallery figcaption {
@@ -308,14 +323,9 @@ footer div {
 
 /*---------storm center----------*/
 
-*:focus {
-    outline: none;
-}
-
 .stormtitle {
-    margin: 3%;
+    margin: 2%;
 }
-
 legend {
     background-color: #003459;
     border-radius: 10px;
@@ -324,11 +334,11 @@ legend {
     color: white;
     font-size: 1.5rem;
     border: none;
+    
 }
 
 form fieldset {
-    margin: 2% .5rem;
-    width: 95%;
+    margin: 2%;
     border-radius: 10px;
     border: none;
     background-color: #08C6AAff;
@@ -369,12 +379,7 @@ select {
     border-radius: 10px;
     color: white;
     padding: 10px;
-    margin: 1.5em;
-    display: inline-block;
-    position: relative;
-    left: 42%;
-    transform: translateX(-50%);
-    font-size: 25px;
+    margin: auto;
 }
 
 .submitButton:hover {

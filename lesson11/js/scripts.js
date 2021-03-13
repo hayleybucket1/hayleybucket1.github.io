@@ -18,18 +18,18 @@ weekday[7] = "Sunday";
 const apiURL = ["//api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=faa2782ca6cb25eaf7cb5e291b27043a",
     "//api.openweathermap.org/data/2.5/forecast?id=5607916&units=imperial&appid=faa2782ca6cb25eaf7cb5e291b27043a",
     "//api.openweathermap.org/data/2.5/forecast?id=5585010&units=imperial&appid=faa2782ca6cb25eaf7cb5e291b27043a"
-]
+];
 const townName = document.getElementById("townName");
 let apisURL;
 switch (townName) {
     case 'Soda Springs Idaho':
-        apisURL = apiURL[1]
+        apisURL = apiURL[1];
         break;
     case 'Fish Haven Idaho':
-        apisURL = apiURL[2]
+        apisURL = apiURL[2];
         break;
     default:
-        apisURL = apiURL[0]
+        apisURL = apiURL[0];
 }
 fetch(apisURL)
     .then((response) => response.json())
@@ -38,11 +38,11 @@ fetch(apisURL)
 
         document.getElementById("speed").textContent = weatherInfo.list[0].wind.speed;
         document.getElementById("humid").textContent = weatherInfo.list[0].main.humidity;
-        document.getElementById("forecast").textContent = weatherInfo.list[0].weather[0].description;
+        document.getElementById("high").textContent = weatherInfo.list[0].main.temp_max;
         document.getElementById("current").textContent = weatherInfo.list[0].main.temp;
 
-        const s = weatherInfo.wind.speed;
-        const t = weatherInfo.main.temp;
+        const s = weatherInfo.list[0].wind.speed;
+        const t = weatherInfo.list[0].main.temp;
         let wc = 35.75 + 0.6125 * t - 35.75 * Math.pow(s, 0.16) + 0.475 * t * Math.pow(s, 0.16);
         wc = Math.round(wc);
         if (t <= 50 && s > 3) {
