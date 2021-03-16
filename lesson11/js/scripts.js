@@ -17,7 +17,7 @@ weekday[7] = "Sunday";
 
 const apiURL = ["//api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=faa2782ca6cb25eaf7cb5e291b27043a",
     "//api.openweathermap.org/data/2.5/forecast?id=5607916&units=imperial&appid=faa2782ca6cb25eaf7cb5e291b27043a",
-    "//api.openweathermap.org/data/2.5/forecast?id=5585010&units=imperial&appid=faa2782ca6cb25eaf7cb5e291b27043a"
+    "//api.openweathermap.org/data/2.5/forecast?id=5585000&units=imperial&appid=faa2782ca6cb25eaf7cb5e291b27043a"
 ];
 const townName = document.getElementById("townName");
 let apisURL;
