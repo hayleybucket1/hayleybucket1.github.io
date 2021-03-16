@@ -15,7 +15,7 @@ weekday[6] = "Saturday";
 weekday[7] = "Sunday";
 
 
-const forecastURL = "//api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=faa2782ca6cb25eaf7cb5e291b27043a";
+const fapiURL = "//api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=faa2782ca6cb25eaf7cb5e291b27043a";
 
 fetch(fapiURL)
     .then((response) => response.json())
