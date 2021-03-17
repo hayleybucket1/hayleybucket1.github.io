@@ -2,29 +2,21 @@
 
 @media only screen and (min-width: 64rem) {
     header,
-    nav,
+    nav ul,
     main,
     footer {
         margin: auto;
-        padding: 0;
     }
     main {
         max-width: 64rem;
     }
-    .logohead {
+    .container {
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap-reverse;
         max-width: 64rem;
-        margin-left: 5rem;
-    }
-    .headings h1 {
-        margin: 0;
-        margin-top: 3rem;
     }
     .motto {
-        margin: 0;
-        max-width: 64rem;
+        margin: auto;
+        margin-left: 10px;
     }
     .preston {
         margin-left: 2%;
@@ -39,25 +31,16 @@
     }
     .hide {
         display: flex;
-    }
-    nav ul {
-        flex-direction: row;
-        justify-content: space-between;
-        margin: 0 10%;
-        text-align: center;
-        padding: 0 1rem;
+    } 
+    nav ul  {
+        max-width: 64rem;
     }
     nav ul li {
-        flex: 1 1 100%;
-        justify-content: space-between;
-        max-width: 64rem;
+        width: 25%;
     }
     nav ul li a {
         border: none;
         border-right: 1px solid rgba(0, 0, 0, 0.3);
-        padding: .5rem 1.5rem;
-        text-align: center;
-        max-width: 64rem;
         display: block;
     }
     .weathersummary {
@@ -95,6 +78,7 @@
     }
     footer p {
         margin: 3%;
+        
     }
     /* gallery */
     .gallery {

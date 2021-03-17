@@ -20,19 +20,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&amp;family=Quicksand:wght@400;700&amp;display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">   
 </head>
 
 <body>
     <!-- HEADER HERE -->
-    <header>
-    <div class="logohead">
-        <img class="headimg" src="images/skypeekerlogo.png" alt="skypeekerlogo">
-        <section class="headings">
-            <h1 class="title">Sky Peeker </h1>
-            <h3 class="motto">Weather for you and your family! </h3>
-        </section>
-    </div>
-        <button class="hamburger" onclick="toggleMenu()">☰ </button>
+    <header class="headlogo">
+        <div class="container">
+            <img class="headimg" src="images/skypeekerlogo.png" alt="skypeekerlogo">
+            <h1 class="sptitle">SKY PEEKER</h1>
+            <h2 class="motto">Weather for you and your family! </h3>
+            <button class="hamburger" onclick="toggleMenu()">☰ </button>
+        </div>
     </header>
     <nav class="clearfix">
         <ul id="primaryNav" class="hide">
@@ -63,9 +62,9 @@
                 <h3 class="summarytitle">Weather Summary</h3>
                 <div class="summarydata">
                     <p class="column1">Currently: </p>
-                    <p><span id="current"></span> &deg;F</p>
+                    <p><span id="current"></span>&deg;F</p>
                     <p class="column1">High: </p>
-                    <p><span id="high"></span> &deg;F;</p>
+                    <p><span id="high"></span>&deg;F;</p>
                     <p class="column1">Wind Chill: </p>
                     <p><span id="chill"></span></p>
                     <p class="column1">Humidity: </p>

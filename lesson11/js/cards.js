@@ -16,6 +16,7 @@ fetch(requestURL)
                 let currentPopulation = document.createElement('p');
                 let averageRainfall = document.createElement('p');
                 let data = document.createElement('div');
+                let link = document.createElement('a');
                 
                 name.textContent = towns[i].name;
                 motto.textContent = towns[i].motto;
@@ -28,16 +29,18 @@ fetch(requestURL)
                 image.setAttribute('alt', towns[i].name);
                 
                 data.setAttribute('id', 'data');
+                link.setAttribute('a', 'href')
             
                 card.appendChild(data);
                 card.appendChild(image);
-            
+                
                 data.appendChild(name);
                 data.appendChild(motto);
                 data.appendChild(currentPopulation);
                 data.appendChild(averageRainfall);
                 data.appendChild(yearFounded);
-                document.querySelector('div.cards').appendChild(card);
+                document.querySelector('div.cards').appendChild(card)
+                
             }
         }
     });

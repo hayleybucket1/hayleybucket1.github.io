@@ -1,25 +1,17 @@
 /* 35em is also 560px when basefont is 16px */
  
 @media only screen and (min-width: 40rem) {
-     .headings h1 {
-         font-size: 55px;
-         color: #ffffff;
-         align-self: flex-start;
-         margin-left: 25%;
-         margin-bottom: 3px;
-     }
-     header img {
-         width: 150px;
-         padding: 3% 0;
-         margin-left: 1%;
-     }
-     h1 {
-         margin: -15%
-     }
-     h2 {
-         margin: 2%;
-         padding: 0;
-     }
+    
+    .sptitle {
+        margin: 1rem;
+    }
+    .motto {
+        margin: auto;
+        padding-bottom: .5rem;
+    }
+    .hamburger {
+        display: none;
+        }
      p {
          margin: 1rem;
      }
@@ -34,26 +26,25 @@
      }
      nav ul {
          margin: 0;
+         padding: 0;
          flex-direction: row;
-         justify-content: space-between;
+         justify-content: space-evenly;
+     }
+     nav ul li {
+         width: 25%;
+         
      }
      nav ul li a {
          justify-content: space-between;
-         padding: .5rem 1.5rem;
+         padding: .5rem;
          border: none;
          text-align: center;
      }
      #active {
-         padding: .75rem 1.5rem;
+         padding: auto;
      }
-     .hamburger {
-         display: none;
-     }
-     .motto {
-         color: #ffffff;
-         font-size: 20px;
-         margin-left: 25%;
-         margin-top: 0;
+     nav ul li a:hover {
+       margin: 0;
      }
      .hero div {
          max-width: 100vw;
@@ -112,10 +103,6 @@
          margin: 1rem;
      }
      /*-----storm center------*/
-     .stormtitle {
-         margin-left: 2%;
-         font-size: 3rem;
-     }
      form {
          max-width: 65%;
          margin: 2%;
