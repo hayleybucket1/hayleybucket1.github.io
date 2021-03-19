@@ -39,9 +39,6 @@
         border: none;
         text-align: center;
     }
-    #active {
-        padding: auto;
-    }
     nav ul li a:hover {
         margin: 0;
     }
