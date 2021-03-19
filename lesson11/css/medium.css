@@ -74,21 +74,25 @@
      .forecast div div {
          display: block;
      }
-     section.article div img {
+     .article {
+         display: block;
+     }
+     .article img {
          display: block;
          float: right;
-         width: 400px;
+         width: 70%;
          height: auto;
-         margin: 0 0 0.5rem 0.5rem;
      }
-     section.contactinfo {
-         display: flex;
-         flex-direction: row;
+     .article p {
+         text-align: justify;
+     }
+     .contactinfo {
+         display: grid;
+         grid-template-columns: 1fr 1fr;
      }
      .map {
-         width: 100%;
-         height: auto;
-         margin: auto;
+         margin-bottom: 1rem;
+         grid-column: 2;
      }
      /* gallery */
      .gallery {
