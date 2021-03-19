@@ -76,7 +76,7 @@
     }
     .top5 {
         margin: 1rem;
-        margin-bottom: -1rem;
+        margin-bottom: 0;
         font-size: 22px;
     }
     .article {
@@ -117,6 +117,7 @@
         margin: 1rem;
         margin-top: -4rem;
         grid-column: 2;
+        
     }
      /* gallery */
     .gallery {

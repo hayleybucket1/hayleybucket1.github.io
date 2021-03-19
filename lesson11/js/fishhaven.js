@@ -1,3 +1,17 @@
+const d = new Date();
+
+const todayDayNumber = d.getDay();
+
+const weekday = new Array(7);
+weekday[0] = "Sunday";
+weekday[1] = "Monday";
+weekday[2] = "Tuedsay";
+weekday[3] = "Wednesday";
+weekday[4] = "Thursday";
+weekday[5] = "Friday";
+weekday[6] = "Saturday";
+weekday[7] = "Sunday";
+
 const apiURL = "//api.openweathermap.org/data/2.5/forecast?id=5585000&units=imperial&appid=faa2782ca6cb25eaf7cb5e291b27043a";
 fetch(apiURL)
     .then((response) => response.json())
@@ -51,4 +65,30 @@ fetch(apiURL)
                 document.getElementById("forecastDays").appendChild(theDay);
             }
         }
+    });
+
+    const requestURL = "https://byui-cit230.github.io/weather/data/towndata.json";
+
+    fetch(requestURL)
+        .then(function(response) {
+            return response.json();
+        })
+        .then(function(jsonObject) {
+            console.table(jsonObject);
+            const towns = jsonObject['towns'];
+    
+            for  (let i = 0; i < towns.length; i++) {
+                if (towns[i].name == "Fish Haven") {
+                
+                    let event = document.createElement("div");
+    
+                    for (let x = 0; x < towns[i].events.length; x++) {
+                    let info = document.createElement("p");
+                    info.textContent = towns[i].events[x];
+                    event.appendChild(info);
+                    document.getElementById("event").appendChild(event);
+                }   
+            }
+        }
+    
     });

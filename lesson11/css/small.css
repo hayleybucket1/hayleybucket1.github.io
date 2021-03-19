@@ -207,6 +207,21 @@ div.hideme {
     margin: 0;
     color: #00171f;
 }
+.soon {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border: 4px ridge #167BB6;
+    margin: 1rem 4rem;
+    padding: 1rem;
+    border-radius: 5px;
+    -webkit-box-shadow: 5px 5px 11px 1px #e0d9d994;
+    box-shadow: 5px 5px 11px 1px #4b4a4ac4;
+    background-color: #167bb669;
+}
+.soon p {
+    font-size: 18px;
+}
 .top5 {
     padding-top: .5rem;
 }
