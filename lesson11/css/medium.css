@@ -1,5 +1,4 @@
 /* 35em is also 560px when basefont is 16px */
- 
 @media only screen and (min-width: 40rem) {
     
     .sptitle {
@@ -12,155 +11,180 @@
     .hamburger {
         display: none;
         }
-     p {
-         margin: 1rem;
-     }
-     .hide {
-         display: flex;
-     }
-     nav {
-         position: sticky;
-         top: 0;
-         z-index: 1;
-         border: 1px solid #003459;
-     }
-     nav ul {
-         margin: 0;
-         padding: 0;
-         flex-direction: row;
-         justify-content: space-evenly;
-     }
-     nav ul li {
-         width: 25%;
-         
-     }
-     nav ul li a {
-         justify-content: space-between;
-         padding: .5rem;
-         border: none;
-         text-align: center;
-     }
-     #active {
-         padding: auto;
-     }
-     nav ul li a:hover {
-       margin: 0;
-     }
-     .hero div {
-         max-width: 100vw;
-     }
-     .weathersummary {
-         top: 50px;
-         left: 50px;
-         padding: 1rem;
-         font-size: 22px;
-     }
-     .summarytitle {
-         margin: auto;
-         margin-bottom: 10px;
-     }
-     .weathersummary p {
-         font-size: 19px;
-         margin: 1px;
-     }
-     .fiveday {
-         display: block;
-         margin: 2%;
-     }
-     .forecast div {
-         display: grid;
-         grid-template-columns: 1fr 1fr 1fr;
-     }
-     .forecast div div {
-         display: block;
-     }
-     .article {
-         display: block;
-     }
-     .article img {
-         display: block;
-         float: right;
-         width: 70%;
-         height: auto;
-     }
-     .article p {
-         text-align: justify;
-     }
-     .contactinfo {
-         display: grid;
-         grid-template-columns: 1fr 1fr;
-     }
-     .map {
-         margin-bottom: 1rem;
-         grid-column: 2;
-     }
+    p {
+        margin: 1rem;
+    }
+    .hide {
+        display: flex;
+    }
+    nav {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        border: 1px solid #003459;
+    }
+    nav ul {
+        margin: 0;
+        padding: 0;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    nav ul li {
+        width: 25%;
+        
+    }
+    nav ul li a {
+        justify-content: space-between;
+        padding: .5rem;
+        border: none;
+        text-align: center;
+    }
+    #active {
+        padding: auto;
+    }
+    nav ul li a:hover {
+        margin: 0;
+    }
+    .hero div {
+        max-width: 100vw;
+    }
+    .weathersummary {
+        top: 50px;
+        left: 50px;
+        padding: 1rem;
+        font-size: 22px;
+    }
+    .summarytitle {
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    .weathersummary p {
+        font-size: 19px;
+        margin: 1px;
+    }
+    .fiveday {
+        display: block;
+        font-size: 22px;
+        margin: 2%;
+    }
+    .forecast div {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .forecast div div {
+        display: block;
+    }
+    .top5 {
+        margin: 1rem;
+        margin-bottom: -1rem;
+        font-size: 22px;
+    }
+    .article {
+        display: block;
+        margin: 1rem;
+    }
+    .paddle {
+        margin: .5rem;
+        width: 300px;
+        float: right; 
+    }
+    .elk {
+        margin: .5rem;
+        width: 300px;
+        float: right;
+    }
+    .fish {
+        margin: .5rem;
+        width: 300px;
+        float: right;
+    }
+    .article p {
+        margin: .5rem;
+    }
+    .contactinfo {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .contact {
+        text-align: left;
+        margin: 0 0 0 1rem;
+    }
+    .contact1 {
+        text-align: left;
+        margin: 0 0 0 1rem;
+    }
+    .map {
+        margin: 1rem;
+        margin-top: -4rem;
+        grid-column: 2;
+    }
      /* gallery */
-     .gallery {
-         display: grid;
-         grid-template-columns: 1fr 1fr;
-         grid-gap: 1rem;
-         margin: 1rem;
-     }
-     /*-----storm center------*/
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+        margin: 1rem;
+    }
+    /*-----storm center------*/
 
-     form {
-         max-width: 65%;
-         margin: 2%;
-         display: inline-block;
-         position: relative;
-         font-size: 25px;
-     }
-     .rainbowafter img {
-         margin: 1rem;
-         margin-left: 6rem;
-     }
-     /*------home page-------*/
-     .heroidaho {
-         display: block;
-         overflow: hidden;
-     }
-     .cards {
-         display: block;
-         margin: 0 auto;
-     }
-     .cards section {
-         display: grid;
-         grid-template-columns: 1fr 1fr;
-         margin: 1rem auto;
-     }
-     .cards section:nth-child(odd) img {
-         grid-column: 1;
-     }
-     .cards section:nth-child(odd) #data {
-         grid-column: 2;
-         grid-row: 1;
-     }
-     .cards h2 {
-         font-size: 45px;
-         margin: 2rem;
-     }
-     .cards h3 {
-         font-size: 23px;
-     }
-     .upcoming {
-         display: flex;
-         flex-flow: column wrap;
-         height: 400px;
-     }
-     .fishingidaho {
-         width: 250px;
-         height: auto;
-         margin-left: auto;
-     }
-     .upcoming ul li {
-         margin: 1rem;
-     }
-     .upcoming h3 {
-         font-size: 40px;
-     }
-     .h3contact {
-         font-size: 30px;
-         margin-left: 3%;
-     }
- }
+    form {
+        max-width: 65%;
+        margin: 2%;
+        display: inline-block;
+        position: relative;
+        font-size: 25px;
+    }
+    .rainbowafter img {
+        margin: 1rem;
+        margin-left: 6rem;
+    }
+    /*------home page-------*/
+    .heroidaho {
+        display: block;
+        overflow: hidden;
+    }
+    .cards {
+        display: block;
+        margin: 0 auto;
+    }
+    .cards section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 1rem auto;
+    }
+    .cards section:nth-child(odd) img {
+        grid-column: 1;
+    }
+    .cards section:nth-child(odd) #data {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .cards h2 {
+        font-size: 45px;
+        margin: 2rem;
+    }
+    .cards h3 {
+        font-size: 23px;
+    }
+    .upcoming {
+        display: flex;
+        flex-flow: column wrap;
+        height: 400px;
+    }
+    .fishingidaho {
+        width: 250px;
+        height: auto;
+        margin-left: auto;
+    }
+    .upcoming ul li {
+        margin: 1rem;
+    }
+    .upcoming h3 {
+        font-size: 40px;
+    }
+    .h3contact {
+        font-size: 30px;
+        margin-left: 3%;
+    }
+}
  /*end medium */

@@ -1,21 +1,4 @@
-//ADD the key and change units to imperial
-
-const d = new Date();
-
-const todayDayNumber = d.getDay();
-
-const weekday = new Array(7);
-weekday[0] = "Sunday";
-weekday[1] = "Monday";
-weekday[2] = "Tuedsay";
-weekday[3] = "Wednesday";
-weekday[4] = "Thursday";
-weekday[5] = "Friday";
-weekday[6] = "Saturday";
-weekday[7] = "Sunday";
-
-
-const apiURL = "//api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=faa2782ca6cb25eaf7cb5e291b27043a";
+const apiURL = "//api.openweathermap.org/data/2.5/forecast?id=5607916&units=imperial&appid=faa2782ca6cb25eaf7cb5e291b27043a";
 fetch(apiURL)
     .then((response) => response.json())
     .then((weatherInfo) => {
@@ -69,7 +52,3 @@ fetch(apiURL)
             }
         }
     });
-
-
-
-
