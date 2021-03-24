@@ -3,10 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="final project website for WDD 230: Web Frontend Developement. BYU-Idaho Online">
+    <meta name="author" content="Hayley Buck">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- STYLE SHEETS -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/small.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico">
     <title>Home Page</title>
 </head>
 <body>
+    <header>
+        <div class="header">
+            <img class="logo" src="images/chamberlogo.jpg" alt="logo">
+            <h1>Marshfield</h1>
+            <h2>Chamber of Commerce</h2>
+            <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+        </div>
+    </header>
+    
+    <nav class="clearfix">
+        <ul id="hamNav" class="hide">
+            <li><a id="active" href="index.html">Home</a></li>
+            <li><a href="marshfield.html">Marshfield</a></li>
+            <li><a href="join.html">Join Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="directory.html">Directory</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div id="alert"></div>
+        <div class="hero-content">
+            <picture class="hero">
+            <source media="(max-width: 500px)" srcset="images/marshcentral500.jpg">
+            <source media="(max-width: 800px)" srcset="images/marshcentral800.jpg">
+            <img src="images/marshcentral1100.jpg" alt="Central Ave" loading="lazy" alt="By Jeff the quiet - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=12073662">
+            </picture>
+            <section class="weathersummary">
+            <h2>Weather Summary</h2>
+            <div class="sumdata">
+                <p>Current Temp: </p>
+                <p><span id="temp"></span>&deg;F</p>
+                <p>Conditions: </p>
+                <p><span id="current"></span></p>
+                <p>Humidity: </p>
+                <p><span id="humidity"></span>%</p>
+            </div>
+        </section>
+        </div>
+        <section class="local3">
+        <div class="cards"></div>  </section>
+        <section class="soon">
+        <div class="upcoming">
+            <h2>Upcoming Events</h2>
+            <div id="events"></div>
+        </div>
+    </section>
+    <h2 class="threeday">Three Day Forecast</h2>
+    <section class="forecast">
+        <div id="forecastDays"></div>
+    </section>
+    <h3 class="contacthome">Contact Info:</h3>
+
+    </main>
     
 </body>
+<script src="js/script.js"></script>
+<script src="js/current.js"></script>
 </html>
