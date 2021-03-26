@@ -1,3 +1,4 @@
+
 /*header*/
 header{
     background-color: #002d52;
@@ -6,6 +7,8 @@ header{
 .header {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    max-width: 640px;
+
 }
 .logo {
     width: 180px;
@@ -114,7 +117,58 @@ nav ul li a:hover {
 .weathersummary p {
     margin: 4px;
 }
+/*--------featured---------*/
+.local {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: .5rem;
+    border: 3px solid #002d52;
+    border-radius: 2px;
+}
+.local h2 {
+    margin: .5rem auto;
+}
+.local1 {
+    grid-row: 2;
+    margin: 1rem auto;
+}
+.local2 {
+    grid-row: 3;
+    margin: 1rem auto;
+}
+.local3 {
+    grid-row: 4;
+    margin: 1rem auto;
+}
+/*------Upcoming events--------*/
+.upcoming {
+    background-color: #ffb4ad;
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    color: #003d52;
+    border-radius: 3px;
+    outline: 5px dotted #003d52;
+    outline-offset: -10px;
+}
+.upcoming h3 {
+    margin: 0;
+}
+.upcoming p {
+    margin: .5rem;
+}
 /*----------forecast---------*/
+.threeday {
+    margin: 1rem;
+}
+.forecast {
+    border: 5px double #ffc885;
+    border-radius: 3px;
+    height: 220px;
+    overflow: hidden;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
 .forecast div {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -122,11 +176,214 @@ nav ul li a:hover {
 }
 .forecast div div {
     border: 1px solid black;
-    margin: 1rem auto;
+    margin: .5rem auto;
     border-radius: 5px;
     display: block;
-    width: 160px;
+    width: 130px;
 }
+/*-------join button------*/
+.joinbutton {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 2rem;
+    margin-bottom: -1.5rem;
+}
+a.button2{
+    display:inline-block;
+    padding:0.5em 3em;
+    border:0.16em solid #002d52;
+    margin:0 0.3em 0.3em 0;
+    box-sizing: border-box;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-family:'Roboto',sans-serif;
+    font-weight:400;
+    color:#002d52;
+    text-align:center;
+    transition: all 0.15s;
+    
+}
+a.button2:hover{
+    color:#ffc885;
+    border-color:#ffc885;
+}
+a.button2:active{
+    color:#BBBBBB;
+    border-color:#BBBBBB;
+}
+@media all and (max-width:30em){
+    a.button2{
+        display:block;
+        margin:0.4em auto;
+    }
+}
+.bouncy {
+    animation: bouncy 5s infinite linear;
+    position: relative;
+}
+    @keyframes bouncy {
+    0%{top:0em}
+    40%{top:0em}
+    43%{top:-0.9em}
+    46%{top:0em}
+    48%{top:-0.4em}
+    50%{top:0em}
+    100%{top:0em;}
+    }
+/*------about us-------*/
+.purpose {
+    background-color: #56aeb3;
+    color: #f5f5f5;
+    padding-top: 1rem;
+}
+.purpose h2 {
+    margin: 1rem;
+}
+.purpose p {
+    margin: 1rem;
+    padding-bottom: 1rem;
+}
+/*----------footer----------*/
+footer {
+    background-color: #002d52;
+}
+.contacthome {
+    color: #f5f5f5;
+    margin: .5rem;
+    padding: 0;
+    display: inline-block;
+}
+.contacthome p {
+    margin: 1rem 1rem 0.5rem 1rem;
+}
+/*---------------social buttons---------*/
+.center {
+    display: table;
+    width: 100%;
+  }
+  
+  #social {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  
+  #social ul {
+    text-align: center;
+    padding-left: 0px;
+    margin: 0 auto;
+  }
+  
+  #social li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0 35px 15px 50px; 
+  }
+  
+  /** Facebook **/
+  
+  .facebook {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .facebook .border {
+    background: transparent;
+    outline: none;
+    color:rgba(255,255,255, 0.9);
+    width: 50px;
+    height: 50px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    border: 2px solid rgba(255,255,255, 0.5);
+    transition: all .2s ease-in-out;
+  }
+  
+  .facebook .border:hover {
+    background: #3b5998;
+    border-color: #436aaf;
+    color: rgba(255,255,255, 0.9);
+    transform: scale(1.2);
+  }
+  
+  .fa.fa-facebook {
+    font-size: 25px;
+  }
+  
+  /** Twitter **/
+  
+  .twitter {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .twitter .border {
+    background: transparent;
+    outline: none;
+    color:rgba(255,255,255, 0.9);
+    width: 50px;
+    height: 50px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    border: 2px solid rgba(255,255,255, 0.5);
+    transition: all .2s ease-in-out;
+  }
+  
+  .twitter .border:hover {
+    background: #00aced;
+    border-color: #72c6e6;
+    color: rgba(255,255,255, 0.9);
+    transform: scale(1.2);
+  }
+  
+  .fa.fa-twitter {
+    font-size: 25px;
+  }
+  
+  /** Instagram **/
+  
+  .instagram {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .instagram .border {
+    background: transparent;
+    outline: none;
+    color:rgba(255,255,255, 0.9);
+    width: 50px;
+    height: 50px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    border: 2px solid rgba(255,255,255, 0.5);
+    transition: all .2s ease-in-out;
+  }
+  
+  .instagram .border:hover {
+    background: #517fa4;
+    border-color: #7495af;
+    color: rgba(255,255,255, 0.9);
+    transform: scale(1.2);
+  }
+  
+  .fa.fa-instagram {
+    font-size: 25px;
+  }
+  #social ul li {
+    transition: ease .3s;
+  }
+  
+  #social ul:hover > li {
+    opacity: 0.5;
+  }
+  
+  #social ul:hover > li:hover {
+    opacity: 1;
+  }
+
 /*----------clearflix: force an element not to collapse -----------*/
 .clearfix:after {
     content: "";
