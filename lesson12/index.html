@@ -19,23 +19,24 @@
 </head>
 <body>
     <header>
-        <div class="header">
+        <section class="header">
             <img class="logo" src="images/chamberlogo.png" alt="logo"> 
             <h1>Marshfield</h1>
             <h2>Chamber of Commerce</h2>
             <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
-        </div>
+        </section>
     </header>
-    
-    <nav class="clearfix">
-        <ul id="hamNav" class="hide">
-            <li><a id="active" href="index.html">Home</a></li>
-            <li><a href="marshfield.html">Marshfield</a></li>
-            <li><a href="join.html">Join Us</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="directory.html">Directory</a></li>
-        </ul>
-    </nav>
+    <div class="container blue circleBehind">
+        <nav class="clearfix">
+            <ul id="hamNav" class="hide">
+                <li><a id="active" href="index.html">Home</a></li>
+                <li><a href="marshfield.html">Marshfield</a></li>
+                <li><a href="join.html">Join Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="directory.html">Directory</a></li>
+            </ul>
+        </nav>
+    </div>
     <main>
         <div id="alert"></div>
         <div class="hero-content">
@@ -73,7 +74,7 @@
                 </a>
             </div>
         </section>
-        <div class="all">
+        <section class="all">
             <div class="two">
                 <div class="purpose">
                     <div class="joinbutton">
@@ -104,10 +105,10 @@
                 <h2 class="threeday">Three Day Forecast</h2>
                 <div id="forecastDays"></div>
             </section>
-        </div>
+        </section>
     </main>
     <footer>
-        <div class="foot">
+        <section class="foot">
             <div class="contacthome">
                 <h2>Contact Info:</h2>
                 <p><strong>Address:  </strong>PO Box 001 Marshfield, ID 54449</p>       
@@ -131,7 +132,7 @@
                     </ul>
                 </div>
             </div>
-        </div>
+        </section>
     </footer>
     
 </body>

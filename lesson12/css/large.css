@@ -7,6 +7,17 @@
     }
     .header{
         max-width: 64rem;
+        margin: auto;
+        display: grid;
+    }
+    .header h1 {
+        margin-left: 16rem;
+        grid-column: 1;
+    }
+    .header h2 {
+        margin-left: 16rem;
+        grid-column: 1;
+
     }
     main {
         max-width: 64rem;
@@ -37,18 +48,23 @@
         display: grid;
         grid-template: 1fr 1fr 1fr;
         grid-gap: .25rem;
-        margin: .5rem;
+        margin: 0;
+        margin-left: .5rem;
     }
     .purpose {
         margin-left: -.5rem;
     }
+    .purpose h2 {
+        margin: auto;
+        text-align: left;
+    }
     .forecast {
         grid-column: 3;
         height: 370px;
+        margin-top: 1rem;
     }
     .forecast div {
         grid-template-columns: 1fr;
-        margin: .5rem;
     }
     .forecast div div {
         width: 120px;
@@ -57,6 +73,7 @@
     }
     .forecast h2 {
         margin: .5rem;
+        padding-left: .5rem;
     }
     .forecast h3 {
         margin-bottom: -.5rem;
@@ -64,11 +81,13 @@
     .forecast p {
         margin-bottom: -.5rem;
     }
-    .foot {
-        display: grid;
-        text-align: center;
+    .foot{
+        max-width: 64rem;
+        text-align: left;
+        justify-content: center;
+        margin: auto;
     }
     .contacthome {
-        margin: 0;
+        margin: 1rem;
     }
 }
