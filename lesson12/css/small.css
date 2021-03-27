@@ -95,6 +95,7 @@ nav ul li a:hover {
     position: relative;
     display: flex; 
     justify-content: center;
+    overflow: hidden;
 }
 /*-----weather summary---------*/
 .weathersummary {
