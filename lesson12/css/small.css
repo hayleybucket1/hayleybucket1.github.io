@@ -1,5 +1,7 @@
 
-/*header*/
+body {
+    background-color: #f5f5f5;
+}/*header*/
 header{
     background-color: #002d52;
     margin: 0;
@@ -75,7 +77,7 @@ nav ul li a {
     display: block;
     padding: .4rem 2%;
     text-decoration: none;
-    color: #002d52;
+    color: #f5f5f5;
     border: 1px ridge #f5f5f5;
 }
 #active {

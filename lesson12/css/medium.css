@@ -38,18 +38,19 @@
         font-size: 18px;
         text-align: center;
         border: none;
-        outline: 1px solid #002d52;;
+        outline: 1px solid #f5f5f5;
         outline-offset: -5px;
-        background-color: #f5f5f5;
+        background-color: #56aeb3;
     }  
     #active {
-        background-color: #56aeb3;
+        background-color: #002d52;
         color: #f5f5f5;
+        outline: 1px solid #f5f5f5;
     }
     nav ul li a:hover {
         background-color: #ffc885;
-        color: #f5f5f5;
-        outline: 1px solid #f5f5f5;
+        color: #002d52;
+        outline: 1px solid #002d52;
         outline-offset: -8px;
     }
     .weathersummary {

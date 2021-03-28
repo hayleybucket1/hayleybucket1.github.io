@@ -3,10 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="final project website for WDD 230: Web Frontend Developement. BYU-Idaho Online">
+    <meta name="author" content="Hayley Buck">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Directory</title>
+    <!-- STYLE SHEETS -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/small.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico">
 </head>
 <body>
+    <header>
+        <section class="header">
+            <img class="logo" src="images/chamberlogo.png" alt="logo"> 
+            <h1>Marshfield</h1>
+            <h2>Chamber of Commerce</h2>
+            <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+        </section>
+    </header>
+    <main>
     
+        <nav class="clearfix">
+            <ul id="hamNav" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="marshfield.html">Marshfield</a></li>
+                <li><a href="join.html">Join Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a id="active" href="directory.html">Directory</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero-content">
+            <picture class="hero">
+            <source media="(max-width: 500px)" srcset="images/marshnight500.jpg">
+            <source media="(max-width: 800px)" srcset="images/marshnight800.jpg">
+            <img src="images/marshnight1100.jpg" alt="Central at Night" loading="lazy" alt="https://web.archive.org/web/20161024150231/http://www.panoramio.com/photo/80069165" alt="author = Corey Coyle">
+            </picture>
+            <section class="weathersummary">
+                <h2>Weather Summary</h2>
+                <div class="sumdata">
+                    <p>Current Temp: </p>
+                    <p><span id="temp"></span>&deg;F</p>
+                    <p>Conditions: </p>
+                    <p><span id="current"></span></p>
+                    <p>Humidity: </p>
+                    <p><span id="humidity"></span>%</p>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <section class="foot">
+            <div class="contacthome">
+                <h2>Contact Info:</h2>
+                <p><strong>Address:  </strong>PO Box 001 Marshfield, ID 54449</p>       
+                <p><strong>Phone:  </strong>715-123-4567</p>
+                <p><strong>Email: </strong>marshfield@email.com</p>
+            </div>
+            <div class="center"></div>
+                <div id="social">
+                    <ul>
+                        <li class="facebook">
+                        <button class="border"><i class="fa fa-facebook"></i></button>
+                        </li>
+            
+                        <li class="twitter">
+                        <button class="border"><i class="fa fa-twitter"></i></button>
+                        </li>
+            
+                        <li class="instagram">
+                        <button class="border"><i class="fa fa-instagram"></i></button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </footer>
 </body>
+<script src="js/script.js"></script>
+<script src="js/current.js"></script>
 </html>
