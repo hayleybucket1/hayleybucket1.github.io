@@ -28,10 +28,10 @@
     footer div {
         max-width: 64rem;
     }
-    .local {
+    .localhome {
         grid-template-columns: 1fr 1fr 1fr;
     }
-    .local h2 {
+    .localhome h2 {
         grid-column: 1/4;
     }
     .local1 {

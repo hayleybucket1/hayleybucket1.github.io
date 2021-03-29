@@ -121,14 +121,14 @@ nav ul li a:hover {
     margin: 4px;
 }
 /*--------featured---------*/
-.local {
+.localhome {
     display: grid;
     grid-template-columns: 1fr;
     margin: .5rem;
     border: 3px solid #56aeb3;
     border-radius: 2px;
 }
-.local h2 {
+.localhome h2 {
     margin: .5rem auto;
 }
 .local1 {
@@ -386,7 +386,12 @@ footer {
   #social ul:hover > li:hover {
     opacity: 1;
   }
+/*---------contact us page--------------*/
+iframe {
+    display: block;
+    margin: 1rem auto;
 
+}
 /*----------clearflix: force an element not to collapse -----------*/
 .clearfix:after {
     content: "";
