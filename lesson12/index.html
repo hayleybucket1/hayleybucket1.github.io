@@ -3,10 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="final project website for WDD 230: Web Frontend Developement. BYU-Idaho Online">
+    <meta name="author" content="Hayley Buck">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- STYLE SHEETS -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/small.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico">
     <title>Home Page</title>
 </head>
 <body>
+    <header>
+        <section class="header">
+            <img class="logo" src="images/chamberlogo.png" alt="logo">
+            <h1>Marshfield</h1>
+            <h2>Chamber of Commerce</h2>
+            <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+        </section>
+    </header>
+        <nav class="clearfix">
+            <ul id="hamNav" class="hide">
+                <li><a id="active" href="index.html">Home</a></li>
+                <li><a href="marshfield.html">Marshfield</a></li>
+                <li><a href="join.html">Join Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="directory.html">Directory</a></li>
+            </ul>
+        </nav>
+    <main>
+        <div id="alert"></div>
+        <div class="hero-content">
+            <picture class="hero">
+            <source media="(max-width: 500px)" srcset="images/roundbarn500.jpg">
+            <source media="(max-width: 800px)" srcset="images/roundbarn800.jpg">
+            <img src="images/roundbarn1100.jpg" alt="Largest Round Barn" loading="lazy" alt="https://web.archive.org/web/20161024150231/http://www.panoramio.com/photo/80069165">
+            </picture>
+            <section class="weathersummary">
+            <h2>Weather Summary</h2>
+            <div class="sumdata">
+                <p>Current Temp: </p>
+                <p><span id="temp"></span>&deg;F</p>
+                <p>Conditions: </p>
+                <p><span id="current"></span></p>
+                <p>Humidity: </p>
+                <p><span id="humidity"></span>%</p>
+            </div>
+            </section>
+        </div>
+        <section class="local">
+            <h2>--- Featured Businesses ---</h2>
+            <div class="local1">
+                <a href="https://www.marshfieldchiropractic.com/">
+                    <img src="https://static.wixstatic.com/media/460708_2398f2ffb8ac4902a1624304b32dc7d9~mv2.jpg/v1/fill/w_201,h_87,al_c,q_80,usm_0.66_1.00_0.01/Color%20Logo%20CHANGE1_edited.webp" alt="advanced logo"></a> 
+            </div>
+            <div class="local2">
+                <a href="http://www.autorepairmarshfield.com/business/Forst-Auto-Repair-LLC">
+                    <img src="http://www.autorepairmarshfield.com/public/admin_images/forst-auto-repair-marshfield.png">
+                </a>
+            </div>
+            <div class="local3">
+                <a href="https://www.jurustic.com/">
+                    <img src="https://www.jurustic.com/menuimages/logo.gif">
+                </a>
+            </div>
+        </section>
+        <section class="all">
+            <div class="two">
+                <div class="purpose">
+                    <div class="joinbutton">
+                    <a href="join.html" class="button2 bouncy">Join Now!</a>
+                    </div>
+                    <h2>About us!</h2>
+                    <p>Here at Marshfield Chamber of Commerce we're committed to help our local businesses grow and flourish. We want to help you with getting the word out about your business through advertising, featuring your business, and providing information to visitors and the community.</p>
+                </div>
+                <section class="soon">
+                    <div class="upcoming">
+                        <h2>Upcoming Events</h2>
+                        <h3>March 27th</h3>
+                        <p>Kiwanis Egg Hunt</p>
+                        <h3>March 27th</h3>
+                        <p>Be the Bunny Enrichment Eggs-travaganze @10:30AM</p>
+                        <h3>April 3rd</h3>
+                        <p>Stock Car Show</p>
+                        <h3>April 10th and 11th</h3>
+                        <p>Schalow's Garden Center Spring Fling</p>
+                        <h3>April 17th</h3>
+                        <p>Spring Craft & Vender Show</p>
+                    </div>
+                </section>
+            </div>
+        
+    
+            <section class="forecast">
+                <h2 class="threeday">Three Day Forecast</h2>
+                <div id="forecastDays"></div>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <section class="foot">
+            <div class="contacthome">
+                <h2>Contact Info:</h2>
+                <p><strong>Address:  </strong>PO Box 001 Marshfield, ID 54449</p>       
+                <p><strong>Phone:  </strong>715-123-4567</p>
+                <p><strong>Email: </strong>marshfield@email.com</p>
+            </div>
+            <div class="center"></div>
+                <div id="social">
+                    <ul>
+                        <li class="facebook">
+                        <button class="border"><i class="fa fa-facebook"></i></button>
+                        </li>
+                
+                        <li class="twitter">
+                        <button class="border"><i class="fa fa-twitter"></i></button>
+                        </li>
+                
+                        <li class="instagram">
+                        <button class="border"><i class="fa fa-instagram"></i></button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </footer>
     
 </body>
+<script src="js/script.js"></script>
+<script src="js/current.js"></script>
 </html>
