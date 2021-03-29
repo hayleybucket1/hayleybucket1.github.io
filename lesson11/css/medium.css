@@ -120,8 +120,11 @@
     .gallery {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        margin: 0;
         grid-gap: 1rem;
-        margin: 1rem;
+    }
+    .gallery figure {
+        margin: 5px;
     }
     /*-----storm center------*/
 
