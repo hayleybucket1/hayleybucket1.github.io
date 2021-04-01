@@ -1,60 +1,67 @@
-{
-    "local": [
-        {
-            "order": 1,
-            "name": "Marshfield Medical Center",
-            "address": "611 N Saint Joseph Ave",
-            "phone": "715-387-5240",
-            "link": "https://www.marshfieldclinic.org/"
-        },
-        {
-            "order": 2,
-            "name": "Roehl Transport Inc.",
-            "address": "1916 E. 29th Street",
-            "phone": "715-591-3795",
-            "link": "https://www.roehl.jobs/"
-        },
-        {
-            "order": 3,
-            "name": "Advanced Chiropractic and Laser Center Marshfield",
-            "address": "1027 W McMillan St",
-            "phone": "715-898-1040",
-            "link": "https://www.marshfieldchiropractic.com/"
-        },
-        {
-            "order": 4,
-            "name": "Badger State Web Services",
-            "address": "217 S Central Ave",
-            "phone": "715-391-9181",
-            "link": "http://badgerstateweb.com/"
-        },
-        {
-            "order": 5,
-            "name": "Chestnut Center for the Arts",
-            "address": "208 S Chestnut Ave",
-            "phone": "715-389-8999",
-            "link": "http://chestnutarts.org/"
-        },
-        {
-            "order": 6,
-            "name": "Elizabeth Olson Photography",
-            "address": "906 W 5th Street",
-            "phone": "715-897-5124",
-            "link": "https://elizabetholsonphotography.smugmug.com/"
-        },
-        {
-            "order": 7,
-            "name": "Forst Auto Repair",
-            "address": "1806 E 4th Street",
-            "phone": "715-384-7500",
-            "link": "http://www.autorepairmarshfield.com/"
-        },
-        {
-            "order": 8,
-            "name": "Jurustic Park",
-            "address": "112021 Old Sugar Bush Ln",
-            "phone": "715-387-1653",
-            "link": "https://www.jurustic.com/"
-        }
-    ]
+{ 
+    "local": [ 
+    {   
+        "order": 0,
+        "name": "Marshfield Medical Center",
+        "address": "611 N Saint Joseph Ave",
+        "phone": "715-387-5240",
+        "link": "https://www.marshfieldclinic.org/",
+        "imageurl": "https://medbridgeuploads.s3.amazonaws.com/Brand/23322/logo_filename_15357536965b89bde06fbd1."
+    },
+    {
+        "order": 1,
+        "name": "Roehl Transport Inc.",
+        "address": "1916 E. 29th Street",
+        "phone": "715-591-3795",
+        "link": "https://www.roehl.jobs/",
+        "imageurl": "https://www.roehl.jobs/roehljobs/media/sitecontent/email-graphics/driver-pay-increase-600x600.jpg"
+    },
+    {
+        "order": 2,
+        "name": "Advanced Chiropractic and Laser Center Marshfield",
+        "address": "1027 W McMillan St",
+        "phone": "715-898-1040",
+        "link": "https://www.marshfieldchiropractic.com/",
+        "imageurl": "https://static.wixstatic.com/media/460708_2398f2ffb8ac4902a1624304b32dc7d9~mv2.jpg/v1/fill/w_201,h_87,al_c,q_80,usm_0.66_1.00_0.01/Color%20Logo%20CHANGE1_edited.webp"
+    },
+    {
+        "order": 3,
+        "name": "Badger State Web Services",
+        "address": "217 S Central Ave",
+        "phone": "715-391-9181",
+        "link": "http://badgerstateweb.com/",
+        "imageurl": "http://badgerstateweb.com/wp-content/uploads/2015/03/badger-state-web-services-seo-web-design-wisconsin-54449.png"
+    },
+    {
+        "order": 4,
+        "name": "Chestnut Center for the Arts",
+        "address": "208 S Chestnut Ave",
+        "phone": "715-389-8999",
+        "link": "http://chestnutarts.org/",
+        "imageurl": "http://chestnutarts.org/wp-content/uploads/2019/12/ScreenShot2019-12-09at9.05.34AM.png"
+    },
+    {
+        "order": 5,
+        "name": "Elizabeth Olson Photography",
+        "address": "906 W 5th Street",
+        "phone": "715-897-5124",
+        "link": "https://elizabetholsonphotography.smugmug.com/",
+        "imageurl": "https://scontent-ort2-1.xx.fbcdn.net/v/t1.6435-1/p960x960/31277590_2225109944379143_2971323976703279104_n.jpg?_nc_cat=105&ccb=1-3&_nc_sid=dbb9e7&_nc_ohc=ExuQ-am6F1gAX-_K2kk&_nc_ht=scontent-ort2-1.xx&tp=6&oh=0ecbd3fa046ea8190b05474f86157d9c&oe=608B22C7"  
+    },
+    {
+        "order": 6,
+        "name": "Forst Auto Repair",
+        "address": "1806 E 4th Street",
+        "phone": "715-384-7500",
+        "link": "http://www.autorepairmarshfield.com/",
+        "imageurl": "http://www.autorepairmarshfield.com/public/admin_images/forst-auto-repair-marshfield.png"
+    },
+    {
+        "order": 7,
+        "name": "Jurustic Park",
+        "address": "112021 Old Sugar Bush Ln",
+        "phone": "715-387-1653",
+        "link": "https://www.jurustic.com/",
+        "imageurl": "https://www.jurustic.com/menuimages/logo.gif"
+    }]
 }

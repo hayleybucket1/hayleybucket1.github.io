@@ -57,7 +57,11 @@
                 </div>
             </section>
         </div>
-        <div class="local"></div>
+        <h2 class="busy">Business Directory</h2>
+        <button id="sList" onclick = 'document.getElementById("cards1").classList.remove("grid")'>&#8863;</button>
+        <button id="sGrid">&#8862;</button>
+        <br><br>
+        <div class="cards" id="cards1"></div>
     </main>
     <footer>
         <section class="foot">
@@ -86,7 +90,10 @@
             </div>
         </section>
     </footer>
-</body>
+
 <script src="js/script.js"></script>
+<script type="text/javascript" src="local.json"></script>
+<script src="js/fetch.js"></script>
 <script src="js/current.js"></script>
+</body>
 </html>
