@@ -60,6 +60,92 @@
             </div>
             </section>
         </div>
+
+        <div class="keybox">
+            <h2>Membership Levels: </h2>
+            <h3>Non-Profit: </h3>
+                <ul class="non-profit">
+                    <li>Directory Listings</li>
+                </ul>
+            <h3>Bronze: </h3>
+                <ul class="bronze">
+                    <li>Directory Listings</li>
+                    <li>Business Trainings</li>
+                </ul>
+            <h3>Silver: </h3>
+                <ul class="silver">
+                    <li>Directory Listings</li>
+                    <li>Business Trainings</li>
+                    <li>Social Media Posts</li>
+                    <li>Luncheon Tickets</li>
+                </ul>
+            <h3>Gold: </h3>
+                <ul class="gold">
+                    <li>Directory Listings</li>
+                    <li>Business Trainings</li>
+                    <li>Social Media Posts</li>
+                    <li>Luncheon Tickets</li>
+                    <li>Sponsorships with Advertising</li>
+                    <li>... and more!!!</li>
+                </ul>
+        </div>
+        <button class="join" onclick="document.getElementById('join').style.display='block'">Join Now</button>
+        <div id="join" class="modal">
+            <span onclick="document.getElementById('join').style.display='none'" class="close" title="close modal"></span>
+            <form class="modal-content" action="/action_page.php">
+                <div class="container-join">
+                    <h1>Sign Up</h1>
+                    <p>Please fill out this form to create an account with us.</p>
+                    <hr>
+                    <label for="name"><b>First Name</b></label>
+                    <input type="text" placeholder="First Name" name="name" required>
+                    <label for="lastname"><b>Last Name</b></label>
+                    <input type="text" placeholder="Last Name" name="lastname" required>
+                    <label for="title"><b>Title</b></label>
+                    <input type="text" name="title">
+                    <label for="phone"><b>Cell Phone</b></label>
+                    <input type="number" placeholder="123-456-7890" name="phone" required>
+                    <label for="businessname"><b>Business Name</b></label>
+                    <input type="text" placeholder="Business Name" name="businessname" required>
+                    <label for="address"><b>Business Address</b></label>
+                    <input type="text" placeholder="Business Address" name="address">
+                    <label for="website"><b>Business Website</b></label>
+                    <input type="text" placeholder="Business Website" name="website">
+                    <label for="description"><b>Business Description</b></label>
+                    <input type="text" placeholder="Business Description" name="description">
+                    <p><b>Membership Level:</b></p>
+                    <input type="radio" id="non-profit" name="level" value="non-profit">
+                    <label for="membership">Non-Profit - $100</label><br>
+                    <input type="radio" id="bronze" name="level" value="bronze">
+                    <label for="membership">Bronze - $200</label><br>
+                    <input type="radio" id="silver" name="level" value="silver">
+                    <label for="membership">Silver - $400</label> <br>
+                    <input type="radio" id="gold" name="level" value="gold">
+                    <label for="membership">Gold - $1000</label><br>               
+
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="text" placeholder="Enter Password" name="psw" required>
+
+                    <label for="psw-repeat"><b>Repeat Password</b></label>
+                    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me 
+                    </label>
+
+                    <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+                    <div class="clearfix">
+                        <button type="button" onclick="document.getElementById('join').style.display='none'" class="cancelbtn">Cancel</button>
+                        <button type="submit" class="signupbtn">Join Now!</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
     </main>
     <footer>
         <section class="foot">
