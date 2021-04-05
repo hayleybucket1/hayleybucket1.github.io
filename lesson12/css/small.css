@@ -487,10 +487,10 @@ textarea {
 textarea:focus, input:focus {
     border-color: transparent;
 }
-input::input-placeholder {
+input::placeholder {
     color: #bdbdd3;
 }
-textarea::input-placeholder {
+textarea::placeholder {
     color: #bdbdd3;
 }
 button {
@@ -575,7 +575,6 @@ textarea.input101 {
     transform: translateX(-50%);
     border-radius: 31px;
     background-color: #fff;
-    pointer-events: none;
     transition: all 0.4s;
 }
 .input101:focus + .focus-input101 {
@@ -618,7 +617,6 @@ textarea.input101 {
     transform: translateX(-50%);
     border-radius: 31px;
     background-color: #ffc885;
-    pointer-events: none;
 
     transition: all 0.4s;
 }
@@ -641,7 +639,6 @@ textarea.input101 {
     top: 50%;
     transform: translateY(-50%);
     right: 10px;
-    pointer-events: none;
     
     color: #c80000;
     font-size: 13px;
