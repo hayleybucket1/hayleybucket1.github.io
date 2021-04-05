@@ -542,7 +542,7 @@ iframe {
     margin: 1rem 0;
     margin-bottom: 14px;
     position: relative;
-    z-index: 1;
+    z-index: 0;
 }
 .input101 {
     position: relative;
@@ -664,7 +664,24 @@ textarea.input101 {
     visibility: visible;
     opacity: 1.5;
 }
-
+.board {
+    text-align: center;
+    background-color: #002d52;
+    color: #f5f5f5;
+    margin: 1rem .5rem;
+    padding-top: 1rem;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+}
+.board h2{
+    padding-bottom: 1rem;   
+}
+.board ul li {
+    background-color: #56aeb3;
+    padding: .5rem;
+    border-radius: 0 0 3px 3px;
+}
 /*-------Join Us---------*/
 /*--------membership levels-------*/
 .keybox {
@@ -778,8 +795,38 @@ hr {
         width: 100%;
     }
 }
+/*----------------marshfield----------*/
+.marshhome {
+    margin: .5rem;
+    margin-bottom: 2rem;
+}
+.marshmedical img {
+    display: block;
+    float: left;
+    margin-right: .5rem;
+    margin-left: -1rem;
+}
+figcaption {
+    font-size: 12px;
+}
+.marshhome h2 {
+    padding: 1rem 0;
+}
+.roddis img {
+    display: block;
+    float: right;
+    margin-left: .5rem;
+}
+.demographics {
+    display: block;
+}
+.marshpop img {
+    display: block;
+    float: right;
+    margin-top: 2rem;
+    margin-left: .5rem;
 
-
+}
 /*----------clearflix: force an element not to collapse -----------*/
 .clearfix:after {
     content: "";
