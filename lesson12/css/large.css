@@ -46,7 +46,6 @@
     }
     .all {
         display: grid;
-        grid-template: 1fr 1fr;
         grid-gap: .25rem;
         margin: 0;
         margin-left: .5rem;
