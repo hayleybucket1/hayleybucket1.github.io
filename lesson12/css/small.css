@@ -58,7 +58,7 @@ h1 {
 }
 h2 {
     font-family: 'Playfair Display SC', serif;
-    font-size: 20px;
+    font-size: 25px;
 }
 p {
     font-family: 'Roboto', sans-serif;
@@ -528,6 +528,8 @@ iframe {
 }
 .contact101-form-title {
     display: block;
+    font-family: 'Playfair Display SC', serif;
+    font-weight: bold;  
     font-size: 30px;
     color: #002d52;
     line-height: 1.2;
@@ -803,7 +805,7 @@ hr {
 .marshmedical img {
     display: block;
     float: left;
-    margin-right: .5rem;
+    margin-right: 1rem;
     margin-left: -1rem;
 }
 figcaption {
