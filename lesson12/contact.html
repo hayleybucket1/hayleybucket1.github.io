@@ -14,7 +14,6 @@
     <link href="css/large.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico">
 </head>
 <body>
@@ -42,7 +41,7 @@
             <picture class="hero">
             <source media="(max-width: 500px)" srcset="images/marshcentral500.jpg">
             <source media="(max-width: 800px)" srcset="images/marshcentral800.jpg">
-            <img src="images/marshcentral1100.jpg" alt="Central Ave" loading="lazy" alt="By Jeff the quiet - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=12073662">
+            <img src="images/marshcentral1100.jpg" alt="Central Ave" loading="lazy">
             </picture>
             <section class="weathersummary">
             <h2>Weather Summary</h2>
@@ -63,25 +62,29 @@
                         Send Us A Message
                     </span>
                     <div class="wrap-input validate-input" data-validate="Please enter your name">
-                        <input class="input101" type="text" name="name" placeholder="Full Name">
+                        <label for="name"></label>
+                        <input class="input101" id="name" type="text" name="name" placeholder="Full Name">
                         <span class="focus-input101"></span>
                     </div>
                     <div class="wrap-input101 validate-input" data-validate = "Please enter your email: e@a.x">
-                        <input class="input101" type="text" name="email" placeholder="Email">
+                        <label for="email"></label>
+                        <input class="input101" type="text" name="email" id="email" placeholder="Email">
                         <span class="focus-input101"></span>
                     </div>
                     <div class="wrap-input100 validate-input" data-validate="Please enter your phone number"> 
-                        <input class="input101" type="text" name="phone" placeholder="Phone">
+                        <label for="phone"></label>
+                        <input class="input101" id="phone" type="text" name="phone" placeholder="Phone">
                         <span class="focus-input101"></span>
                     </div>
                     <div class="wrap-input101 validate-input" data-validate="Please enter your message">
-                        <textarea class="input101" name="message" placeholder="Your Message"></textarea>
+                        <label for="message"></label>
+                        <textarea class="input101" name="message" id="message" placeholder="Your Message"></textarea>
                         <span class="focus-input101"></span>
                     </div>
                     <div class="container-contact101-form-btn">
                         <button class="contact101-form-btn">
                             <span>
-                                <i class="fa fa-paper-plane-o m-r-6" aria-hiden="true"></i>
+                                <i class="fa fa-paper-plane-o m-r-6"></i>
                                 Send
                             </span>
                         </button>
@@ -165,13 +168,10 @@
                         </li>
                     </ul>
                 </div>
-            </div>
         </section>
     </footer>
-</body>
+
     <script src="js/script.js"></script>
     <script src="js/current.js"></script>
-</html>
-    
 </body>
 </html>
