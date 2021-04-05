@@ -8,18 +8,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Join Here
     </title>
-</head>
-<body>
     <!-- STYLE SHEETS -->
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/small.css" rel="stylesheet">
     <link href="css/medium.css" rel="stylesheet">
     <link href="css/large.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="shortcut icon" href="favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Roboto&display=swap" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="shortcut icon" href="favicon.ico">
-</head>
+</head>    
 <body>
     <header>
         <section class="header">
@@ -45,7 +43,7 @@
             <picture class="hero">
             <source media="(max-width: 500px)" srcset="images/marshjoin500.jpg">
             <source media="(max-width: 800px)" srcset="images/marshjoin800.jpg">
-            <img src="images/marshjoin1100.jpg" alt="Ariel View" loading="lazy" alt="https://unsplash.com/@alexvassios">
+            <img src="images/marshjoin1100.jpg" alt="Ariel View" loading="lazy">
   
             </picture>
             <section class="weathersummary">
@@ -98,21 +96,21 @@
                     <p>Please fill out this form to create an account with us.</p>
                     <hr>
                     <label for="name"><b>First Name</b></label>
-                    <input type="text" placeholder="First Name" name="name" required>
+                    <input type="text" id="name" placeholder="First Name" name="name" required>
                     <label for="lastname"><b>Last Name</b></label>
-                    <input type="text" placeholder="Last Name" name="lastname" required>
+                    <input type="text" id="lastname" placeholder="Last Name" name="lastname" required>
                     <label for="title"><b>Title</b></label>
-                    <input type="text" name="title">
+                    <input type="text" id="title" name="title">
                     <label for="phone"><b>Cell Phone</b></label>
                     <input type="number" placeholder="123-456-7890" name="phone" required>
                     <label for="businessname"><b>Business Name</b></label>
-                    <input type="text" placeholder="Business Name" name="businessname" required>
+                    <input type="text" id="businessname" placeholder="Business Name" name="businessname" required>
                     <label for="address"><b>Business Address</b></label>
-                    <input type="text" placeholder="Business Address" name="address">
+                    <input type="text" id="address" placeholder="Business Address" name="address">
                     <label for="website"><b>Business Website</b></label>
-                    <input type="text" placeholder="Business Website" name="website">
+                    <input type="text" id="website" placeholder="Business Website" name="website">
                     <label for="description"><b>Business Description</b></label>
-                    <input type="text" placeholder="Business Description" name="description">
+                    <input type="text" id="description" placeholder="Business Description" name="description">
                     <p><b>Membership Level:</b></p>
                     <input type="radio" id="non-profit" name="level" value="non-profit">
                     <label for="membership">Non-Profit - $100</label><br>
@@ -124,16 +122,16 @@
                     <label for="membership">Gold - $1000</label><br>               
 
                     <label for="email"><b>Email</b></label>
-                    <input type="text" placeholder="Enter Email" name="email" required>
+                    <input type="text" id="email" placeholder="Enter Email" name="email" required>
 
                     <label for="psw"><b>Password</b></label>
-                    <input type="text" placeholder="Enter Password" name="psw" required>
+                    <input type="text" id="psw" placeholder="Enter Password" name="psw" required>
 
                     <label for="psw-repeat"><b>Repeat Password</b></label>
-                    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                    <input type="password" id="psw-repeat " placeholder="Repeat Password" name="psw-repeat" required>
 
                     <label>
-                        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me 
+                        <input type="checkbox" checked="checked" id="checkbox" name="remember" style="margin-bottom:15px"> Remember me 
                     </label>
 
                     <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
@@ -171,10 +169,9 @@
                         </li>
                     </ul>
                 </div>
-            </div>
         </section>
     </footer>
-</body>
     <script src="js/script.js"></script>
     <script src="js/current.js"></script>
+</body>
 </html>
