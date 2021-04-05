@@ -264,126 +264,22 @@ footer {
     margin: 1rem 1rem 0.5rem 1rem;
 }
 /*---------------social buttons---------*/
-.center {
-    display: table;
-    width: 100%;
-  }
-  
-  #social {
-    display: table-cell;
-    vertical-align: middle;
-  }
-  
-  #social ul {
-    text-align: center;
-    padding-left: 0px;
-    margin: 0 auto;
-  }
-  
-  #social li {
-    display: inline-block;
-    list-style-type: none;
-    margin: 0 35px 15px 50px; 
-  }
-  
-  /** Facebook **/
-  
-  .facebook {
-    width: 50px;
-    height: 50px;
-  }
-  
-  .facebook .border {
-    background: transparent;
-    outline: none;
-    color:rgba(255,255,255, 0.9);
-    width: 50px;
-    height: 50px;
-    border-radius: 100px;
-    border: 2px solid rgba(255,255,255, 0.5);
-    transition: all .2s ease-in-out;
-  }
-  
-  .facebook .border:hover {
-    background: #3b5998;
-    border-color: #436aaf;
-    color: rgba(255,255,255, 0.9);
-    transform: scale(1.2);
-  }
-  
-  .fa.fa-facebook {
-    font-size: 25px;
-  }
-  
-  /** Twitter **/
-  
-  .twitter {
-    width: 50px;
-    height: 50px;
-  }
-  
-  .twitter .border {
-    background: transparent;
-    outline: none;
-    color:rgba(255,255,255, 0.9);
-    width: 50px;
-    height: 50px;
-    border-radius: 100px;
-    border: 2px solid rgba(255,255,255, 0.5);
-    transition: all .2s ease-in-out;
-  }
-  
-  .twitter .border:hover {
-    background: #00aced;
-    border-color: #72c6e6;
-    color: rgba(255,255,255, 0.9);
-    transform: scale(1.2);
-  }
-  
-  .fa.fa-twitter {
-    font-size: 25px;
-  }
-  
-  /** Instagram **/
-  
-  .instagram {
-    width: 50px;
-    height: 50px;
-  }
-  
-  .instagram .border {
-    background: transparent;
-    outline: none;
-    color:rgba(255,255,255, 0.9);
-    width: 50px;
-    height: 50px;
-    border-radius: 100px;
-    border: 2px solid rgba(255,255,255, 0.5);
-    transition: all .2s ease-in-out;
-  }
-  
-  .instagram .border:hover {
-    background: #517fa4;
-    border-color: #7495af;
-    color: rgba(255,255,255, 0.9);
-    transform: scale(1.2);
-  }
-  
-  .fa.fa-instagram {
-    font-size: 25px;
-  }
-  #social ul li {
-    transition: ease .3s;
-  }
-  
-  #social ul:hover > li {
-    opacity: 0.5;
-  }
-  
-  #social ul:hover > li:hover {
-    opacity: 1;
-  }
-
+#socialiconsbox {
+    margin: 10px 0;
+    }
+    .socialicons {
+    color: #FFF;
+    font-size: 2.5rem;
+    margin-right: 1rem;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: -1px;
+    border-radius: 32px;
+    }
+    .facebook { background:#3B5998; padding: 5px 20px; }
+    .twitter { background:#00ACED; padding: 5px 20px; }
+    .googleplus { background:#D2412E; padding: 5px 8px; }
+    .linkedin { background:#4A9CC9; padding: 5px 12px; }
+    
 /*------Directory--------*/
 .busy {
     margin: 1rem;
