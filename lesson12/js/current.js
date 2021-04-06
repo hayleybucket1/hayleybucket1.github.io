@@ -47,9 +47,8 @@ fetch(apiURL)
             theDay.appendChild(dayName);
             theDay.appendChild(theTemp);
             theDay.appendChild(theIcon);
-            
-
-            document.getElementById("forecastDays").appendChild(theDay);
+                
+                document.getElementById("forecastDays").appendChild(theDay);
         }
         
     });
