@@ -277,7 +277,7 @@ footer {
     }
 
     .facebook { background:#3B5998; padding: 6px 24px;}
-    .twitter { background:#00ACED; padding: 6px 24px; }
+    .twitter { background:hsl(209, 100%, 46%); padding: 6px 24px; }
     .googleplus { background:#D2412E; padding: 6px 10px; }
     .linkedin { background:#4A9CC9; padding: 6px 16px; }
     .facebook:hover {
