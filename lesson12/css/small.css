@@ -394,10 +394,10 @@ textarea:focus, input:focus {
     border-color: transparent;
 }
 input::placeholder {
-    color: #bdbdd3;
+    color: #56aeb3;
 }
 textarea::placeholder {
-    color: #bdbdd3;
+    color: #56aeb3;
 }
 button {
     outline: none;
@@ -469,7 +469,7 @@ iframe {
     background: #fff;
     border-radius: 31px;
     font-size: 18px;
-    color: #8f8fa1;
+    color: #002d52;
     line-height: 1;
 }
 input.input101 {
@@ -558,6 +558,7 @@ textarea.input101 {
     background-color: #56aeb3;
     padding: .5rem;
     border-radius: 0 0 3px 3px;
+    color: #002d52;
 }
 /*-------Join Us---------*/
 /*--------membership levels-------*/
