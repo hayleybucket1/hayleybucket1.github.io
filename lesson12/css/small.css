@@ -556,9 +556,9 @@ textarea.input101 {
     left: 50%;
     transform: translateX(-50%);
     border-radius: 31px;
-    background-color: #3c9ba0;
+    background-color: #0b8b92;
     transition: all 0.4s;
-    border: 2px solid #002d52; 
+    border: 2px solid #0b8b92; 
 }
 .contact101-form-btn:hover:before {
     background-color: #403866;
