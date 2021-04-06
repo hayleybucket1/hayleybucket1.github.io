@@ -197,32 +197,34 @@ nav ul li a:hover {
     margin-bottom: -1.5rem;
 }
 a.button2{
-    display:inline-block;
-    padding:0.5em 3em;
-    border:0.16em solid #002d52;
-    margin:0 0.3em 0.3em 0;
+    display: inline-block;
+    padding: 0.5em 3em;
+    border: 0.16em solid #002d52;
+    border-radius: 10px;
+    margin: 0 0.3em 0.3em 0;
     box-sizing: border-box;
-    text-decoration:none;
-    text-transform:uppercase;
-    font-family:'Roboto',sans-serif;
-    font-weight:400;
-    color:#002d52;
-    text-align:center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 400;
+    color: #002d52;
+    text-align: center;
     transition: all 0.15s;
+    box-shadow: 5px 5px 9px 1px rgba(0.1, 0, 0.3, 0.5);
     
 }
 a.button2:hover{
-    color:#ffc885;
-    border-color:#ffc885;
+    color: #ffc885;
+    border-color: #ffc885;
 }
 a.button2:active{
-    color:#BBBBBB;
-    border-color:#BBBBBB;
+    color: #BBBBBB;
+    border-color: #BBBBBB;
 }
 @media all and (max-width:30em){
     a.button2{
-        display:block;
-        margin:0.4em auto;
+        display: block;
+        margin: 0.4em auto;
     }
 }
 .bouncy {
