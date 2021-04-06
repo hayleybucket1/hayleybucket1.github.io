@@ -708,6 +708,21 @@ figcaption {
     margin-left: .5rem;
 
 }
+/*---------thanks---------*/
+.confirm {
+    position: absolute;
+    color: #00171f;
+    top: 10rem;
+    right: 10rem;
+    background: radial-gradient(#ffffff, #e0d9d994);
+    border-radius: 5px;
+    border: 1px solid #00171f;
+    text-align: center;
+    padding: 3%;
+    margin: 0 1%;
+    line-height: 4rem;
+    box-shadow: 5px 5px 11px 1px #4b4a4ac4;
+}
 /*----------clearflix: force an element not to collapse -----------*/
 .clearfix:after {
     content: "";

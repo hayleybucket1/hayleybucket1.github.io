@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="final project website for WDD 230: Web Frontend Developement. BYU-Idaho Online">
+    <meta name="author" content="Hayley Buck">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- STYLE SHEETS -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/small.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>Home Page</title>
+</head>
+<body>
+    <header>
+        <section class="header">
+            <img class="logo" src="images/chamberlogo.png" alt="logo">
+            <h1>Marshfield</h1>
+            <h2>Chamber of Commerce</h2>
+            <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+        </section>
+    </header>
+        <nav class="clearfix">
+            <ul id="hamNav" class="hide">
+                <li><a id="active" href="index.html">Home</a></li>
+                <li><a href="marshfield.html">Marshfield</a></li>
+                <li><a href="join.html">Join Us</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    <main>
+        <div class="hero-content">
+            <picture class="hero">
+            <source media="(max-width: 500px)" srcset="images/marshzoo500.jpg">
+            <source media="(max-width: 800px)" srcset="images/marshzoo800.jpg">
+            <img src="images/marshzoo1100.jpg" alt="marshfield zoo" loading="lazy">
+            </picture>
+            <section class="confirm">
+                <h2>THANKS!</h2>
+                <div class="thanks">
+                <p>Thanks for joining the Marshfield Chamber of Commerce!</p>
+                <p>Please check your email for your confirmation information.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <section class="foot">
+            <div class="contacthome">
+                <h2>Contact Info:</h2>
+                <p><strong>Address:  </strong>PO Box 001 Marshfield, WI 54449</p>       
+                <p><strong>Phone:  </strong>715-123-4567</p>
+                <p><strong>Email: </strong>marshfield@email.com</p>
+            </div>
+            <div id="socialiconsbox">
+                <a class="facebook socialicons" href="https://www.facebook.com/abc" title="Facebook " target="_blank">f</a>
+                <a class="twitter socialicons" href="https://twitter.com/abc" title="Twitter " target="_blank">t</a>
+                <a class="googleplus socialicons" href="https://plus.google.com/abc" title="Google+" target="_blank">g+</a>
+                <a class="linkedin socialicons" href="https://linkedin.com/abc" title="Linkedin" target="_blank">in</a>
+                </div>
+        </section>
+    </footer>
+<script src="js/script.js"></script>
+<script src="js/current.js"></script>
+</body>
+</html>
