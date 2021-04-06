@@ -59,7 +59,7 @@
     }
     .forecast {
         grid-column: 3;
-        height: 370px;
+        height: 380px;
         margin-top: 1rem;
     }
     .forecast div {

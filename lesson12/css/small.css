@@ -105,7 +105,7 @@ nav ul li a:hover {
     position: absolute;
     bottom: 10px;
     right: 5px;
-    background: radial-gradient(#ffffff, #e0d9d994);
+    background: radial-gradient(#ffffff, #e0d9d9cc);
     border-radius: 5px;
     text-align: left;
     padding: 1%;
@@ -186,6 +186,7 @@ nav ul li a:hover {
     display: block;
     width: 120px;
     padding: .2rem;
+    box-shadow: 5px 5px 11px 1px rgba(0, 0, 0, 0.548);
 }
 /*-------join button------*/
 .joinbutton {
@@ -265,7 +266,10 @@ footer {
 }
 /*---------------social buttons---------*/
 #socialiconsbox {
+    display: block;
     margin: auto;
+    text-align: center;
+    padding-bottom: .5rem;
     }
     .socialicons {
     color: #FFF;
