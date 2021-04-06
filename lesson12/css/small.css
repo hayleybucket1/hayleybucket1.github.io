@@ -560,6 +560,9 @@ textarea.input101 {
     border-radius: 0 0 3px 3px;
     color: #002d52;
 }
+.board li {
+    font-size: 20px;
+}
 /*-------Join Us---------*/
 /*--------membership levels-------*/
 .keybox {
