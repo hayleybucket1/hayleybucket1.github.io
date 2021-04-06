@@ -765,9 +765,12 @@ figcaption {
     box-shadow: 5px 5px 11px 1px #4b4a4ac4;
 }
 /*----------sources---------*/
+
 .sources {
     display: block;
-    margin: auto;
+    margin: 1rem;
+    max-width: 64rem;
+    text-align: center;
 }
 /*----------clearflix: force an element not to collapse -----------*/
 .clearfix:after {
