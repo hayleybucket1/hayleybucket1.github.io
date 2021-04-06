@@ -265,21 +265,41 @@ footer {
 }
 /*---------------social buttons---------*/
 #socialiconsbox {
-    margin: 10px 0;
+    margin: auto;
     }
     .socialicons {
     color: #FFF;
     font-size: 2.5rem;
-    margin-right: 1rem;
+    margin-right: 2rem;
     font-family: 'Roboto', sans-serif;
     letter-spacing: -1px;
-    border-radius: 32px;
+    border-radius: 36px;
     }
-    .facebook { background:#3B5998; padding: 5px 20px; }
-    .twitter { background:#00ACED; padding: 5px 20px; }
-    .googleplus { background:#D2412E; padding: 5px 8px; }
-    .linkedin { background:#4A9CC9; padding: 5px 12px; }
-    
+
+    .facebook { background:#3B5998; padding: 6px 24px;}
+    .twitter { background:#00ACED; padding: 6px 24px; }
+    .googleplus { background:#D2412E; padding: 6px 10px; }
+    .linkedin { background:#4A9CC9; padding: 6px 16px; }
+    .facebook:hover {
+        color: #56aeb3;
+        border: #56aeb3 solid 2px;
+        background: #f5f5f5;
+    }
+    .twitter:hover {
+        color: #ffc885;
+        border: #ffc885 solid 2px;
+        background: #f5f5f5;
+    }
+    .googleplus:hover {
+        color: #56aeb3;
+        border: #56aeb3 solid 2px;
+        background: #f5f5f5;
+    }
+    .linkedin:hover {
+        color: #ffc885;
+        border: #ffc885 solid 2px;
+        background: #f5f5f5;
+    }
 /*------Directory--------*/
 .busy {
     margin: 1rem;
