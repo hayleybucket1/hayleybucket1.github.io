@@ -699,6 +699,9 @@ hr {
         width: 100%;
     }
 }
+.hamNavjoin li a{
+    color: #002d52;
+}
 /*----------------marshfield----------*/
 .marshhome {
     margin: .5rem;
