@@ -89,6 +89,28 @@
     .contacthome {
         margin: 1rem;
     }
+
+    .arrow {
+        position: absolute;
+        top: 18rem;
+        left: 0;
+    }
+    .joinhere {
+        position: absolute;
+        top: 8rem;
+        left: 3rem;
+    }
+    .joinarrow {
+        width: 280px;
+    }
     /*-----directory-------*/
+    /*---------contact-------*/
+    .awaits {
+        position: absolute;
+        top: -5rem;
+        left: 1rem;
+    }
+    .marshawaits {
+        width: 400px;
 
 }

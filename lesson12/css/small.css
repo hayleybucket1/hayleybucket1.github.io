@@ -376,6 +376,14 @@ footer {
     margin: 1rem .5rem;
 }
 /*-------contact us----------*/
+.awaits {
+    position: absolute;
+    top: -5rem;
+    left: 1rem;
+}
+.marshawaits {
+    width: 240px;
+}
 iframe {
     display: block;
     margin: 1rem auto;
@@ -588,6 +596,19 @@ textarea.input101 {
     font-size: 20px;
 }
 /*--------membership levels-------*/
+.arrow {
+    position: absolute;
+    top: 2rem;
+    left: 0;
+}
+.joinhere {
+    position: absolute;
+    top: -8rem;
+    left: 3rem;
+}
+.joinarrow {
+    width: 280px;
+}
 .keybox {
     border: 1px solid #002d52;
     margin: 1rem;
