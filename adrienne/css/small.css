@@ -15,18 +15,17 @@
 }
 .white {
     background-color: black;
-    color: #F9F7F1;
+    color: #EFEFEF;
 }
 header, h1, h2, h3 {
     font-family: 'Ruthie', cursive;
     color: #163f79;
 }
 html, body {
-    background-color: #f9f7f1;
+    background-color: #EFEFEF;
     margin: 0;
 }
 header {
-    background-color: #b1e7d8;
     padding: .5rem;   
     margin: 0;
 }
@@ -35,9 +34,11 @@ header h1 {
 }
 h3 {
     font-size: 30px;
+    margin: .5rem;
 }
 p {
     font-family: 'Open Sans', sans-serif;
+    margin: .5rem;
 }
 a {
     text-decoration: none;
@@ -45,22 +46,15 @@ a {
 body {
     margin: 0;
     padding: 0;
-    background: #fae9ec;
+    background: #EFEFEF;
 }
 #menuToggle {
     display: block;
     position: relative;
-    top: 20px;
-    left: 20px;
+    top: -10px;
+    left: 15px;
     z-index: 1;
     user-select: none;
-}
-#menuToggle a {
-    text-decoration: none;
-    transition: #163f79 0.3s ease;
-}
-#MenuToggle a:hover {
-    color: #fae9ec;
 }
 #menuToggle input {
     display: block;
@@ -133,7 +127,7 @@ body {
   font-size: 22px;
 }
 #menu li:hover {
-    color: #b1e7d8;
+    color: #FDC835;
 }
 
 /*
@@ -142,4 +136,31 @@ body {
 #menuToggle input:checked ~ ul
 {
   transform: none;
+}
+.adriandlexa {
+    width: 300px;
+    height: auto;
+}
+.searchbox {
+    float: left;
+}
+input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+    border-radius: 5px;
+}
+.searchbox button {
+    padding: 8px;
+    margin-top: 10px;
+    margin-left: 10px;
+    background: #fefefe;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+}
+.searchbox button:hover {
+    background: #b1e7d8;
 }
