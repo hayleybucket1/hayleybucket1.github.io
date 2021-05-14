@@ -25,14 +25,35 @@
         </section>
     </header>
     <main>
-        <nav class="clearfix">
-            <ul id="hamNav" class="hide">
-                <li><a id="active" href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
+        <nav role="navigation">
+            <div id="menuToggle">
+              <!--
+              A fake / hidden checkbox is used as click reciever,
+              so you can use the :checked selector on it.
+              -->
+              <input type="checkbox" />
+              
+              <!--
+              Some spans to act as a hamburger.
+              
+              They are acting like a real hamburger,
+              not that McDonalds stuff.
+              -->
+              <span></span>
+              <span></span>
+              <span></span>
+        
+            <!-- The nav menu -->
+                <ul id="menu">
+                    <a href="#"><li>Home</li></a>
+                    <a href="#"><li>About</li></a>
+                    <a href="#"><li>Info</li></a>
+                    <a href="#"><li>Contact</li></a>
+                </ul>
+            </div>
         </nav>
         <div class="hero"></div>
+
                 <h3>About</h3>
                     <p>Section or Button, picture and story</p>
                 <h3>Contact Us</h3>
@@ -44,11 +65,11 @@
                     <p>Target audience is homeowners probably women age 30-45/50</p>
                     <p>Color scheme: muted/neutral colors.
                         <div class="colors">
-                            <p class="black"> Jet: #3A6389</p>
-                            <p class="grey"> Davys Grey: #4A5559</p>
-                            <p class="pink">Tuscany: #CCA7AD</p>
-                            <p class="bone">Pale Pink: #FADCDB</p>
-                            <p class="white">Lavender Blush: #FAE9EC</p>
+                            <p class="black"> Eerie Black: #1F1E1F</p>
+                            <p class="blue"> Cornflower Blue: #163f79</p>
+                            <p class="yellow">Sunglow: #FDC835</p>
+                            <p class="mint">Magic Mint: B1E7D8</p>
+                            <p class="white">Floral White: #FAE9EC</p>
                         </div>
                     </p>
     </main>

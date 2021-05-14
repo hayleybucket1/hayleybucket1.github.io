@@ -1,26 +1,33 @@
+* {
+    box-sizing: border-box;
+}
 .black {
-    color: #3A3839;
+    color: #1F1E1F;
 }
-.grey {
-    color: #4A5559;
+.blue {
+    color: #163f79;
 }
-.bone {
-    color: #E6DEC7;
+.mint {
+    color: #B1E7D8;
 }
-.pink {
-    color: #CCA7AD;
+.yellow {
+    color: #FDC835;
 }
 .white {
     background-color: black;
-    color: #FAE9EC;
+    color: #F9F7F1;
 }
 header, h1, h2, h3 {
     font-family: 'Ruthie', cursive;
-    color: #4a5559;
+    color: #163f79;
+}
+html, body {
+    background-color: #f9f7f1;
+    margin: 0;
 }
 header {
-    background-color: #fae9ec;
-    padding:.5rem;   
+    background-color: #b1e7d8;
+    padding: .5rem;   
     margin: 0;
 }
 header h1 {
@@ -32,6 +39,107 @@ h3 {
 p {
     font-family: 'Open Sans', sans-serif;
 }
-.hamNav {
-    width: 240;
+a {
+    text-decoration: none;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: #fae9ec;
+}
+#menuToggle {
+    display: block;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+    user-select: none;
+}
+#menuToggle a {
+    text-decoration: none;
+    transition: #163f79 0.3s ease;
+}
+#MenuToggle a:hover {
+    color: #fae9ec;
+}
+#menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+}
+#menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+  
+    background: #163f79;
+    border-radius: 3px;
+  
+    z-index: 1;
+  
+    transform-origin: 4px 0px;
+  
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease;
+}
+#menuToggle span:first-child {
+    transform-origin: 0% 0%;
+}
+#menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+#menuToggle input:checked ~ span {
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #FDC835;
+}
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+#menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg)
+    translate(0, -1px);
+}
+#menu
+{
+  position: absolute;
+  width: 250px;
+  margin: -90px 0 0 -50px;
+  padding: 50px;
+  padding-top: 100px;
+  
+  background: #163f79;
+  list-style-type: none;
+  
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  color: #fae9ec;  
+  padding: 8px 0;
+  font-size: 22px;
+}
+#menu li:hover {
+    color: #b1e7d8;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
 }
