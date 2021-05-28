@@ -1,6 +1,13 @@
 * {
     box-sizing: border-box;
 }
+.logo {
+    display: block;
+    width: 300px;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+}
 .black {
     color: #1F1E1F;
 }
@@ -86,13 +93,26 @@ body {
 .dropdown:hover .dropbutton {
     color: #fdc835;
 }
-
+.about {
+    display: block;
+}
 .adriandlexa {
     width: 300px;
     height: auto;
+    float: left;
+    margin: .5rem;
 }
 .searchbox {
     float: left;
+}
+.shopping {
+    list-style: none;
+}
+.shopping li a {
+    color: #163f79;
+}
+.shopping li a:hover {
+    color: #FDC835;
 }
 input[type=text] {
     padding: 6px;
