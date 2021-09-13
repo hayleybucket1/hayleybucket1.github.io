@@ -11,9 +11,6 @@
 .black {
     color: #1F1E1F;
 }
-.blue {
-    color: #163f79;
-}
 .mint {
     color: #B1E7D8;
 }
@@ -26,7 +23,7 @@
 }
 header, h1, h2, h3 {
     font-family: 'Caveat', cursive;
-    color: #163f79;
+    color: #1f1e1f;
 }
 html, body {
     background-color: #EFEFEF;
@@ -57,7 +54,7 @@ body {
     background: #EFEFEF;
 }
 .dropbutton {
-    color: #163f79;
+    color: #1f1e1f;
     border: none;
     cursor: pointer;
     margin: 10px;
@@ -71,17 +68,19 @@ body {
     display: none;
     min-width: 160px;
     z-index: 1;
+    text-decoration: none;
 }
 .menu li {
-    border-bottom: .5px solid #163f79;
+    border-bottom: .5px solid #1f1e1f;
     text-decoration: none;
     margin-left: -28px;
 }
 .menu a li {
-    color: #163f79;
+    color: #1f1e1f;
     padding: 12px 16px;
     display: block;
     text-align: center;
+    text-decoration: none;
 }
 .menu a:hover li{
     color: #b1e7d8;
@@ -109,7 +108,7 @@ body {
     list-style: none;
 }
 .shopping li a {
-    color: #163f79;
+    color: #1f1e1f;
 }
 .shopping li a:hover {
     color: #FDC835;

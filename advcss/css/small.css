@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+header{
+    padding: 1rem 2rem;
+    text-align: right;
+    background-color: #6495ED;
+    color: #FAEBD7;
+
+}
+main{
+    background-color: #FAEBD7;
+    padding: 1rem;
+}
+main h2{
+    font-family: Lora;
+}
+main h2 a{
+    text-decoration: none;
+    color: black;
+}
+main h2 a:active{
+    color: #DEB887;
+}
+main h2 a:hover{
+    color: #6495ED;
+    text-decoration: underline;
+}
+body{
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+header h1{
+    font-family: Lora;
+}
+header a{
+    text-decoration: none;
+    color: #FAEBD7;
+}
+header a:active{
+    color: #DEB887;
+}
+header a:hover{
+    color: white;
+    text-decoration: underline;
+}
+header nav li{
+    list-style: none;
+    line-height: 2em;
+}
+article {
+    background-color: white;
+    padding: 2rem;
+    margin: 1rem;
+    margin-bottom: 2.5rem;
+    box-shadow: 3px 4px 4px lightgray;
+}
+article p a{
+    color: #6495ED;
+    text-decoration: none;
+}
+article p a:active{
+    color: #DEB887;
+}
+article p a:hover{
+    text-decoration: underline;
+}
+img{
+    max-width: 80%;
+    height: auto;
+    margin: 1rem 0 0 1rem;
+}
+.post-date{
+    color: grey;
+}
