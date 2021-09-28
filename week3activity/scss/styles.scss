@@ -83,3 +83,5 @@ body {
         }
     }
 }
+@include breakpoint(medium) { @include post-content(700px)}
+@include breakpoint(large) { @include post-content(900px, 70%)}
