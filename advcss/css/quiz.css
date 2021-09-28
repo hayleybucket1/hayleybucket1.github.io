@@ -1,0 +1,13 @@
+
+span.help {
+    color: purple;
+}
+span.help::before {
+    content: "(";
+}
+span.help::after {
+    content: ")";
+}
+p:nth-of-type(n+3) {
+    display: none;
+}
