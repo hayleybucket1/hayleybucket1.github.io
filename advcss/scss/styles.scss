@@ -7,56 +7,36 @@ $h2-color: black;
 $hover-color: #6495ED;
 $active-color: #DEB887;
 $article-color: white;
+$post-date-color: grey;
 
-//set breakpoint sizes
-$break-small: 20em;
-$break-medium: 31em;
-$break-large: 60em;
+
 
 //mixins
-@mixin breakpoint($break) {
-    @if $break == large {
-        @media (max-width: $break-large) {
-            @content; 
-        }
+@mixin for-size($size) {
+    @if $size == phone-only {
+      @media (max-width: 599px) { @content; }
+    } @else if $size == tablet-portrait-up {
+      @media (min-width: 600px) { @content; }
+    } @else if $size == tablet-landscape-up {
+      @media (min-width: 900px) { @content; }
+    } @else if $size == desktop-up {
+      @media (min-width: 1200px) { @content; }
+    } @else if $size == big-desktop-up {
+      @media (min-width: 1800px) { @content; }
     }
-    @else if $break == medium {
-        @media (max-width: $break-medium) {
-            @content; 
-        }
-    }
-    @else if $break == small {
-        @media (max-width: $break-small) {
-            @content;
-        }
-    }
-    @else {
-        @media ($break) {
-            @content;
-        }
-    }
-}
-@mixin post-content($max-width, $width: 90%) {
-    width: $width;
-    max-width: $max-width;
+  }
+
+@mixin center-block {
+    display: block;
     margin-left: auto;
     margin-right: auto;
 }
-@mixin flex-container($axis, $wrap: nowrap) {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-flow: $axis $wrap;
-    -ms-flex-flow: $axis $wrap;
-    flex-flow: $axis $wrap;
-
-}
 main {
     background-color: $body-background-color;
-    padding: 1rem;
+    padding: .5rem;
     h2 {
         font-family: Lora;
+        padding-bottom: 2em;
     }
     a {
         color: $h2-color;
@@ -67,8 +47,12 @@ body {
     background-color: $body-background-color;
     color: $p-color;
     color: $h2-color;
-    font-family: Helvetica, Arial, sans-serif
-    
+    font-family: Helvetica, Arial, sans-serif;
+
+    @include for-size(tablet-landscape-up) {
+        margin: 0;
+        border-left: 240px solid;
+    }
 }
 header {
     padding: 1rem 2rem;
@@ -92,14 +76,23 @@ header {
     nav li {
         list-style: none;
         line-height: 2em;
+    } 
+    @include for-size(tablet-landscape-up){
+        top: 0;
+        left: 0;
+        width: 180px; 
+        height: 1500px;
+        position: absolute;
     }
 }
 
 article {
+    display: block;
     background-color: $article-color;
     padding: 2rem;
-    margin: 1rem;
+    margin: 2rem;
     box-shadow: 3px 4px 4px lightgray;
+    
     a{
         text-decoration: none;
     }
@@ -110,5 +103,15 @@ article {
     a:active {
         color: $active-color;
     }
-        
+    .post-date {
+        color: $post-date-color;
+    }
+    img {
+        width: 250px;
+        @include center-block();
+        padding-bottom: 1rem;
+    }
+    @include for-size(tablet-landscape-up) {
+        margin: 3rem 4rem;
+    }
 }

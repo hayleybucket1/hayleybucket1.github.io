@@ -85,3 +85,10 @@ body {
 }
 @include breakpoint(medium) { @include post-content(700px)}
 @include breakpoint(large) { @include post-content(900px, 70%)}
+@mixin post-content {
+    padding: 1em;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+}

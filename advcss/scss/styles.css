@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
 main {
   background-color: #FAEBD7;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 main h2 {
   font-family: Lora;
+  padding-bottom: 2em;
 }
 main a {
   color: black;
@@ -16,6 +17,12 @@ body {
   color: #FAEBD7;
   color: black;
   font-family: Helvetica, Arial, sans-serif;
+}
+@media (min-width: 900px) {
+  body {
+    margin: 0;
+    border-left: 240px solid;
+  }
 }
 
 header {
@@ -42,11 +49,21 @@ header nav li {
   list-style: none;
   line-height: 2em;
 }
+@media (min-width: 900px) {
+  header {
+    top: 0;
+    left: 0;
+    width: 180px;
+    height: 1500px;
+    position: absolute;
+  }
+}
 
 article {
+  display: block;
   background-color: white;
   padding: 2rem;
-  margin: 1rem;
+  margin: 2rem;
   -webkit-box-shadow: 3px 4px 4px lightgray;
           box-shadow: 3px 4px 4px lightgray;
 }
@@ -59,5 +76,20 @@ article a:hover {
 }
 article a:active {
   color: #DEB887;
+}
+article .post-date {
+  color: grey;
+}
+article img {
+  width: 250px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 1rem;
+}
+@media (min-width: 900px) {
+  article {
+    margin: 3rem 4rem;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
