@@ -1,0 +1,20 @@
+
+main.css
+  2:5  ×  Expected indentation of 2 spaces                    indentation                       
+  3:9  ×  Expected indentation of 4 spaces                    indentation                       
+  4:9  ×  Expected indentation of 4 spaces                    indentation                       
+  5:9  ×  Expected indentation of 4 spaces                    indentation                       
+  6:9  ×  Expected indentation of 4 spaces                    indentation                       
+  7:5  ×  Expected indentation of 2 spaces                    indentation                       
+  9:5  ×  Expected indentation of 2 spaces                    indentation                       
+ 10:9  ×  Expected indentation of 4 spaces                    indentation                       
+ 11:9  ×  Expected indentation of 4 spaces                    indentation                       
+ 12:5  ×  Expected indentation of 2 spaces                    indentation                       
+ 14:5  ×  Expected indentation of 2 spaces                    indentation                       
+ 15:9  ×  Expected indentation of 4 spaces                    indentation                       
+ 16:9  ×  Expected indentation of 4 spaces                    indentation                       
+ 17:5  ×  Expected indentation of 2 spaces                    indentation                       
+ 17:8  ×  Unexpected whitespace at end of line                no-eol-whitespace                 
+ 17:9  ×  Expected newline before "}" of a multi-line block   block-closing-brace-newline-before
+ 18:1  ×  Unexpected missing end-of-source newline            no-missing-end-of-source-newline
+
